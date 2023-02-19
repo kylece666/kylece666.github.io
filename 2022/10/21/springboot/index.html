@@ -1,0 +1,1885 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="springboot-base, Kylece">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>springboot-base | Kylece</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Kylece</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Kylece</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">springboot-base</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/springboot/">
+                                <span class="chip bg-color">springboot</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-10-21
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-10-28
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    28 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="SpringBoot基础篇"><a href="#SpringBoot基础篇" class="headerlink" title="SpringBoot基础篇"></a>SpringBoot基础篇</h2><h3 id="1-创建springboot程序"><a href="#1-创建springboot程序" class="headerlink" title="1.创建springboot程序"></a>1.创建springboot程序</h3><p>​	创建springboot程序有以下4种方式：</p>
+<h4 id="1-1创建方式一"><a href="#1-1创建方式一" class="headerlink" title="1.1创建方式一"></a>1.1创建方式一</h4><p><strong>步骤①</strong>：idea中点击，创建新模块，选择Spring Initializr，并配置模块相关基础信息</p>
+<p><strong>步骤②</strong>：选择当前模块需要使用的技术集</p>
+<p><strong>步骤③</strong>：开发控制器类</p>
+<p>例如</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">&#x2F;&#x2F;Rest模式
+@RestController
+@RequestMapping(&quot;&#x2F;books&quot;)
+public class BookController &#123;
+    @GetMapping
+    public String getById()&#123;
+        System.out.println(&quot;springboot is running...&quot;);
+        return &quot;springboot is running...&quot;;
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>步骤④</strong>：运行自动生成的Application类</p>
+<p>spring搭建和springboot搭建的区别</p>
+<table>
+<thead>
+<tr>
+<th><strong>类配置文件</strong></th>
+<th><strong>Spring</strong></th>
+<th><strong>SpringBoot</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pom文件中的坐标</td>
+<td><strong>手工添加</strong></td>
+<td><strong>勾选添加</strong></td>
+</tr>
+<tr>
+<td>web3.0配置类</td>
+<td><strong>手工制作</strong></td>
+<td><strong>无</strong></td>
+</tr>
+<tr>
+<td>Spring&#x2F;SpringMVC配置类</td>
+<td><strong>手工制作</strong></td>
+<td><strong>无</strong></td>
+</tr>
+<tr>
+<td>控制器</td>
+<td><strong>手工制作</strong></td>
+<td><strong>手工制作</strong></td>
+</tr>
+</tbody></table>
+<p>此种方式idea需要联网。</p>
+<h4 id="1-2创建方式二"><a href="#1-2创建方式二" class="headerlink" title="1.2创建方式二"></a>1.2创建方式二</h4><p>SpringBoot的官网里面就可以直接创建SpringBoot程序</p>
+<p>​	SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可以通过项目一级一级的找到SpringBoot技术的介绍页，然后在页面中间部位找到如下内容</p>
+<img src="springboot/image-20211122150444816.png" alt="image-20211122150444816" style="zoom: 67%;" />
+
+<p><strong>步骤①</strong>：点击Spring Initializr后进入到创建SpringBoot程序的界面上，下面是输入信息的过程，和前面的一样，只是界面变了而已，根据自己的要求，在左侧选择对应信息和输入对应的信息即可</p>
+<img src="springboot/image-20211122150608039.png" alt=""  />
+
+<p><strong>步骤②</strong>：右侧的ADD DEPENDENCIES用于选择使用何种技术，和之前勾选的Spring WEB是在做同一件事，仅仅是界面不同而已，点击后打开网页版的技术选择界面</p>
+<img src="springboot/image-20211122161257361.png" alt=""/>
+
+<p><strong>步骤③</strong>：所有信息设置完毕后，点击下面左侧按钮，生成一个文件包</p>
+<p><strong>步骤④</strong>：保存后得到一个压缩文件，这个文件打开后就是创建的SpringBoot工程文件夹了</p>
+<p><strong>步骤⑤</strong>：解压缩此文件后，得到工程目录，在Idea中导入即可使用，和之前创建的东西完全一样。</p>
+<h4 id="1-3创建方式三"><a href="#1-3创建方式三" class="headerlink" title="1.3创建方式三"></a>1.3创建方式三</h4><p>​	创建工程时，切换选择starter服务路径，然后手工收入阿里云提供给我们的使用地址即可。地址：<a target="_blank" rel="noopener" href="http://start.aliyun.com或https//start.aliyun.com">http://start.aliyun.com或https://start.aliyun.com</a></p>
+<img src="/2022/10/21/springboot/image-20211122163605950-16668662345831.png" class="" title="image-20211122163605950">
+
+<p>​	阿里云地址默认创建的SpringBoot工程版本是<font color="#ff0000"><b>2.4.1</b></font>，所以如果你想更换其他的版本，创建项目后手工修改即可，别忘了刷新一下，加载新版本信息。</p>
+<p>​	阿里云提供的地址更符合国内开发者的使用习惯，里面有一些SpringBoot官网上没有给出的坐标。</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>选择start来源为自定义URL</li>
+<li>输入阿里云start地址</li>
+<li>创建项目</li>
+</ol>
+<h4 id="1-4创建方式四"><a href="#1-4创建方式四" class="headerlink" title="1.4创建方式四"></a>1.4创建方式四</h4><p><strong>步骤①</strong>：创建工程时，选择手工创建Maven工程</p>
+<p><strong>步骤②</strong>：参照标准SpringBoot工程的pom文件，书写自己的pom文件即可</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;?xml version&#x3D;&quot;1.0&quot; encoding&#x3D;&quot;UTF-8&quot;?&gt;
+&lt;project xmlns&#x3D;&quot;http:&#x2F;&#x2F;maven.apache.org&#x2F;POM&#x2F;4.0.0&quot;
+         xmlns:xsi&#x3D;&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2001&#x2F;XMLSchema-instance&quot;
+         xsi:schemaLocation&#x3D;&quot;http:&#x2F;&#x2F;maven.apache.org&#x2F;POM&#x2F;4.0.0 http:&#x2F;&#x2F;maven.apache.org&#x2F;xsd&#x2F;maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;&#x2F;modelVersion&gt;
+
+    &lt;parent&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-parent&lt;&#x2F;artifactId&gt;
+        &lt;version&gt;2.5.4&lt;&#x2F;version&gt;
+    &lt;&#x2F;parent&gt;
+
+    &lt;groupId&gt;com.itheima&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;springboot_01_04_quickstart&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;1.0-SNAPSHOT&lt;&#x2F;version&gt;
+
+    &lt;properties&gt;
+        &lt;maven.compiler.source&gt;8&lt;&#x2F;maven.compiler.source&gt;
+        &lt;maven.compiler.target&gt;8&lt;&#x2F;maven.compiler.target&gt;
+    &lt;&#x2F;properties&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;
+        &lt;&#x2F;dependency&gt;
+    &lt;&#x2F;dependencies&gt;
+
+&lt;&#x2F;project&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>步骤③</strong>：之前运行SpringBoot工程需要一个类，这个不能缺，自己手写一个就行了，建议按照之前的目录结构来创建。</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@SpringBootApplication
+public class Application &#123;
+    public static void main(String[] args) &#123;
+        SpringApplication.run(&lt;Application.class);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	<font color="#ff0000"><b>注意</b></font>：类上面的注解@SpringBootApplication千万别丢了，这个是核心，后面再介绍</p>
+<p>​	<font color="#ff0000"><b>注意</b></font>：类名可以自定义，只要保障下面代码中使用的类名和你自己定义的名称一样即可，也就是run方法中的那个class对应的名称</p>
+<p><strong>步骤④</strong>：下面就可以自己创建一个Controller测试一下是否能用了，和之前没有差别了</p>
+<h3 id="2-SpringBoot特点"><a href="#2-SpringBoot特点" class="headerlink" title="2.SpringBoot特点"></a>2.SpringBoot特点</h3><ul>
+<li>parent</li>
+<li>starter</li>
+<li>引导类</li>
+<li>内嵌tomcat</li>
+</ul>
+<h4 id="2-1parent"><a href="#2-1parent" class="headerlink" title="2.1parent"></a>2.1parent</h4><p>​	为了防止各版本技术冲突，SpringBoot将所有的技术版本的常见使用方案都给开发者整理了出来，以后开发者使用时直接用它提供的版本方案，就不用担心冲突问题了，相当于SpringBoot做了无数个技术版本搭配的列表，这个技术搭配列表的名字叫做<strong>parent</strong>。</p>
+<p>​	<font color="#ff0000"><b>parent</b></font>自身具有很多个版本，每个<font color="#ff0000"><b>parent</b></font>版本中包含有几百个其他技术的版本号，不同的parent间使用的各种技术的版本号有可能会发生变化。当开发者使用某些技术时，直接使用SpringBoot提供的<font color="#ff0000"><b>parent</b></font>就行了，由<font color="#ff0000"><b>parent</b></font>帮助开发者统一的进行各种技术的版本管理。</p>
+<p>​	<font color="#ff0000"><b>parent</b></font>仅仅帮我们进行版本管理，它不负责帮你导入坐标，说白了用什么还是你自己定，只不过版本不需要你管理了。整体上来说，<font color="#ff0000"><b>使用parent可以帮助开发者进行版本的统一管理</b></font>。</p>
+<p>​		<strong>源码解析：</strong></p>
+<ul>
+<li>项目中的pom.xml中继承了一个坐标</li>
+</ul>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;parent&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-parent&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;2.5.4&lt;&#x2F;version&gt;
+&lt;&#x2F;parent&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>打开后可以查阅到其中又继承了一个坐标</li>
+</ul>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;parent&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;spring-boot-dependencies&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;2.5.4&lt;&#x2F;version&gt;
+&lt;&#x2F;parent&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>这个坐标中定义了两组信息，第一组是各式各样的依赖版本号属性，下面列出依赖版本属性的局部，可以看的出来，定义了若干个技术的依赖版本号</li>
+</ul>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;properties&gt;
+    &lt;activemq.version&gt;5.16.3&lt;&#x2F;activemq.version&gt;
+    &lt;aspectj.version&gt;1.9.7&lt;&#x2F;aspectj.version&gt;
+    &lt;assertj.version&gt;3.19.0&lt;&#x2F;assertj.version&gt;
+    &lt;commons-codec.version&gt;1.15&lt;&#x2F;commons-codec.version&gt;
+    &lt;commons-dbcp2.version&gt;2.8.0&lt;&#x2F;commons-dbcp2.version&gt;
+    &lt;commons-lang3.version&gt;3.12.0&lt;&#x2F;commons-lang3.version&gt;
+    &lt;commons-pool.version&gt;1.6&lt;&#x2F;commons-pool.version&gt;
+    &lt;commons-pool2.version&gt;2.9.0&lt;&#x2F;commons-pool2.version&gt;
+    &lt;h2.version&gt;1.4.200&lt;&#x2F;h2.version&gt;
+    &lt;hibernate.version&gt;5.4.32.Final&lt;&#x2F;hibernate.version&gt;
+    &lt;hibernate-validator.version&gt;6.2.0.Final&lt;&#x2F;hibernate-validator.version&gt;
+    &lt;httpclient.version&gt;4.5.13&lt;&#x2F;httpclient.version&gt;
+    &lt;jackson-bom.version&gt;2.12.4&lt;&#x2F;jackson-bom.version&gt;
+    &lt;javax-jms.version&gt;2.0.1&lt;&#x2F;javax-jms.version&gt;
+    &lt;javax-json.version&gt;1.1.4&lt;&#x2F;javax-json.version&gt;
+    &lt;javax-websocket.version&gt;1.1&lt;&#x2F;javax-websocket.version&gt;
+    &lt;jetty-el.version&gt;9.0.48&lt;&#x2F;jetty-el.version&gt;
+    &lt;junit.version&gt;4.13.2&lt;&#x2F;junit.version&gt;
+&lt;&#x2F;properties&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	第二组是各式各样的的依赖坐标信息，可以看出依赖坐标定义中没有具体的依赖版本号，而是引用了第一组信息中定义的依赖版本属性值</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencyManagement&gt;
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.hibernate&lt;&#x2F;groupId&gt;
+            &lt;artifactId&gt;hibernate-core&lt;&#x2F;artifactId&gt;
+            &lt;version&gt;$&#123;hibernate.version&#125;&lt;&#x2F;version&gt;
+        &lt;&#x2F;dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;junit&lt;&#x2F;groupId&gt;
+            &lt;artifactId&gt;junit&lt;&#x2F;artifactId&gt;
+            &lt;version&gt;$&#123;junit.version&#125;&lt;&#x2F;version&gt;
+        &lt;&#x2F;dependency&gt;
+    &lt;&#x2F;dependencies&gt;
+&lt;&#x2F;dependencyManagement&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>开发SpringBoot程序要继承spring-boot-starter-parent</li>
+<li>spring-boot-starter-parent中定义了若干个依赖管理</li>
+<li>继承parent模块可以避免多个依赖使用相同技术时出现依赖版本冲突</li>
+<li>继承parent的形式也可以采用引入依赖的形式实现效果</li>
+</ol>
+<h4 id="2-2starter"><a href="#2-2starter" class="headerlink" title="2.2starter"></a>2.2starter</h4><p>​	开发者在实际开发时，对于依赖坐标的使用往往都有一些固定的组合方式，比如使用spring-webmvc就一定要使用spring-web。每次都要固定搭配着写，非常繁琐，而且格式固定，没有任何技术含量。</p>
+<p>​	SpringBoot把所有的技术使用的固定搭配格式都给开发出来，以后你用某个技术，就不用一次写一堆依赖了，还容易写错，我给你做一个东西，代表一堆东西，开发者使用的时候，直接用我做好的这个东西就好了，对于这样的固定技术搭配，SpringBoot给它起了个名字叫做<strong>starter</strong>。</p>
+<p>​	starter定义了使用某种技术时对于依赖的固定搭配格式，也是一种最佳解决方案，使用starter可以帮助开发者减少依赖配置。</p>
+<p><strong>starter与parent的区别</strong></p>
+<p>​	starter是一个坐标中定了若干个坐标，以前写多个的，现在写一个，是用来减少依赖配置的书写量的。</p>
+<p>​	parent是定义了几百个依赖版本号，以前写依赖需要自己手工控制版本，现在由SpringBoot统一管理，这样就不存在版本冲突了，是用来减少依赖冲突的</p>
+<p><strong>实际开发应用方式</strong></p>
+<ul>
+<li><p>实际开发中如果需要用什么技术，先去找有没有这个技术对应的starter</p>
+<ul>
+<li>如果有对应的starter，直接写starter，而且无需指定版本，版本由parent提供</li>
+<li>如果没有对应的starter，手写坐标即可</li>
+</ul>
+</li>
+<li><p>实际开发中如果发现坐标出现了冲突现象，确认你要使用的可行的版本号，使用手工书写的方式添加对应依赖，覆盖SpringBoot提供给我们的配置管理</p>
+</li>
+</ul>
+<p>SpringBoot官方给出了好多个starter的定义，方便我们使用，而且名称都是如下格式</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">命名规则：spring-boot-starter-技术名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>开发SpringBoot程序需要导入坐标时通常导入对应的starter</li>
+<li>每个不同的starter根据功能不同，通常包含多个依赖坐标</li>
+<li>使用starter可以实现快速配置的效果，达到简化配置的目的</li>
+</ol>
+<h4 id="2-3引导类"><a href="#2-3引导类" class="headerlink" title="2.3引导类"></a>2.3引导类</h4><p>​	SpringBoot本身是为了加速Spring程序的开发的，而Spring程序运行的基础是需要创建自己的Spring容器对象（IoC容器）并将所有的对象交给Spring的容器管理，也就是一个一个的Bean。那还了SpringBoot加速开发Spring程序，这个容器还在吗？这个疑问不用说，一定在。当前这个类运行后就会产生一个Spring容器对象，并且可以将这个对象保存起来，通过容器对象直接操作Bean。</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@SpringBootApplication
+public class Springboot0101QuickstartApplication &#123;
+    public static void main(String[] args) &#123;
+        ConfigurableApplicationContext ctx &#x3D; SpringApplication.run(Springboot0101QuickstartApplication.class, args);
+        BookController bean &#x3D; ctx.getBean(BookController.class);
+        System.out.println(&quot;bean&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;&quot; + bean);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	通过上述操作不难看出，其实SpringBoot程序启动还是创建了一个Spring容器对象。这个类在SpringBoot程序中是所有功能的入口，称这个类为<font color="#835f50"><b>引导类</b></font>。</p>
+<p>​	作为一个引导类最典型的特征就是当前类上方声明了一个注解<b>@SpringBootApplication</b></p>
+<p><strong>总结</strong></p>
+<ol>
+<li>SpringBoot工程提供引导类用来启动程序</li>
+<li>SpringBoot工程启动后创建并初始化Spring容器</li>
+</ol>
+<h4 id="2-4内嵌tomcat"><a href="#2-4内嵌tomcat" class="headerlink" title="2.4内嵌tomcat"></a>2.4内嵌tomcat</h4><p>​	围绕着这个内置的web服务器，也可以说是内置的tomcat服务器来研究几个问题</p>
+<ol>
+<li>这个服务器在什么位置定义的</li>
+<li>这个服务器是怎么运行的</li>
+<li>这个服务器如果想换怎么换？虽然这个需求很垃圾，搞得开发者会好多web服务器一样，用别人提供好的不香么？非要自己折腾</li>
+</ol>
+<p>通查看pom文件的源码，可以知道tomcat在spring-boot-starter-web中</p>
+<p><strong>内嵌Tomcat运行原理</strong></p>
+<p>​	tomcat服务器运行其实是以对象的形式在Spring容器中运行的，具体运行就是上前面提到的那个tomcat内嵌核心。</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.apache.tomcat.embed&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;tomcat-embed-core&lt;&#x2F;artifactId&gt;
+        &lt;version&gt;9.0.52&lt;&#x2F;version&gt;
+        &lt;scope&gt;compile&lt;&#x2F;scope&gt;
+    &lt;&#x2F;dependency&gt;
+&lt;&#x2F;dependencies&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>通过依赖排除可以去掉这个web服务器功能</p>
+<p><strong>更换内嵌Tomcat</strong></p>
+<p>​	那根据上面的操作我们思考是否可以换个服务器呢？必须的嘛。根据SpringBoot的工作机制，用什么技术，加入什么依赖就行了。SpringBoot提供了3款内置的服务器</p>
+<ul>
+<li><p>tomcat(默认)：apache出品，粉丝多，应用面广，负载了若干较重的组件</p>
+</li>
+<li><p>jetty：更轻量级，负载性能远不及tomcat</p>
+</li>
+<li><p>undertow：负载性能勉强跑赢tomcat</p>
+</li>
+<li></li>
+</ul>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;
+        &lt;exclusions&gt;
+            &lt;exclusion&gt;
+                &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+                &lt;artifactId&gt;spring-boot-starter-tomcat&lt;&#x2F;artifactId&gt;
+            &lt;&#x2F;exclusion&gt;
+        &lt;&#x2F;exclusions&gt;
+    &lt;&#x2F;dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-jetty&lt;&#x2F;artifactId&gt;
+    &lt;&#x2F;dependency&gt;
+&lt;&#x2F;dependencies&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	现在就已经成功替换了web服务器，核心思想就是用什么加入对应坐标就可以了。如果有starter，优先使用starter。</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>内嵌Tomcat服务器是SpringBoot辅助功能之一</li>
+<li>内嵌Tomcat工作原理是将Tomcat服务器作为对象运行，并将该对象交给Spring容器管理</li>
+<li>变更内嵌服务器思想是去除现有服务器，添加全新的服务器</li>
+</ol>
+<h3 id="3-SpringBoot属性配置"><a href="#3-SpringBoot属性配置" class="headerlink" title="3.SpringBoot属性配置"></a>3.SpringBoot属性配置</h3><p>​	SpringBoot没有具体的功能，它在辅助加快Spring程序的开发效率。我们发现现在几乎不用做任何的配置，功能就有了，确实很好用。但是仔细想想，没有做配置意味着什么？意味着配置已经做好了，不用你自己写了。但是新的问题又来了，如果不想用已经写好的默认配置，该如何干预呢？</p>
+<h4 id="3-1属性配置"><a href="#3-1属性配置" class="headerlink" title="3.1属性配置"></a>3.1属性配置</h4><p>​	resources目录下面有一个空白的文件，叫做application.properties。一看就是个配置文件，SpringBoot通过配置文件application.properties就可以修改默认的配置。</p>
+<p>​	改端口，写port。当你输入port后，发现会有提示。</p>
+<img src="springboot/image-20211123165719091.png" alt="image-20211123165719091" style="zoom:80%;" />
+
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">80</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>SpringBoot默认配置文件是application.properties</li>
+</ol>
+<h4 id="3-2配置文件分类"><a href="#3-2配置文件分类" class="headerlink" title="3.2配置文件分类"></a>3.2配置文件分类</h4><p>​	SpringBoot除了支持properties格式的配置文件，还支持另外两种格式的配置文件。</p>
+<ul>
+<li>properties格式</li>
+<li>yml格式</li>
+<li>yaml格式</li>
+</ul>
+<p>​		下面，列举三种不同文件格式配置相同的属性范例</p>
+<ul>
+<li>application.properties（properties格式）</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">80</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>application.yml（yml格式）</li>
+</ul>
+<pre class="line-numbers language-YML" data-language="YML"><code class="language-YML">server:
+  port: 81<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li>application.yaml（yaml格式）</li>
+</ul>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">server</span><span class="token punctuation">:</span>
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">82</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>SpringBoot提供了3种配置文件的格式<ul>
+<li>properties（传统格式&#x2F;默认格式）</li>
+<li><strong>yml</strong>（主流格式）</li>
+<li>yaml</li>
+</ul>
+</li>
+</ol>
+<p><strong>配置文件的优先级</strong></p>
+<p>​	通过配置同样不同值的属性，测试优先级</p>
+<ul>
+<li>application.properties（properties格式）</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">80</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>application.yml（yml格式）</li>
+</ul>
+<pre class="line-numbers language-YML" data-language="YML"><code class="language-YML">server:
+  port: 81<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li>application.yaml（yaml格式）</li>
+</ul>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">server</span><span class="token punctuation">:</span>
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">82</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>​	启动后发现目前的启动端口为80，把80对应的文件删除掉，然后再启动，现在端口又改成了81。现在我们就已经知道了3个文件的加载优先顺序是什么</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">application.properties  &gt;  application.yml  &gt;  application.yaml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>application.properties（properties格式）</li>
+</ul>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">80</span>
+<span class="token attr-name">spring.main.banner-mode</span><span class="token punctuation">=</span><span class="token attr-value">off</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ul>
+<li>application.yml（yml格式）</li>
+</ul>
+<pre class="line-numbers language-YML" data-language="YML"><code class="language-YML">server:
+  port: 81
+logging: 
+  level: 
+    root: debug<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul>
+<li>application.yaml（yaml格式）</li>
+</ul>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">server</span><span class="token punctuation">:</span>
+  <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">82</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>​	我们发现不仅端口生效了，最终显示80，同时其他两条配置也生效了，看来每个配置文件中的项都会生效，只不过如果多个配置文件中有相同类型的配置会优先级高的文件覆盖优先级的文件中的配置。如果配置项不同的话，那所有的配置项都会生效。</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>配置文件间的加载优先级	properties（最高）&gt;  yml  &gt;  yaml（最低）</li>
+<li>不同配置文件中相同配置按照加载优先级相互覆盖，不同配置文件中不同配置全部保留</li>
+</ol>
+<h4 id="3-3YAML文件"><a href="#3-3YAML文件" class="headerlink" title="3.3YAML文件"></a>3.3YAML文件</h4><p>​	YAML（YAML Ain’t Markup Language），一种数据序列化格式。具有容易阅读、容易与脚本语言交互、以数据为核心，重数据轻格式的特点。常见的文件扩展名有两种：</p>
+<ul>
+<li>.yml格式（主流）</li>
+<li>.yaml格式</li>
+</ul>
+<p>​	对于文件自身在书写时，具有严格的语法格式要求，具体如下：</p>
+<ol>
+<li>大小写敏感</li>
+<li>属性层级关系使用多行描述，<strong>每行结尾使用冒号结束</strong></li>
+<li>使用缩进表示层级关系，同层级左侧对齐，只允许使用空格（<font color='red'>不允许使用Tab键</font>）</li>
+<li>属性值前面添加<strong>空格</strong>（属性名与属性值之间使用冒号+空格作为分隔）</li>
+<li>#号 表示注释</li>
+</ol>
+<p>​	常见的数据书写格式：</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">boolean: TRUE  						#TRUE,true,True,FALSE,false，False均可
+float: 3.14    						#6.8523015e+5  #支持科学计数法
+int: 123       						#0b1010_0111_0100_1010_1110    #支持二进制、八进制、十六进制
+null: ~        						#使用~表示null
+string: HelloWorld      			#字符串可以直接书写
+string2: &quot;Hello World&quot;  			#可以使用双引号包裹特殊字符
+date: 2018-02-17        			#日期必须使用yyyy-MM-dd格式
+datetime: 2018-02-17T15:02:31+08:00  #时间和日期之间使用T连接，最后使用+代表时区<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	yaml格式中也可以表示数组</p>
+<pre class="line-numbers language-none"><code class="language-none">subject:
+	- Java
+	- 前端
+	- 大数据
+likes: [跑步,游泳]			#数组书写缩略格式
+users:							 #对象数组格式一
+  - name: Tom
+   	age: 4
+  - name: Jerry
+    age: 5
+users:							 #对象数组格式二
+  -  
+    name: Tom
+    age: 4
+  -   
+    name: Jerry
+    age: 5			    
+users2: [ &#123; name:Tom , age:4 &#125; , &#123; name:Jerry , age:5 &#125; ]	#对象数组缩略格式	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-4yaml数据读取"><a href="#3-4yaml数据读取" class="headerlink" title="3.4yaml数据读取"></a>3.4yaml数据读取</h4><p><strong>读取单一数据</strong></p>
+<p>​	yaml中保存的单个数据，可以使用Spring中的注解直接读取，使用@Value可以读取单个数据，属性名引用方式：<font color="#ff0000"><b>${一级属性名.二级属性名……}</b></font></p>
+<p>​	使用@Value注解时，要将该注入写在某一个指定的Spring管控的bean的属性名上方。现在就可以读取到对应的单一数据行了</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>使用@Value配合SpEL读取单个数据</li>
+<li>如果数据存在多层级，依次书写层级名称即可</li>
+</ol>
+<p><strong>读取全部数据</strong></p>
+<p>pringBoot提供了一个对象，能够把所有的数据都封装到这一个对象中，这个对象叫做Environment，使用自动装配注解(@Autowired)可以将所有的yaml数据封装到这个对象中</p>
+<p>通过Environment的接口操作进行，具体方法时getProperties（String），参数填写属性名即可</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>使用Environment对象封装全部配置信息</li>
+<li>使用@Autowired自动装配数据到Environment对象中</li>
+</ol>
+<p><strong>读取对象数据</strong></p>
+<p>​	单一数据读取书写比较繁琐，全数据封装又封装的太厉害了，每次拿数据还要一个一个的getProperties（）,总之用起来都不是很舒服。由于Java是一个面向对象的语言，很多情况下，我们会将一组数据封装成一个对象。</p>
+<p>​	首先定义一个对象，并将该对象纳入Spring管控的范围，也就是定义成一个bean，然后使用注解@ConfigurationProperties指定该对象加载哪一组yaml中配置的信息。</p>
+<p>​	@ConfigurationProperties必须告诉他加载的数据前缀是什么，这样当前前缀下的所有属性就封装到这个对象中。记得数据属性名要与对象的变量名一一对应啊</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>使用@ConfigurationProperties注解绑定配置信息到封装类中</li>
+<li>封装类需要定义为Spring管理的bean，否则无法进行属性注入</li>
+</ol>
+<p><strong>yaml文件中的数据引用</strong></p>
+<p>​	如果你在书写yaml数据时，经常出现如下现象，比如很多个文件都具有相同的目录前缀</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">center:
+	dataDir: &#x2F;usr&#x2F;local&#x2F;fire&#x2F;data
+    tmpDir: &#x2F;usr&#x2F;local&#x2F;fire&#x2F;tmp
+    logDir: &#x2F;usr&#x2F;local&#x2F;fire&#x2F;log
+    msgDir: &#x2F;usr&#x2F;local&#x2F;fire&#x2F;msgDir<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	这个时候你可以使用引用格式来定义数据，其实就是搞了个变量名，然后引用变量了，格式如下：</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">baseDir: &#x2F;usr&#x2F;local&#x2F;fire
+	center:
+    dataDir: $&#123;baseDir&#125;&#x2F;data
+    tmpDir: $&#123;baseDir&#125;&#x2F;tmp
+    logDir: $&#123;baseDir&#125;&#x2F;log
+    msgDir: $&#123;baseDir&#125;&#x2F;msgDir<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	如果需要使用转义字符，需要将数据字符串使用双引号包裹起来</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">lesson: &quot;Spring\tboot\nlesson&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>在配置文件中可以使用${属性名}方式引用属性值</li>
+<li>如果属性中出现特殊字符，可以使用双引号包裹起来作为字符解析</li>
+</ol>
+<h3 id="4-基于SpringBoot实现SSMP整合"><a href="#4-基于SpringBoot实现SSMP整合" class="headerlink" title="4.基于SpringBoot实现SSMP整合"></a>4.基于SpringBoot实现SSMP整合</h3><ul>
+<li>整合JUnit</li>
+<li>整合MyBatis</li>
+<li>整合MyBatis-Plus</li>
+<li>整合Druid</li>
+</ul>
+<h4 id="4-1整合JUnit"><a href="#4-1整合JUnit" class="headerlink" title="4.1整合JUnit"></a>4.1整合JUnit</h4><p>​	不使用SpringBoot技术时，Spring整合JUnit的制作方式</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">&#x2F;&#x2F;加载spring整合junit专用的类运行器
+@RunWith(SpringJUnit4ClassRunner.class)
+&#x2F;&#x2F;指定对应的配置信息
+@ContextConfiguration(classes &#x3D; SpringConfig.class)
+public class AccountServiceTestCase &#123;
+    &#x2F;&#x2F;注入你要测试的对象
+    @Autowired
+    private AccountService accountService;
+    @Test
+    public void testGetById()&#123;
+        &#x2F;&#x2F;执行要测试的对象对应的方法
+        System.out.println(accountService.findById(2));
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	其中核心代码是前两个注解：</p>
+<p>​	第一个注解@RunWith是设置Spring专用于测试的类运行器，简单说就是Spring程序执行程序有自己的一套独立的运行程序的方式，不能使用JUnit提供的类运行方式了，必须指定一下，但是格式是固定的，琢磨一下</p>
+<p>​	第二个注解@ContextConfiguration是用来设置Spring核心配置文件或配置类的，简单说就是加载Spring的环境你要告诉Spring具体的环境配置是在哪里写的，虽然每次加载的文件都有可能不同，但是仔细想想，如果文件名是固定的，这个貌似也是一个固定格式。</p>
+<p>​	SpringBoot就抓住上述两条没有技术含量的内容书写进行开发简化，能走默认值的走默认值，能不写的就不写，具体格式如下</p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@SpringBootTest
+class Springboot04JunitApplicationTests &#123;
+    &#x2F;&#x2F;注入你要测试的对象
+    @Autowired
+    private BookDao bookDao;
+    @Test
+    void contextLoads() &#123;
+        &#x2F;&#x2F;执行要测试的对象对应的方法
+        bookDao.save();
+        System.out.println(&quot;two...&quot;);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li>导入测试对应的starter</li>
+<li>测试类使用@SpringBootTest修饰</li>
+<li>使用自动装配的形式添加要测试的对象</li>
+<li>测试类如果存在于引导类所在包或子包中无需指定引导类</li>
+<li>测试类如果不存在于引导类所在的包或子包中需要通过classes属性指定引导类</li>
+</ol>
+<h4 id="4-2整合MyBatis"><a href="#4-2整合MyBatis" class="headerlink" title="4.2整合MyBatis"></a>4.2整合MyBatis</h4><p><strong>步骤①</strong>：创建模块时勾选要使用的技术，MyBatis，由于要操作数据库，还要勾选对应数据库</p>
+<img src="/2022/10/21/springboot/image-20211129092210993-16669201824092.png" class="" title="image-20211129092210993">
+
+<p>或者手工导入对应技术的starter，和对应数据库的坐标</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencies&gt;
+    &lt;!--1.导入对应的starter--&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.mybatis.spring.boot&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;mybatis-spring-boot-starter&lt;&#x2F;artifactId&gt;
+        &lt;version&gt;2.2.0&lt;&#x2F;version&gt;
+    &lt;&#x2F;dependency&gt;
+
+    &lt;dependency&gt;
+        &lt;groupId&gt;mysql&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;mysql-connector-java&lt;&#x2F;artifactId&gt;
+        &lt;scope&gt;runtime&lt;&#x2F;scope&gt;
+    &lt;&#x2F;dependency&gt;
+&lt;&#x2F;dependencies&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>步骤②</strong>：配置数据源相关信息，没有这个信息你连接哪个数据库都不知道</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#2.配置相关信息</span>
+<span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">datasource</span><span class="token punctuation">:</span>
+    <span class="token key atrule">driver-class-name</span><span class="token punctuation">:</span> com.mysql.cj.jdbc.Driver
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> jdbc<span class="token punctuation">:</span>mysql<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span>3306/ssm_db
+    <span class="token key atrule">username</span><span class="token punctuation">:</span> root
+    <span class="token key atrule">password</span><span class="token punctuation">:</span> root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>下面就可以写一下MyBatis程序运行需要的Dao（或者Mapper）就可以运行了</p>
+<p><strong>实体类</strong></p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">public class Book &#123;
+    private Integer id;
+    private String type;
+    private String name;
+    private String description;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>映射接口（Dao）</strong></p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@Mapper
+public interface BookDao &#123;
+    @Select(&quot;select * from tbl_book where id &#x3D; #&#123;id&#125;&quot;)
+    public Book getById(Integer id);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>测试类</strong></p>
+<pre class="line-numbers language-JAVA" data-language="JAVA"><code class="language-JAVA">@SpringBootTest
+class Springboot05MybatisApplicationTests &#123;
+    @Autowired
+    private BookDao bookDao;
+    @Test
+    void contextLoads() &#123;
+        System.out.println(bookDao.getById(1));
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>总结</strong></p>
+<ol>
+<li><p>整合操作需要勾选MyBatis技术，也就是导入MyBatis对应的starter</p>
+</li>
+<li><p>数据库连接相关信息转换成配置</p>
+</li>
+<li><p>数据库SQL映射需要添加@Mapper被容器识别到</p>
+</li>
+<li><p>MySQL 8.X驱动强制要求设置时区</p>
+<ul>
+<li>修改url，添加serverTimezone设定</li>
+<li>修改MySQL数据库配置</li>
+</ul>
+</li>
+<li><p>驱动类过时，提醒更换为com.mysql.cj.jdbc.Driver</p>
+</li>
+</ol>
+<h4 id="4-3整合MyBatis-Plus"><a href="#4-3整合MyBatis-Plus" class="headerlink" title="4.3整合MyBatis-Plus"></a>4.3整合MyBatis-Plus</h4><ul>
+<li>导入对应技术的starter坐标</li>
+<li>根据对应技术的要求做配置</li>
+</ul>
+<p><strong>步骤①</strong>：导入对应的starter</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependency&gt;
+    &lt;groupId&gt;com.baomidou&lt;&#x2F;groupId&gt;
+    &lt;artifactId&gt;mybatis-plus-boot-starter&lt;&#x2F;artifactId&gt;
+    &lt;version&gt;3.4.3&lt;&#x2F;version&gt;
+&lt;&#x2F;dependency&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	坐标命名规范：</p>
+<table>
+<thead>
+<tr>
+<th>starter所属</th>
+<th>命名规则</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>官方提供</td>
+<td>spring-boot-starter-技术名称</td>
+<td>spring-boot-starter-web <br/>spring-boot-starter-test</td>
+</tr>
+<tr>
+<td>第三方提供</td>
+<td>第三方技术名称-spring-boot-starter</td>
+<td>druid-spring-boot-starter</td>
+</tr>
+<tr>
+<td>第三方提供</td>
+<td>第三方技术名称-boot-starter（第三方技术名称过长，简化命名）</td>
+<td>mybatis-plus-boot-starter</td>
+</tr>
+</tbody></table>
+<p><strong>步骤②</strong>：配置数据源相关信息</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment">#2.配置相关信息</span>
+<span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">datasource</span><span class="token punctuation">:</span>
+    <span class="token key atrule">driver-class-name</span><span class="token punctuation">:</span> com.mysql.cj.jdbc.Driver
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> jdbc<span class="token punctuation">:</span>mysql<span class="token punctuation">:</span>//localhost<span class="token punctuation">:</span>3306/ssm_db
+    <span class="token key atrule">username</span><span class="token punctuation">:</span> root
+    <span class="token key atrule">password</span><span class="token punctuation">:</span> root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	完活。</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>手工添加MyBatis-Plus对应的starter</li>
+<li>数据层接口使用BaseMapper简化开发</li>
+<li>需要使用的第三方技术无法通过勾选确定时，需要手工添加坐标</li>
+</ol>
+<h4 id="4-4整合Druid"><a href="#4-4整合Druid" class="headerlink" title="4.4整合Druid"></a>4.4整合Druid</h4><p>前面整合MyBatis和MP的时候，使用的数据源对象都是SpringBoot默认的数据源对象，下面我们手工控制一下，自己指定了一个数据源对象，Druid。</p>
+<p>​	在没有指定数据源时，我们的配置如下：</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">#2.配置相关信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ssm_db?serverTimezone&#x3D;Asia&#x2F;Shanghai
+    username: root
+    password: root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>如果需要更换数据源，其实只需要两步即可。</p>
+<ol>
+<li>导入对应的技术坐标</li>
+<li>配置使用指定的数据源类型</li>
+</ol>
+<p><strong>步骤①</strong>：导入对应的坐标（注意，是坐标，此处不是starter）</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;druid&lt;&#x2F;artifactId&gt;
+        &lt;version&gt;1.1.16&lt;&#x2F;version&gt;
+    &lt;&#x2F;dependency&gt;
+&lt;&#x2F;dependencies&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>步骤②</strong>：修改配置，在数据源配置中有一个type属性，专用于指定数据源类型</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ssm_db?serverTimezone&#x3D;UTC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​		目前的数据源配置格式是一个通用格式，不管你换什么数据源都可以用这种形式进行配置。但是新的问题又来了，如果对数据源进行个性化的配置，例如配置数据源对应的连接数量，这个时候就有新的问题了。每个数据源技术对应的配置名称都一样吗？肯定不是啊，怎么办？</p>
+<p>​	应该按照SpringBoot整合其他技术的通用规则来套啊，导入对应的starter，进行相应的配置即可。</p>
+<p><strong>步骤①</strong>：导入对应的starter</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;com.alibaba&lt;&#x2F;groupId&gt;
+        &lt;artifactId&gt;druid-spring-boot-starter&lt;&#x2F;artifactId&gt;
+        &lt;version&gt;1.2.6&lt;&#x2F;version&gt;
+    &lt;&#x2F;dependency&gt;
+&lt;&#x2F;dependencies&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>步骤②</strong>：修改配置</p>
+<pre class="line-numbers language-YAML" data-language="YAML"><code class="language-YAML">spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql:&#x2F;&#x2F;localhost:3306&#x2F;ssm_db?serverTimezone&#x3D;UTC
+      username: root
+      password: root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	配置项中，在datasource下面并不是直接配置url这些属性的，而是先配置了一个druid节点，然后再配置的url这些东西。</p>
+<p><strong>总结</strong></p>
+<ol>
+<li>整合Druid需要导入Druid对应的starter</li>
+<li>根据Druid提供的配置方式进行配置</li>
+<li>整合第三方技术通用方式<ul>
+<li>导入对应的starter</li>
+<li>根据提供的配置格式，配置非默认值对应的配置项</li>
+</ul>
+</li>
+</ol>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Kylece</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://kylece666.github.io/2022/10/21/springboot/">http://kylece666.github.io/2022/10/21/springboot/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Kylece</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/springboot/">
+                                    <span class="chip bg-color">springboot</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/01/20/dubbo/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="dubbo">
+                        
+                        <span class="card-title">dubbo</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-20
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kylece
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/">
+                        <span class="chip bg-color">分布式</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/09/26/git/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="git">
+                        
+                        <span class="card-title">git</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kylece
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">Kylece</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/kylece666" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1341446024@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1341446024" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1341446024" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+    <script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"log":false});</script></body>
+
+</html>
