@@ -1,0 +1,2912 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <meta name="keywords" content="java面试, Kylece">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>java面试 | Kylece</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Kylece</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Kylece</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">java面试</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+        background-color: rgb(255, 255, 255,0.7);
+        border-radius: 10px;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07), 0 2px 5px -5px rgba(0, 0, 0, .1) !important;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-05-05
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2024-07-18
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    126 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Java面试"><a href="#Java面试" class="headerlink" title="Java面试"></a>Java面试</h1><h2 id="1-准备篇"><a href="#1-准备篇" class="headerlink" title="1.准备篇"></a>1.准备篇</h2><h3 id="1-1-简历设计"><a href="#1-1-简历设计" class="headerlink" title="1.1 简历设计"></a>1.1 简历设计</h3><p>基本信息、教育背景、求职意向、工作经历、<strong>职业技能、项目经历</strong>、个人优势荣誉</p>
+<p>主要注意职业技能与项目经历的设计：</p>
+<p><strong>职业技能</strong></p>
+<ul>
+<li>放到简历的黄金位置</li>
+<li>基本准则：写在简历上的必须能聊，不然就别写</li>
+<li>参考公式：职业技能 &#x3D; 必要技术 + 其他技术</li>
+<li>针对性的引导面试官</li>
+</ul>
+<p><strong>项目经历</strong></p>
+<ul>
+<li>项目个数以自己的工作经历为准</li>
+<li>项目要体现业务深度或技术深度</li>
+<li>有没有主导设计过xx模块（0-1、1-2）</li>
+<li>尽可能展示指标数据</li>
+</ul>
+<h2 id="2-Redis篇"><a href="#2-Redis篇" class="headerlink" title="2.Redis篇"></a>2.Redis篇</h2><p><img src="/Java%E9%9D%A2%E8%AF%95/image-20240220224754729-17149159734951.png" alt="image-20240220224754729"></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="21">缓存穿透</a></td>
+<td><a href="#26">过期策略</a></td>
+</tr>
+<tr>
+<td><a href="#22">缓存击穿</a></td>
+<td><a href="#27">淘汰策略</a></td>
+</tr>
+<tr>
+<td><a href="#23">缓存雪崩</a></td>
+<td><a href="#28">分布式锁</a></td>
+</tr>
+<tr>
+<td><a href="#24">双写一致</a></td>
+<td><a href="#29">Redis集群</a></td>
+</tr>
+<tr>
+<td><a href="#25">数据持久化</a></td>
+<td><a href="#210">Redis性能</a></td>
+</tr>
+</tbody></table>
+<h3 id="2-1-缓存穿透、布隆过滤器"><a href="#2-1-缓存穿透、布隆过滤器" class="headerlink" title="2.1 缓存穿透、布隆过滤器"></a>2.1 缓存穿透、布隆过滤器</h3><blockquote>
+<p><a id='21'><strong>面试官</strong>：什么是缓存穿透 ? 怎么解决 ?</a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，我想一下</p>
+<p>缓存穿透是指查询一个一定<strong>不存在</strong>的数据，如果从存储层查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到 DB 去查询，可能导致 DB 挂掉。这种情况大概率是遭到了攻击。</p>
+<p>解决方案的话，我们通常都会用布隆过滤器来解决它</p>
+</blockquote>
+<blockquote>
+<p><strong>面试官</strong>：好的，你能介绍一下布隆过滤器吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，是这样~</p>
+<p>布隆过滤器主要是用于检索一个元素是否在一个集合中。我们当时使用的是redisson实现的布隆过滤器。</p>
+<p>它的底层主要是先去初始化一个比较大数组，里面存放的二进制0或1。在一开始都是0，当一个key来了之后经过3次hash计算，模于数组长度找到数据的下标然后把数组中原来的0改为1，这样的话，三个数组的位置就能标明一个key的存在。查找的过程也是一样的。</p>
+<p>当然是有缺点的，布隆过滤器有可能会产生一定的误判，我们一般可以设置这个误判率，大概不会超过5%，其实这个误判是必然存在的，要不就得增加数组的长度，其实已经算是很划分了，5%以内的误判率一般的项目也能接受，不至于高并发下压倒数据库。</p>
+</blockquote>
+<h3 id="2-2-缓存击穿"><a href="#2-2-缓存击穿" class="headerlink" title="2.2 缓存击穿"></a>2.2 缓存击穿</h3><blockquote>
+<p><a id='22'><strong>面试官</strong>：什么是缓存击穿 ? 怎么解决 ?</a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！！</p>
+<p>缓存击穿的意思是对于设置了过期时间的key，缓存在某个时间点过期的时候，恰好这时间点对这个Key有大量的并发请求过来，这些请求发现缓存过期一般都会从后端 DB 加载数据并回设到缓存，这个时候大并发的请求可能会瞬间把 DB 压垮。</p>
+<p>解决方案有两种方式：</p>
+<p>第一可以使用互斥锁：当缓存失效时，不立即去load db，先使用如 Redis 的 setnx 去设置一个互斥锁，当操作成功返回时再进行 load db的操作并回设缓存，否则重试get缓存的方法</p>
+<p>第二种方案可以设置当前key逻辑过期，大概是思路如下：</p>
+<p>①：在设置key的时候，设置一个过期时间字段一块存入缓存中，不给当前key设置过期时间</p>
+<p>②：当查询的时候，从redis取出数据后判断时间是否过期</p>
+<p>③：如果过期则开通另外一个线程进行数据同步，当前线程正常返回数据，这个数据不是最新</p>
+<p>当然两种方案各有利弊：</p>
+<p>如果选择数据的<strong>强一致性</strong>，建议使用<strong>分布式锁</strong>的方案，性能上可能没那么高，锁需要等，也有可能产生死锁的问题</p>
+<p>如果选择key的<strong>逻辑过期</strong>，则<strong>优先考虑的高可用性</strong>，性能比较高，但是数据同步这块做不到强一致。</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240220230716746.png" alt="image-20240220230716746"></p>
+</blockquote>
+<h3 id="2-3-缓存雪崩"><a href="#2-3-缓存雪崩" class="headerlink" title="2.3 缓存雪崩"></a>2.3 缓存雪崩</h3><blockquote>
+<p><a id='23'><strong>面试官</strong>：什么是缓存雪崩 ? 怎么解决 ?</a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！！</p>
+<p>缓存雪崩意思是设置缓存时采用了相同的过期时间，导致缓存在某<strong>一时刻同时失效</strong>，请求全部转发到DB，DB 瞬时压力过重雪崩。与缓存击穿的区别：雪崩是很多key，击穿是某一个key缓存。</p>
+<p>解决方案主要是可以将缓存失效时间分散开，比如可以在原有的失效时间基础上增加一个随机值，比如1-5分钟随机，这样每一个缓存的过期时间的重复率就会降低，就很难引发集体失效的事件。</p>
+</blockquote>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240220230950358.png" alt="image-20240220230950358"></p>
+<h3 id="2-4-双写一致"><a href="#2-4-双写一致" class="headerlink" title="2.4 双写一致"></a>2.4 双写一致</h3><blockquote>
+<p><a id='24'><strong>面试官</strong>：redis做为缓存，mysql的数据如何与redis进行同步呢？（双写一致性）<strong>强一致</strong></a></p>
+<p><strong>候选人</strong>：嗯！就说我最近做的这个项目，里面有xxxx（<strong>根据自己的简历上写</strong>）的功能，需要让数据库与redis高度保持一致，因为要求时效性比较高，我们当时采用的读写锁保证的<strong>强一致性</strong>。</p>
+<p>我们采用的是redisson实现的<strong>读写锁</strong>，在<strong>读</strong>的时候添加共享锁，可以保证读读不互斥，读写互斥。当我们<strong>更新数据</strong>的时候，添加排他锁，它是读写，读读都互斥，这样就能保证在写数据的同时是不会让其他线程读数据的，避免了脏数据。这里面需要注意的是读方法和写方法上需要使用同一把锁才行。</p>
+<p><strong>面试官</strong>：那这个排他锁是如何保证读写、读读互斥的呢？</p>
+<p><strong>候选人</strong>：其实排他锁底层使用也是setnx，保证了同时只能有一个线程操作锁住的方法</p>
+<p><strong>面试官</strong>：你听说过延时双删吗？为什么不用它呢？</p>
+<p><strong>候选人</strong>：延迟双删，如果是写操作，我们先把缓存中的数据删除，然后更新数据库，最后再延时删除缓存中的数据，其中这个延时多久不太好确定，在延时的过程中可能会出现脏数据，并不能保证强一致性，所以没有采用它。</p>
+<hr>
+<p><strong>面试官</strong>：redis做为缓存，mysql的数据如何与redis进行同步呢？（双写一致性）<strong>最终一致</strong></p>
+<p><strong>候选人</strong>：嗯！就说我最近做的这个项目，里面有xxxx（<strong>根据自己的简历上写</strong>）的功能，数据同步可以有<strong>一定的延时</strong>（符合大部分业务）</p>
+<p>我们当时采用的阿里的canal组件实现数据同步：不需要更改业务代码，部署一个canal服务。canal服务把自己伪装成mysql的一个从节点，当mysql数据更新以后，canal会读取binlog数据，然后在通过canal的客户端获取到数据，更新缓存即可。</p>
+<p>或者MQ，更新时发消息通知缓存删除。</p>
+</blockquote>
+<h3 id="2-5-数据持久化"><a href="#2-5-数据持久化" class="headerlink" title="2.5 数据持久化"></a>2.5 数据持久化</h3><blockquote>
+<p><a id='25'><strong>面试官</strong>：redis做为缓存，数据的持久化是怎么做的？</a></p>
+<p><strong>候选人</strong>：在Redis中提供了两种数据持久化的方式：1、RDB  2、AOF</p>
+<p><strong>面试官</strong>：这两种持久化方式有什么区别呢？</p>
+<p><strong>候选人</strong>：RDB是一个快照文件，它是把redis内存存储的数据写到磁盘上，当redis实例宕机恢复数据的时候，方便从RDB的快照文件中恢复数据。</p>
+<p>AOF的含义是追加文件，当redis操作写命令的时候，都会存储这个文件中，当redis实例宕机恢复数据的时候，会从这个文件中再次执行一遍命令来恢复数据</p>
+<p><strong>面试官</strong>：这两种方式，哪种恢复的比较快呢？</p>
+<p><strong>候选人</strong>：RDB因为是二进制文件，在保存的时候体积也是比较小的，它恢复的比较快，但是它有可能会丢数据，我们通常在项目中也会使用AOF来恢复数据，虽然AOF恢复的速度慢一些，但是它丢数据的风险要小很多，在AOF文件中可以设置刷盘策略(everysec)，我们当时设置的就是每秒批量写入一次命令</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240220233309159.png" alt="image-20240220233309159"></p>
+</blockquote>
+<h3 id="2-6-过期策略"><a href="#2-6-过期策略" class="headerlink" title="2.6 过期策略"></a>2.6 过期策略</h3><blockquote>
+<p><a id='26'><strong>面试官</strong>：Redis的数据过期策略有哪些 ? </a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~，在redis中提供了两种数据过期删除策略</p>
+<p>第一种是惰性删除，在设置该key过期时间后，我们不去管它，当需要该key时，我们在检查其是否过期，如果过期，我们就删掉它，反之返回该key。</p>
+<p>第二种是定期删除，就是说每隔一段时间，我们就对一些key进行检查，删除里面过期的key</p>
+<p>定期清理的两种模式：</p>
+<ul>
+<li>SLOW模式是定时任务，执行频率默认为10hz，每次不超过25ms，以通过修改配置文件redis.conf 的 <strong>hz</strong> 选项来调整这个次数</li>
+<li>FAST模式执行频率不固定，每次事件循环会尝试执行，但两次间隔不低于2ms，每次耗时不超过1ms</li>
+</ul>
+<p>Redis的过期删除策略：<strong>惰性删除 + 定期删除</strong>两种策略进行<strong>配合</strong>使用。</p>
+</blockquote>
+<h3 id="2-7-淘汰策略"><a href="#2-7-淘汰策略" class="headerlink" title="2.7 淘汰策略"></a>2.7 淘汰策略</h3><blockquote>
+<p><a id='27'><strong>面试官</strong>：Redis的数据淘汰策略有哪些 ? </a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个在redis中提供了很多种，<strong>默认</strong>是<strong>noeviction</strong>，<strong>不删除</strong>任何数据，内部不足直接报错</p>
+<p>是可以在redis的配置文件中进行设置的，里面有两个非常重要的概念，一个是LRU，另外一个是LFU</p>
+<p><strong>LRU</strong>的意思是<strong>最少最近使用</strong>，用当前时间减去最后一次访问时间，这个值越大则淘汰优先级越高。</p>
+<p><strong>LFU</strong>的意思是<strong>最少频率使用</strong>。会统计每个key的访问频率，值越小淘汰优先级越高</p>
+<p>我们在项目设置的<strong>allkeys-lru</strong>，挑选最近最少使用的数据淘汰，把一些经常访问的key留在redis中</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240220234243568.png" alt="image-20240220234243568"></p>
+<p><strong>面试官</strong>：数据库有1000万数据 ,Redis只能缓存20w数据, 如何保证Redis中的数据都是热点数据 ?</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，我想一下~~</p>
+<p>可以使用 allkeys-lru （挑选最近最少使用的数据淘汰）淘汰策略，那留下来的都是经常访问的热点数据</p>
+<p><strong>面试官</strong>：Redis的内存用完了会发生什么？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~，这个要看redis的数据淘汰策略是什么，如果是默认的配置，redis内存用完以后则直接报错。我们当时设置的 allkeys-lru 策略。把最近最常访问的数据留在缓存中。</p>
+</blockquote>
+<h3 id="2-8-分布式锁"><a href="#2-8-分布式锁" class="headerlink" title="2.8 分布式锁"></a>2.8 分布式锁</h3><blockquote>
+<p>&lt;<a id='28'><strong>面试官</strong>：Redis分布式锁如何实现 ? </a></p>
+<p><strong>候选人</strong>：嗯，在redis中提供了一个命令setnx(SET if not exists)（自旋锁）</p>
+<p>由于redis的单线程的，用了命令之后，只能有一个客户端对某一个key设置值，在没有过期或删除key的时候是其他客户端是不能设置这个key的</p>
+<p><strong>面试官</strong>：好的，那你如何控制Redis实现分布式锁<strong>有效时长</strong>呢？（看门狗）</p>
+<p><strong>候选人</strong>：嗯，的确，redis的setnx指令不好控制这个问题，我们当时采用的redis的一个框架redisson实现的。</p>
+<p>在redisson中需要手动加锁，并且可以控制锁的失效时间和等待时间，当锁住的一个业务还没有执行完成的时候，在redisson中引入了一个看门狗机制，就是说<strong>每隔一段时间</strong>就检查当前业务是否还持有锁，如果持有就增加加锁的持有时间，当业务执行完成之后需要使用释放锁就可以了</p>
+<p>还有一个好处就是，在高并发下，一个业务有可能会执行很快，先客户1持有锁的时候，客户2来了以后并不会马上拒绝，它会<strong>自旋</strong>不断尝试获取锁，如果客户1释放之后，客户2就可以马上持有锁，性能也得到了提升。</p>
+<p><strong>面试官</strong>：好的，redisson实现的分布式锁是可重入的吗？</p>
+<p><strong>候选人</strong>：嗯，是可以重入的。这样做是为了避免死锁的产生。这个重入其实在内部就是判断<strong>是否是当前线程</strong>持有的锁，如果是当前线程持有的锁就会计数加一，如果释放锁就会在计算上减一。在存储数据的时候采用的hash结构，大key可以按照自己的业务进行定制，其中小key是当前线程的唯一标识，value是当前线程重入的次数</p>
+<hr>
+<p><strong>面试官</strong>：redisson实现的分布式锁能解决主从一致性的问题吗</p>
+<p><strong>候选人</strong>：这个是<strong>不能</strong>的，比如，当线程1加锁成功后，master节点数据会<strong>异步复制</strong>到slave节点，此时当前持有Redis锁的master节点宕机，slave节点被提升为新的master节点，假如现在来了一个线程2，再次加锁，会在新的master节点上加锁成功，这个时候就会出现两个节点同时持有一把锁的问题。</p>
+<p>我们可以利用redisson提供的<strong>红锁</strong>来解决这个问题，它的主要作用是，不能只在一个redis实例上创建锁，应该是在<strong>多个redis实例上创建锁</strong>，并且要求在大多数redis节点上都成功创建锁，红锁中要求是redis的<strong>节点数量要过半</strong>。这样就能避免线程1加锁成功后master节点宕机导致线程2成功加锁到新的master节点上的问题了。</p>
+<p>但是，如果使用了红锁，因为需要同时在多个节点上都添加锁，<strong>性能就变的很低了</strong>，并且运维维护成本也非常高，所以，我们一般在项目中也<strong>不会直接使用红锁</strong>，并且官方也暂时废弃了这个红锁</p>
+<p><strong>面试官</strong>：好的，如果业务非要保证数据的强一致性，这个该怎么解决呢？</p>
+<p><strong>候选人：</strong>嗯~，redis本身就是支持高可用的，做到强一致性，就非常影响性能，所以，如果<strong>有强一致性要求高的业务</strong>，建议<strong>使用zookeeper实现的分布式锁</strong>，它是可以保证强一致性的。</p>
+</blockquote>
+<h3 id="2-9-Redis集群"><a href="#2-9-Redis集群" class="headerlink" title="2.9 Redis集群"></a>2.9 Redis集群</h3><blockquote>
+<p><a id='29'><strong>面试官</strong>：Redis集群有哪些方案, 知道嘛 ? </a></p>
+<p><strong>候选人</strong>：嗯~~，在Redis中提供的集群方案总共有三种：主从复制、哨兵模式、Redis分片集群</p>
+<p><strong>面试官</strong>：那你来介绍一下主从同步</p>
+<p><strong>候选人</strong>：嗯，是这样的，单节点Redis的并发能力是有上限的，要进一步提高Redis的并发能力，可以搭建主从集群，实现读写分离。一般都是一主多从，主节点负责写数据，从节点负责读数据，主节点写入数据之后，需要把数据同步到从节点中</p>
+<p><strong>面试官</strong>：能说一下，主从同步数据的流程</p>
+<p><strong>候选人</strong>：嗯~~，好！主从同步分为了两个阶段，一个是全量同步，一个是增量同步</p>
+<p><strong>全量同步</strong>是指从节点第一次与主节点建立连接的时候使用全量同步，流程是这样的：</p>
+<p>第一：从节点请求主节点同步数据，其中从节点会携带自己的<strong>replication id</strong>和<strong>offset</strong>偏移量。</p>
+<p>第二：主节点判断是否是第一次请求，主要判断的依据就是，主节点与从节点是否是<strong>同一个replication id</strong>，如果不是，就说明是第一次同步，那主节点就会把自己的replication id和offset发送给从节点，让从节点与主节点的信息保持一致。</p>
+<p>第三：在同时主节点会执行bgsave，生成rdb文件后，发送给从节点去执行，从节点先把自己的数据清空，然后执行主节点发送过来的rdb文件，这样就保持了一致</p>
+<p>当然，如果在rdb生成执行期间，依然有请求到了主节点，而主节点会以命令的方式记录到缓冲区，缓冲区是一个日志文件，最后把这个日志文件发送给从节点，这样就能保证主节点与从节点完全一致了，后期再同步数据的时候，都是依赖于这个日志文件，这个就是全量同步</p>
+<p><strong>增量同步</strong>指的是，当从节点服务重启之后，数据就不一致了，所以这个时候，从节点会请求主节点同步数据，主节点还是判断不是第一次请求，不是第一次就获取从节点的offset值，然后主节点从命令日志中获取offset值之后的数据，发送给从节点进行数据同步</p>
+<hr>
+<p><strong>面试官</strong>：怎么保证Redis的高并发高可用</p>
+<p><strong>候选人</strong>：<strong>首先可以搭建主从集群，再加上使用redis中的哨兵模式</strong>，哨兵模式可以实现主从集群的自动故障恢复，里面就包含了对主从服务的监控、自动故障恢复、通知；如果master故障，Sentinel会将一个slave提升为master。当故障实例恢复后也以新的master为主；同时Sentinel也充当Redis客户端的服务发现来源，当集群发生故障转移时，会将最新信息推送给Redis的客户端，所以一般项目都会采用哨兵的模式来保证redis的高并发高可用</p>
+<blockquote>
+<p>服务状态监控：</p>
+<ul>
+<li>主观下线：如果某sentinel节点发现某实例未在规定时间响应，则认为该实例<strong>主观下线</strong>。</li>
+<li>客观下线：若超过指定数量（quorum）的sentinel都认为该实例主观下线，则该实例<strong>客观下线</strong>。quorum值最好超过Sentinel实例数量的一半。</li>
+</ul>
+<p>哨兵选主规则</p>
+<ul>
+<li>首先判断主与从节点断开时间长短，如超过指定值就排该从节点</li>
+<li>然后判断从节点的slave-priority值，越小优先级越高</li>
+<li>如果slave-prority一样，则判断slave节点的offset值，越大优先级越高</li>
+<li>最后是判断slave节点的运行id大小，越小优先级越高。</li>
+</ul>
+</blockquote>
+<p><strong>面试官</strong>：你们使用redis是单点还是集群，哪种集群</p>
+<p><strong>候选人</strong>：嗯！，我们当时使用的是主从（1主1从）加哨兵。一般<strong>单节点不超过10G内存</strong>，如果Redis内存不足则可以给不同服务分配独立的Redis主从节点。<strong>尽量不做分片集群</strong>。因为集群维护起来比较麻烦，并且集群之间的心跳检测和数据通信会消耗大量的网络带宽，也没有办法使用lua脚本和事务</p>
+<p><strong>面试官</strong>：redis集群脑裂，该怎么解决呢？</p>
+<p><strong>候选人</strong>：嗯！ 这个在项目很少见，不过脑裂的问题是这样的，我们现在用的是redis的哨兵模式集群的</p>
+<p>有的时候由于网络等原因可能会出现脑裂的情况，就是说，由于redis master节点和redis salve节点和sentinel处于不同的网络分区，使得sentinel没有能够心跳感知到master，所以通过选举的方式提升了一个salve为master，这样就存在了两个master，就像大脑分裂了一样，这样会导致客户端还在old master那里写入数据，新节点无法同步数据，当网络恢复后，sentinel会将old master降为salve，这时再从新master同步数据，这会导致old master中的大量数据丢失。</p>
+<p>关于解决的话，我记得在redis的配置中可以设置：第一可以设置最少的salve节点个数，比如设置至少要有一个从节点才能同步数据，第二个可以设置主从数据复制和同步的延迟时间，达不到要求就拒绝请求，就可以避免大量的数据丢失</p>
+<hr>
+<p><strong>面试官</strong>：redis的分片集群有什么作用</p>
+<p><strong>候选人</strong>：分片集群主要解决的是，海量数据存储的问题，<strong>集群中有多个master，每个master保存不同数据</strong>，并且还可以给<strong>每个master设置多个slave节点</strong>，就可以继续增大集群的高并发能力。同时每个master之间通过ping<strong>监测彼此</strong>健康状态，就类似于哨兵模式了。当客户端请求可以访问集群任意节点，最终都会被转发到正确节点</p>
+<p><strong>面试官</strong>：Redis分片集群中数据是怎么存储和读取的？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~，在redis集群中是这样的</p>
+<p>Redis 集群引入了<strong>哈希槽</strong>的概念，有 16384 个哈希槽，集群中每个主节点绑定了一定范围的哈希槽范围， key通过 <strong>CRC16</strong> 校验后对 16384 取模来决定放置哪个槽，通过槽找到对应的节点进行存储。</p>
+<p>取值的逻辑是一样的</p>
+</blockquote>
+<h3 id="2-10-Redis性能"><a href="#2-10-Redis性能" class="headerlink" title="2.10 Redis性能"></a>2.10 Redis性能</h3><blockquote>
+<p><a id='210'><strong>面试官</strong>：Redis是单线程的，但是为什么还那么快？</a></p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个有几个原因吧~~~</p>
+<p>1、完全基于<strong>内存</strong>的，C语言编写</p>
+<p>2、采用单线程，避免<strong>不必要的上下文切换</strong>可竞争条件</p>
+<p>3、使用<strong>多路I&#x2F;O复用</strong>模型，非阻塞IO</p>
+<p>例如：bgsave 和 bgrewriteaof  都是在<strong>后台</strong>执行操作，不影响主线程的正常使用，不会产生阻塞</p>
+<p><strong>面试官</strong>：能解释一下I&#x2F;O多路复用模型？</p>
+<p><strong>候选人</strong>：嗯~~，I&#x2F;O多路复用是指利用单个线程来同时监听<strong>多个Socket</strong> ，并在某个Socket可读、可写时得到通知，<strong>从而避免无效的等待</strong>，充分利用CPU资源。目前的I&#x2F;O多路复用都是采用的epoll模式实现，它会在通知用户进程Socket就绪的同时，把已就绪的Socket写入用户空间，不需要挨个遍历Socket来判断是否就绪，提升了性能。</p>
+<p>其中Redis的网络模型就是使用I&#x2F;O多路复用结合事件的处理器来应对多个Socket请求，比如，提供了连接应答处理器、命令回复处理器，命令请求处理器；</p>
+<p>在Redis6.0之后，为了提升更好的性能，在命令<strong>回复处理器使用了多线程</strong>来处理回复事件，在命令请求处理器中，将<strong>命令的转换使用了多线程</strong>，增加命令转换速度，在<strong>命令执行的时候，依然是单线程</strong></p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221004233016.png" alt="image-20240221004233016"></p>
+</blockquote>
+<h2 id="3-数据库-MySQL-篇"><a href="#3-数据库-MySQL-篇" class="headerlink" title="3.数据库(MySQL)篇"></a>3.数据库(MySQL)篇</h2><p><img src="E:/Blog/source/_posts/Java面试/image-20240221010237532.png" alt="image-20240221010237532"></p>
+<h3 id="3-1-慢查询"><a href="#3-1-慢查询" class="headerlink" title="3.1 慢查询"></a>3.1 慢查询</h3><blockquote>
+<p><strong>面试官：</strong>MySQL中，如何定位慢查询?</p>
+<p><strong>候选人：</strong></p>
+<p>嗯~，我们当时做压测的时候有的接口非常的慢，接口的响应时间超过了2秒以上，因为我们当时的系统部署了运维的监控系统<strong>Skywalking</strong> ，在展示的报表中可以看到是哪一个接口比较慢，并且可以分析这个接口哪部分比较慢，这里可以看到SQL的具体的执行时间，所以可以定位是哪个sql出了问题</p>
+<p>如果，项目中没有这种运维的监控系统，其实在MySQL中也提供了<strong>慢日志查询</strong>的功能，可以在MySQL的系统<strong>配置文件中开启</strong>这个慢日志的功能，并且也可以<strong>设置SQL执行超过多少时间</strong>来记录到一个日志文件中，我记得上一个项目配置的是2秒，只要SQL执行的时间超过了2秒就会记录到日志文件中，我们就可以在日志文件找到执行比较慢的SQL了。</p>
+<p><strong>面试官：</strong>那这个SQL语句执行很慢, 如何分析呢？</p>
+<p><strong>候选人：</strong>如果一条sql执行很慢的话，我们通常会使用mysql自动的执行计划<strong>explain</strong>来去查看这条sql的执行情况，比如在这里面可以通过<strong>key</strong>和key_len检查是否命中了索引，如果本身已经添加了索引，也可以判断索引是否有失效的情况，第二个，可以通过type字段查看sql是否有进一步的优化空间，是否存在全索引扫描或全盘扫描，第三个可以通过extra建议来判断，是否出现了回表的情况，如果出现了，可以尝试添加索引或修改返回字段来修复</p>
+<p><strong>type字段：</strong>这条sql的连接的类型，性能由好到差为NULL、system、const、eq_ref、ref、range、 index(全索扫描)、all(全盘扫描) </p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221010926034.png" alt="image-20240221010926034"></p>
+</blockquote>
+<h3 id="3-2-索引"><a href="#3-2-索引" class="headerlink" title="3.2 索引"></a>3.2 索引</h3><blockquote>
+<p><strong>面试官：</strong>了解过索引吗？（什么是索引）</p>
+<p><strong>候选人：</strong>嗯，索引在项目中还是比较常见的，它是帮助MySQL<strong>高效</strong>获取数据的数据结构(有序)，主要是用来提高数据检索的效率，降低数据库的IO成本，同时通过索引列对数据进行排序，降低数据排序的成本，也能降低了CPU的消耗</p>
+<p><strong>面试官：</strong>索引的底层数据结构了解过嘛 ? </p>
+<p><strong>候选人：</strong>MySQL的默认的<strong>存储引擎InnoDB采用的B+树</strong>的数据结构来存储索引，选择B+树的主要的原因是：第一<strong>阶数更多，路径更短</strong>，第二个磁盘读写代价B+树更低，<strong>非叶子节点只存储指针</strong>，叶子阶段存储数据，第三是<strong>B+树便于扫库和区间查询</strong>，叶子节点是一个双向链表</p>
+<p><strong>面试官：</strong>B树和B+树的区别是什么呢？</p>
+<p><strong>候选人</strong>：第一：在B树中，非叶子节点和叶子节点都会存放数据，而B+树的所有的数据都会出现在叶子节点，在查询的时候，B+树查找效率更加稳定</p>
+<p>第二：在进行范围查询的时候，B+树效率更高，因为B+树都在叶子节点存储，并且叶子节点是一个双向链表</p>
+<hr>
+<p><strong>面试官：</strong>什么是聚簇索引什么是非聚簇索引 ?</p>
+<p><strong>候选人：</strong></p>
+<p>好的~，聚簇索引主要是指<strong>数据与索引放到一块</strong>，B+树的叶子节点保存了<strong>整行数据</strong>，有且只有一个，一般情况下主键在作为聚簇索引的</p>
+<p>非聚簇索引值的是<strong>数据与索引分开</strong>存储，B+树的<strong>叶子节点保存对应的主键</strong>，可以有多个，一般我们自己定义的索引都是非聚簇索引</p>
+<p><strong>面试官：</strong>知道什么是回表查询嘛 ?</p>
+<p><strong>候选人：</strong>嗯，其实跟刚才介绍的聚簇索引和非聚簇索引是有关系的，回表的意思就是<strong>通过二级索引找到对应的主键值</strong>，然后<strong>再通过主键值</strong>找到聚集索引中所对应的<strong>整行数据</strong>，这个过程就是回表</p>
+<p>【<strong>备注</strong>：如果面试官直接问回表，则需要先介绍聚簇索引和非聚簇索引】</p>
+<hr>
+<p><strong>面试官：</strong>知道什么叫覆盖索引嘛 ? </p>
+<p><strong>候选人：</strong>嗯~，清楚的</p>
+<p>覆盖索引是指<strong>select查询语句使用了索引</strong>，在<strong>返回的列</strong>，必须在索引中<strong>全部能够找到</strong>，如果我们使用id查询，它会直接走聚集索引查询，<strong>一次索引扫描，直接返回数据，性能高。</strong></p>
+<p>如果按照<strong>二级索引</strong>查询数据的时候，返回的列中没有创建索引，有可能会触发回表查询，**尽量避免使用select ***，尽量在返回的列中都包含添加索引的字段</p>
+<p><strong>面试官：</strong>MYSQL超大分页怎么处理 ?</p>
+<p><strong>候选人：</strong>嗯，超大分页一般都是在数据量比较大时，我们使用了limit分页查询，并且需要对数据进行排序，这个时候效率就很低，我们可以采用覆盖索引和子查询来解决</p>
+<p><strong>先分页查询数据的id字段</strong>，确定了id之后，<strong>再用子查询来过滤</strong>，只查询这个id列表中的数据就可以了</p>
+<p>因为查询id的时候，<strong>走的覆盖索引</strong>，所以效率可以提升很多</p>
+<hr>
+<p><strong>面试官：</strong>索引创建原则有哪些？</p>
+<p><strong>候选人：</strong>嗯，这个情况有很多，不过都有一个大前提，就是表中的数<strong>据要超过10万以上</strong>，我们才会创建索引，并且添加索引的字段是<strong>查询比较频繁的字段</strong>，一般也是像<strong>作为查询条件</strong>，<strong>排序字段或分组的字段</strong>这些。</p>
+<p>还有就是，我们通常创建索引的时候都是使用复合索引来创建，一条sql的返回值，尽量使用覆盖索引，如果字段的<strong>区分度不高</strong>的话，我们也会把它放在<strong>组合索引后面的字段</strong>。</p>
+<p>如果某一个<strong>字段的内容较长</strong>，我们会考虑<strong>使用前缀索引</strong>来使用，当然并不是所有的字段都要添加索引，这个索引的<strong>数量也要控制</strong>，因为添加索引也会<strong>导致新增改</strong>的速度变慢。</p>
+<p>尽量使用联合索引，因为覆盖索引快。</p>
+<hr>
+<p><strong>面试官：</strong>什么情况下索引会失效 ?</p>
+<p><strong>候选人：</strong>嗯，这个情况比较多，我说一些自己的经验，以前遇到过的</p>
+<p>比如，索引在使用的时候没有遵循<strong>最左匹配法则</strong>，第二个是，<strong>模糊查询</strong>，如果**%号在前面<strong>也会导致索引失效。如果在添加</strong>索引的字段<strong>上进行了</strong>运算操作或者类型转换**也都会导致索引失效。</p>
+<p>我们之前还遇到过一个就是，如果使用了复合索引，中间使用了<strong>范围查询，右边的条件索引也会失效</strong></p>
+<p>字符串不加单引号，产生了<strong>类型转换</strong>也会失效</p>
+<p>所以，通常情况下，想要判断出这条sql是否有索引失效的情况，可以使用explain执行计划来分析</p>
+</blockquote>
+<h3 id="3-3-sql优化"><a href="#3-3-sql优化" class="headerlink" title="3.3 sql优化"></a>3.3 sql优化</h3><blockquote>
+<p><strong>面试官：</strong>sql的优化的经验</p>
+<p><strong>候选人：</strong>嗯，这个在项目还是挺常见的，当然如果直说sql优化的话，我们会从这几方面考虑，比如</p>
+<p><strong>建表</strong>的时候、使用<strong>索引</strong>、sql语句的编写、<strong>主从复制，读写分离</strong>，还有一个是如果量比较大的话，可以考虑<strong>分库分表</strong></p>
+<p><strong>面试官：</strong>创建表的时候，你们是如何优化的呢？</p>
+<p><strong>候选人：</strong>这个我们主要参考的阿里出的那个<strong>开发手册《嵩山版》</strong>，就比如，在定义字段的时候需要<strong>结合字段的内容来选择合适的类型</strong>，如果是数值的话，像tinyint、int 、bigint这些类型，要根据实际情况选择。如果是字符串类型，也是结合存储的内容来选择char和varchar或者text类型</p>
+<p><strong>面试官：</strong>那在使用索引的时候，是如何优化呢？</p>
+<p><strong>候选人：</strong>【参考索引创建原则    进行描述】</p>
+<p><strong>面试官：</strong>你平时对sql语句做了哪些优化呢？</p>
+<p><strong>候选人：</strong>嗯，这个也有很多，比如SELECT语句务必指明字段名称，<strong>不要直接使用select *** ，还有就是要注意SQL语句</strong>避免造成索引失效<strong>的写法；如果是聚合查询，尽量用</strong>union all代替union** ，union会多一次过滤，效率比较低；如果是<strong>表关联</strong>的话，尽量使用innerjoin ，不要使用用left join right join，<strong>如必须使用 一定要以小表为驱动</strong></p>
+</blockquote>
+<h3 id="3-4-事务"><a href="#3-4-事务" class="headerlink" title="3.4 事务"></a>3.4 事务</h3><blockquote>
+<p><strong>面试官：</strong>事务的特性是什么？可以详细说一下吗？</p>
+<p><strong>候选人：</strong>嗯，这个比较清楚，<strong>ACID</strong>，分别指的是：<strong>原子性、一致性、隔离性、持久性</strong>；我举个例子：</p>
+<p>A向B转账500，转账成功，A扣除500元，B增加500元，原子操作体现在要么都成功，要么都失败</p>
+<p>在转账的过程中，数据要一致，A扣除了500，B必须增加500</p>
+<p>在转账的过程中，隔离性体现在A像B转账，不能受其他事务干扰</p>
+<p>在转账的过程中，持久性体现在事务提交后，要把<strong>数据持久化</strong>（可以说是落盘操作）</p>
+<p><strong>面试官</strong>：并发事务带来哪些问题？</p>
+<p><strong>候选人</strong>：</p>
+<p>我们在项目开发中，多个事务并发进行是经常发生的，并发也是必然的，有可能导致一些问题</p>
+<p>第一是<strong>脏读</strong>， 当一个事务正在访问数据并且对数据进行了修改，而这种修改还没有提交到数据库中，这时另外一个事务也访问了这个数据，因为这个数据是还没有提交的数据，那么另外一个事务读到的这个数据是“脏数据”，依据“脏数据”所做的操作可能是不正确的。</p>
+<p>第二是<strong>不可重复读</strong>：比如在一个事务内多次读同一数据。在这个事务还没有结束时，另一个事务也访问该数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改导致第一个事务两次读取的数据可能不太一样。这就发生了在一个事务内两次读到的数据是不一样的情况，因此称为不可重复读。</p>
+<p>第三是<strong>幻读</strong>（Phantom read）：幻读与不可重复读类似。它发生在一个事务（T1）读取了几行数据，接着另一个并发事务（T2）插入了一些数据时。在随后的查询中，第一个事务（T1）就会发现多了一些原本不存在的记录，就好像发生了幻觉一样，所以称为幻读。</p>
+<p><strong>面试官</strong>：怎么解决这些问题呢？MySQL的默认隔离级别是？</p>
+<p><strong>候选人</strong>：解决方案是对事务进行隔离</p>
+<p>MySQL支持四种隔离级别，分别有：</p>
+<p>第一个是，<strong>未提交读</strong>（read uncommitted）它解决不了刚才提出的所有问题，一般项目中也不用这个。第二个是<strong>读已提交</strong>（read committed）它能解决脏读的问题的，但是解决不了不可重复读和幻读。第三个是<strong>可重复读</strong>（repeatable read）它能解决脏读和不可重复读，但是解决不了幻读，这个也是mysql<strong>默认的隔离级别</strong>。第四个是<strong>串行化</strong>（serializable）它可以解决刚才提出来的所有问题，但是由于让是事务串行执行的，<strong>性能比较低</strong>。所以，我们<strong>一般使用</strong>的都是mysql默认的隔离级别:<strong>可重复读</strong></p>
+<p><strong>面试官</strong>：undo log和redo log的区别</p>
+<p><strong>候选人</strong>：好的，其中redo log日志记录的是<strong>数据页的物理变化</strong>，服务宕机可用来<strong>同步数据</strong>，而undo log 不同，它主要记录的是<strong>逻辑日志</strong>，当事务<strong>回滚</strong>时，通过<strong>逆操作恢复原来的数据</strong>，比如我们删除一条数据的时候，就会在undo log日志文件中新增一条delete语句，如果发生回滚就执行逆操作；</p>
+<p><strong>redo log保证了事务的持久性，undo log保证了事务的原子性和一致性</strong></p>
+<p><strong>面试官</strong>：事务中的隔离性是如何保证的呢？(你解释一下MVCC)</p>
+<p><strong>候选人</strong>：事务的隔离性是由<strong>锁</strong>和<strong>mvcc</strong>实现的。</p>
+<p>其中mvcc的意思是<strong>多版本并发控制</strong>。指维护一个数据的多个版本，使得读写操作没有冲突，它的底层实现主要是分为了<strong>三个部分</strong>，第一个是<strong>隐藏字段</strong>，第二个是<strong>undo log日志</strong>，第三个是<strong>readView读视图</strong></p>
+<p>隐藏字段是指：在mysql中给每个表都设置了隐藏字段，有一个是<strong>trx_id(事务id)<strong>，记录</strong>每一次操作的事务id</strong>，是自增的；另一个字段是<strong>roll_pointer(回滚指针)<strong>，</strong>指向上一个版本</strong>的事务版本记录地址</p>
+<p>undo log主要的作用是<strong>记录回滚日志</strong>，存储老版本数据，在内部会<strong>形成一个版本链</strong>，在多个事务并行<strong>操作某一行记录</strong>，<strong>记录不同事务修改数据的版本，</strong>通过<strong>roll_pointer指针形成一个链表</strong></p>
+<p>readView解决的是一个事务查询选择版本的问题，在内部定义了<strong>一些匹配规则</strong>和<strong>当前的一些事务id判断该访问那个版本的数据</strong>，不同的隔离级别<strong>快照读</strong>是不一样的，最终的访问的结果不一样。如果是<strong>rc</strong>隔离级别，<strong>每一次执行快照读时生成ReadView</strong>，如果是<strong>rr</strong>隔离级别仅在事务中<strong>第一次执行快照读时生成ReadView</strong>，后续复用</p>
+</blockquote>
+<h3 id="3-5-主从同步"><a href="#3-5-主从同步" class="headerlink" title="3.5 主从同步"></a>3.5 主从同步</h3><blockquote>
+<p><strong>面试官</strong>：MySQL主从同步原理 </p>
+<p><strong>候选人</strong>：MySQL主从复制的核心就是<strong>二进制日志</strong>(DDL（数据定义语言）语句和 DML（数据操纵语言）语句)，它的步骤是这样的：</p>
+<p>第一：主库在事务提交时，会把数据<strong>变更记录</strong>在二进制日志文件 <strong>Binlog</strong> 中。</p>
+<p>第二：<strong>从库读取主库</strong>的二进制日志文件 <strong>Binlog</strong> ，<strong>写入到从库的中继日志 Relay Log</strong> 。</p>
+<p>第三：从库<strong>重做中继日志</strong>中的事件，将改变反映它自己的数据</p>
+</blockquote>
+<h3 id="3-6-分库分表"><a href="#3-6-分库分表" class="headerlink" title="3.6 分库分表"></a>3.6 分库分表</h3><blockquote>
+<p><strong>面试官</strong>：你们项目用过MySQL的分库分表吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，因为我们都是微服务开发，<strong>每个微服务对应了一个数据库</strong>，是根据业务进行拆分的，这个其实就是<strong>垂直拆分</strong>。</p>
+<p><strong>面试官</strong>：那你之前使用过水平分库吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个是使用过的，我们当时的业务是(xxx)，一开始，我们也是单库，后来这个业务逐渐发展，业务量上来的很迅速，其中(xx)表已经存放了超过<strong>1000万</strong>的数据，我们做了很多优化也不好使，性能依然很慢，所以当时就使用了水平分库。</p>
+<p>我们一开始先做了3台服务器对应了3个数据库，由于<strong>库多了，需要分片</strong>，我们当时采用的<strong>mycat</strong>来作为数据库的<strong>中间件</strong>。数据都是按照<strong>id（自增）取模</strong>的方式来存取的。</p>
+<p>当然一开始的时候，那些旧数据，我们做了一些清洗的工作，我们也是按照id取模规则分别存储到了各个数据库中，好处就是可以让各个数据库分摊存储和读取的压力，解决了我们当时性能的问题</p>
+</blockquote>
+<h2 id="4-框架篇"><a href="#4-框架篇" class="headerlink" title="4.框架篇"></a>4.框架篇</h2><p><img src="E:/Blog/source/_posts/Java面试/image-20240221202124124.png" alt="image-20240221202124124"></p>
+<h3 id="4-1-bean的线程安全问题"><a href="#4-1-bean的线程安全问题" class="headerlink" title="4.1 bean的线程安全问题"></a>4.1 bean的线程安全问题</h3><blockquote>
+<h5 id="面试官：Spring框架中的单例bean是线程安全的吗？"><a href="#面试官：Spring框架中的单例bean是线程安全的吗？" class="headerlink" title="面试官：Spring框架中的单例bean是线程安全的吗？"></a><strong>面试官</strong>：Spring框架中的单例bean是线程安全的吗？</h5><p><strong>候选人</strong>：</p>
+<p>嗯！</p>
+<p>不是线程安全的，是这样的</p>
+<p>当多用户同时请求一个服务时，容器会给<strong>每一个请求分配一个线程</strong>，这是多个线程会并发执行该请求对应的业务逻辑（成员方法），如果该处理逻辑中有<strong>对该单列状态</strong>的修改（体现为该单例的<strong>成员属性</strong>），则<strong>必须考虑</strong>线程同步问题。</p>
+<p>Spring框架并<strong>没有对单例bean进行任何多线程的封装处理</strong>。关于单例bean的线程安全和并发问题需<strong>要开发者自行去搞定</strong>。</p>
+<p>比如：我们通常在项目中使用的Spring bean都是<strong>不可变的状态</strong>(比如<strong>Service类和DAO类</strong>)，所以在<strong>某种程度上</strong>说Spring的单例bean是线程安全的。</p>
+<p>如果你的bean有多种状态的话（比如 View Model对象），就需要自行保证线程安全。最浅显的解决办法就是将多态bean的作用由“<strong>singleton</strong>”变更为“<strong>prototype</strong>”。(多例)或者进行加锁。</p>
+</blockquote>
+<h3 id="4-2-AOP切面"><a href="#4-2-AOP切面" class="headerlink" title="4.2 AOP切面"></a>4.2 AOP切面</h3><blockquote>
+<p><strong>面试官</strong>：什么是AOP</p>
+<p><strong>候选人</strong>：</p>
+<p>aop是<strong>面向切面编程</strong>，在spring中用于将那些<strong>与业务无关</strong>，但却对多个对象产生影响的<strong>公共行为和逻辑</strong>，抽取公共模块复用，降低耦合，一般比如可以做为公共日志保存，事务处理等</p>
+<p><strong>面试官</strong>：你们项目中有没有使用到AOP</p>
+<p><strong>候选人</strong>：</p>
+<p>我们当时在后台管理系统中，就是使用aop来记录了系统的<strong>操作日志</strong></p>
+<p>主要思路是这样的，使用aop中的<strong>环绕通知+切点表达式</strong>，这个表达式就是要找到要记录日志的方法，然后通过环绕通知的参数获取请求方法的参数，比如类信息、方法信息、注解、请求方式等，获取到这些参数以后，保存到数据库</p>
+<p><strong>面试官</strong>：Spring中的事务是如何实现的</p>
+<p><strong>候选人</strong>：</p>
+<p>spring实现的<strong>事务本质就是aop完成</strong>，<strong>对方法前后进行拦截</strong>，在执行方法<strong>之前开启事务</strong>，在执行完目标方法<strong>之后</strong>根据执行情况<strong>提交或者回滚</strong>事务。</p>
+</blockquote>
+<h3 id="4-3-事务失效"><a href="#4-3-事务失效" class="headerlink" title="4.3 事务失效"></a>4.3 事务失效</h3><blockquote>
+<p><strong>面试官</strong>：Spring中事务失效的场景有哪些</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！这个在项目中之前遇到过，我想想啊</p>
+<p>第一个，如果方法上<strong>异常捕获处理</strong>，自己<strong>处理了异常，没有抛出</strong>，就会导致事务失效，所以一般处理了异常以后，别忘了抛 出去就行了</p>
+<p>第二个，如果方法<strong>抛出检查异常</strong>，如果<strong>报错也会导致事务失效</strong>，最后在spring事务的注解上，就是**@Transactional上配置rollbackFor属性为Exception<strong>，这样别管是什么异常，</strong>都会回滚**事务，Spring默认只回滚非检查异常</p>
+<p>第三，我之前还遇到过一个，如果方法上<strong>不是public修饰</strong>的，也会导致事务失效</p>
+<p>嗯，就能想起来那么多</p>
+</blockquote>
+<h3 id="4-4-bean的生命周期"><a href="#4-4-bean的生命周期" class="headerlink" title="4.4 bean的生命周期"></a>4.4 bean的生命周期</h3><blockquote>
+<p><strong>面试官</strong>：Spring的bean的生命周期</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！，这个步骤还是挺多的，我之前看过一些源码，它大概流程是这样的</p>
+<p>首先会通过一个非常重要的类，叫做<strong>BeanDefinition</strong>获取<strong>bean的定义信息</strong>，这里面就<strong>封装了bean的所有信息</strong>，比如，类的全路径，是否是延迟加载，是否是单例等等这些信息</p>
+<p>在创建bean的时候：</p>
+<p>第一步是调用<strong>构造函数</strong>实例化bean</p>
+<p>第二步是bean的<strong>依赖注入</strong>，比如一些<strong>set方法</strong>注入，像平时开发用的**@Autowire**都是这一步完成</p>
+<p>第三步是处理<strong>Aware接口</strong>，如果某一个bean<strong>实现了Aware接口就会重写</strong>方法执行</p>
+<p>第四步是bean的<strong>后置处理器BeanPostProcessor</strong>，这个是<strong>前置</strong>处理器</p>
+<p>第五步是<strong>初始化方法</strong>，比如<strong>实现了接口InitializingBean</strong>或者<strong>自定义了方法init</strong>-method标签或**@PostContruct**</p>
+<p>第六步是执行了bean的<strong>后置处理器BeanPostProcessor，</strong>主要是<strong>对bean进行增强</strong>，有可能在这里产生<strong>代理对象</strong></p>
+<p>最后一步是<strong>销毁bean</strong></p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221213644640.png" alt="image-20240221213644640"></p>
+</blockquote>
+<h3 id="4-5-循环引用"><a href="#4-5-循环引用" class="headerlink" title="4.5 循环引用"></a>4.5 循环引用</h3><blockquote>
+<p><strong>面试官</strong>：Spring中的循环引用</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，好的，我来解释一下</p>
+<p>循环依赖：<strong>循环依赖其实就是循环引用</strong>，也就是两个或两个以上的bean<strong>互相持有对方</strong>,最终形成<strong>闭环</strong>。比如A依赖于B,B依赖于A</p>
+<p>循环依赖在spring中是允许存在，spring框架依据<strong>三级缓存</strong>已经解决了大部分的循环依赖</p>
+<p>①一级缓存：<strong>单例池</strong>，缓存已经经历了<strong>完整的生命周期</strong>，已经初始化完成的bean对象</p>
+<p>②二级缓存：缓存<strong>早期的bean对象</strong>（<strong>生命周期还没走完</strong>）</p>
+<p>③三级缓存：<strong>缓存的是ObjectFactory</strong>，表示对象工厂，用来创建某个对象的</p>
+<p><strong>面试官</strong>：那具体解决流程清楚吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>第一，先实例A对象，同时会<strong>创建ObjectFactory对象存入三级缓存singletonFactories</strong>  </p>
+<p>第二，A在初始化的时候需要B对象，这个走B的创建的逻辑</p>
+<p>第三，B实例化完成，也会创建ObjectFactory对象存入三级缓存singletonFactories  </p>
+<p>第四，B需要<strong>注入A，通过三级缓存中获取ObjectFactory来生成一个A的对象</strong>同时存入二级缓存，这个是有两种情况，一个是可能是A的<strong>普通对象</strong>，另外一个是A的<strong>代理对象</strong>，都可以让ObjectFactory来生产对应的对象，这也是三级缓存的关键</p>
+<p>第五，B通过从通过二级缓存earlySingletonObjects  获得到A的对象后可以正常注入，<strong>B创建成功，存入一级缓存singletonObjects</strong>  </p>
+<p>第六，回到A对象初始化，因为B对象已经创建完成，则可以直接注入B，<strong>A创建成功存入一次缓存singletonObjects</strong> </p>
+<p>第七，二级缓存中的临时对象A清除 </p>
+<p><strong>面试官</strong>：<strong>构造方法出现了循环依赖</strong>怎么解决？</p>
+<p><strong>候选人</strong>：</p>
+<p>由于bean的生命周期中构造函数是<strong>第一个</strong>执行的，spring框架并不能解决构造函数的的依赖注入，可以使用**@Lazy懒加载<strong>，</strong>什么时候需要对象再进行bean对象**的创建</p>
+</blockquote>
+<h3 id="4-6-Mvc执行流程"><a href="#4-6-Mvc执行流程" class="headerlink" title="4.6 Mvc执行流程"></a>4.6 Mvc执行流程</h3><blockquote>
+<p><strong>面试官</strong>：SpringMVC的执行流程知道嘛</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个知道的，它分了好多步骤</p>
+<p>1、用户发送出请求到前端控制器DispatcherServlet，这是一个调度中心</p>
+<p>2、DispatcherServlet收到请求调用HandlerMapping（处理器映射器）。</p>
+<p>3、HandlerMapping找到具体的处理器(可查找xml配置或注解配置)，生成处理器对象及处理器拦截器(如果有)，再一起返回给DispatcherServlet。</p>
+<p>4、DispatcherServlet调用HandlerAdapter（处理器适配器）。</p>
+<p>5、HandlerAdapter经过适配调用具体的处理器（Handler&#x2F;Controller）。</p>
+<p>6、Controller执行完成返回ModelAndView对象。</p>
+<p>7、HandlerAdapter将Controller执行结果ModelAndView返回给DispatcherServlet。</p>
+<p>8、DispatcherServlet将ModelAndView传给ViewReslover（视图解析器）。</p>
+<p>9、ViewReslover解析后返回具体View（视图）。</p>
+<p>10、DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。</p>
+<p>11、DispatcherServlet响应用户。</p>
+<p>当然现在的开发，基本都是前后端分离的开发的，并没有视图这些，一般都是handler中使用Response直接结果返回</p>
+</blockquote>
+<blockquote>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221220045855.png" alt="image-20240221220045855"></p>
+<hr>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221220057746.png" alt="image-20240221220057746"></p>
+</blockquote>
+<h3 id="4-7-自动配置原理"><a href="#4-7-自动配置原理" class="headerlink" title="4.7 自动配置原理"></a>4.7 自动配置原理</h3><blockquote>
+<p><strong>面试官</strong>：Springboot自动配置原理</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，好的，它是这样的。</p>
+<p>在Spring Boot项目中的<strong>引导类</strong>上有一个注解@SpringBootApplication，这个注解是对三个注解进行了封装，分别是：</p>
+<ul>
+<li><p><strong>@SpringBootConfiguration</strong></p>
+</li>
+<li><p><strong>@EnableAutoConfiguration</strong></p>
+</li>
+<li><p><strong>@ComponentScan</strong></p>
+</li>
+</ul>
+<p>其中<code>@EnableAutoConfiguration</code>是实现自动化配置的<strong>核心注解。</strong> </p>
+<p>该注解<strong>通过<code>@Import</code>注解</strong>导入对应的<strong>配置选择器</strong>。关键的是内部就是读取了该项目和该项目引用的Jar包的的classpath路径下<strong>META-INF&#x2F;spring.factories</strong>文件中的所配置的类的全类名。 </p>
+<p>在这些配置类中所定义的Bean会根据条件注解所<strong>指定的条件来决定</strong>是否需要将其导入到Spring容器中。</p>
+<p>一<strong>般条件判断会有像<code>@ConditionalOnClass</code>这样的注解</strong>，判断是否有对应的class文件，如果有则加载该类，把这个配置类的所有的Bean放入spring容器中使用。</p>
+</blockquote>
+<h3 id="4-8-Spring框架注解"><a href="#4-8-Spring框架注解" class="headerlink" title="4.8 Spring框架注解"></a>4.8 Spring框架注解</h3><blockquote>
+<p><strong>面试官</strong>：Spring 的常见注解有哪些？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个就很多了</p>
+<p>第一类是：声明bean，有@Component、@Service、@Repository、@Controller</p>
+<p>第二类是：依赖注入相关的，有@Autowired、@Qualifier、@Resourse</p>
+<p>第三类是：设置作用域 @Scope</p>
+<p>第四类是：spring配置相关的，比如@Configuration，@ComponentScan 和 @Bean </p>
+<p>第五类是：跟aop相关做增强的注解  @Aspect，@Before，@After，@Around，@Pointcut</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221222744515.png" alt="image-20240221222744515"></p>
+<hr>
+<p><strong>面试官</strong>：SpringMVC常见的注解有哪些？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个也很多的</p>
+<p>有@RequestMapping：用于映射请求路径；</p>
+<p>@RequestBody：注解实现接收http请求的json数据，将json转换为java对象；</p>
+<p>@RequestParam：指定请求参数的名称；</p>
+<p>@PathViriable：从请求路径下中获取请求参数(&#x2F;user&#x2F;{id})，传递给方法的形式参数；@ResponseBody：注解实现将controller方法返回对象转化为json对象响应给客户端。@RequestHeader：获取指定的请求头数据，还有像@PostMapping、@GetMapping这些。</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221222801871.png" alt="image-20240221222801871"></p>
+<hr>
+<p><strong>面试官</strong>：Springboot常见注解有哪些？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~</p>
+<p>Spring Boot的核心注解是@SpringBootApplication , 他由几个注解组成 : </p>
+<ul>
+<li>@SpringBootConfiguration： 组合了- @Configuration注解，实现配置文件的功能；</li>
+<li>@EnableAutoConfiguration：打开自动配置的功能，也可以关闭某个自动配置的选项</li>
+<li>@ComponentScan：Spring组件扫描</li>
+</ul>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240221222843639.png" alt="image-20240221222843639"></p>
+</blockquote>
+<h3 id="4-9-Mybatis执行流程"><a href="#4-9-Mybatis执行流程" class="headerlink" title="4.9 Mybatis执行流程"></a>4.9 Mybatis执行流程</h3><blockquote>
+<p><strong>面试官</strong>：MyBatis执行流程</p>
+<p><strong>候选人</strong>：</p>
+<p>好，这个知道的，不过步骤也很多</p>
+<p>①<strong>读取MyBatis配置文件</strong>：mybatis-config.xml加载运行环境和映射文件</p>
+<p>②<strong>构造会话工厂</strong>SqlSessionFactory，一个项目只需要一个，单例的，一般由spring进行管理</p>
+<p>③会话工厂<strong>创建SqlSession对象</strong>，这里面就<strong>含了执行SQL语句的所有方法</strong></p>
+<p>④操作数据库的<strong>接口</strong>，<strong>Executor执行器</strong>，同时负责查询缓存的维护</p>
+<p>⑤Executor接口的执行方法中有一个<strong>MappedStatement类型的参数</strong>，封装了<strong>映射信息</strong></p>
+<p>⑥输入<strong>参数映射</strong></p>
+<p>⑦输出<strong>结果映射</strong></p>
+</blockquote>
+<h3 id="4-10-Mybatis延迟加载"><a href="#4-10-Mybatis延迟加载" class="headerlink" title="4.10 Mybatis延迟加载"></a>4.10 Mybatis延迟加载</h3><blockquote>
+<p><strong>面试官</strong>：Mybatis是否支持延迟加载？</p>
+<p><strong>候选人</strong>：</p>
+<p>是支持的~</p>
+<p>延迟加载的意思是：就是在需要<strong>用到数据时才进行加载</strong>，不需要用到数据时就不加载数据。</p>
+<p>Mybatis支持<strong>一对一关联对象</strong>和<strong>一对多关联集合对象</strong>的延迟加载</p>
+<p>在Mybatis配置文件中，可以配置是否启用延迟加载<strong>lazyLoadingEnabled&#x3D;true|false</strong>，默认是关闭的(全局)。（mapper文件（局部）：fetchType:”lazy”）</p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>面试官</strong>：延迟加载的底层原理知道吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，我想想啊</p>
+<p>延迟加载在底层主要使用的<strong>CGLIB动态代理</strong>完成的</p>
+<p>第一是，使用CGLIB创建目标对象的<strong>代理对象</strong>，这里的目标对象就是开启了延迟加载的mapper</p>
+<p>第二个是当<strong>调用目标方法</strong>时，进入<strong>拦截器invoke</strong>方法，发现目标方法是<strong>null值</strong>，再执行sql查询</p>
+<p>第三个是获取数据以后，调用<strong>set方法设置属性值</strong>，<strong>再继续查询</strong>目标方法，就有值了</p>
+</blockquote>
+<h3 id="4-11-MyBatis缓存"><a href="#4-11-MyBatis缓存" class="headerlink" title="4.11 MyBatis缓存"></a>4.11 MyBatis缓存</h3><blockquote>
+<p><strong>面试官</strong>：Mybatis的一级、二级缓存用过吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，用过的~</p>
+<p>mybatis的<strong>一级缓存</strong>: 基于 <strong>PerpetualCache</strong> 的 <strong>HashMap 本地缓存</strong>，其存储作用域为 <strong>Session</strong>，当Session进行<strong>flush或close之后</strong>，该Session中的所有Cache就将<strong>清空</strong>，<strong>默认打开</strong>一级缓存</p>
+<p>关于二级缓存<strong>需要单独开启</strong></p>
+<p><strong>二级缓存</strong>是基于<strong>namespace和mapper</strong>的作用域起作用的，不是依赖于SQL session，默认也是采用 PerpetualCache，HashMap 存储。</p>
+<p>如果想要开启二级缓存<strong>需要在全局配置文件和映射文件中开启配置</strong>才行。</p>
+<p><strong>面试官</strong>：Mybatis的二级缓存什么时候会清理缓存中的数据</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！！</p>
+<p>当某一个作用域(一级缓存 Session&#x2F;二级缓存Namespaces)的进行了新增、修改、删除操作后，默认该作用域下所有 select 中的缓存将被 clear。</p>
+</blockquote>
+<h2 id="5-微服务篇"><a href="#5-微服务篇" class="headerlink" title="5.微服务篇"></a>5.微服务篇</h2><p><img src="E:/Blog/source/_posts/Java面试/image-20240221230402912.png" alt="image-20240221230402912"></p>
+<h3 id="5-1-SpringCloud组件（送命题★）"><a href="#5-1-SpringCloud组件（送命题★）" class="headerlink" title="5.1 SpringCloud组件（送命题★）"></a>5.1 SpringCloud组件（送命题★）</h3><blockquote>
+<p><strong>面试官：</strong>Spring Cloud 5大组件有哪些？</p>
+<p><strong>候选人：</strong></p>
+<p>早期我们一般认为的Spring Cloud五大组件是 </p>
+<ul>
+<li>Eureka   : 注册中心</li>
+<li>Ribbon  : 负载均衡</li>
+<li>Feign     : 远程调用</li>
+<li>Hystrix :  服务熔断</li>
+<li>Zuul&#x2F;Gateway  : 网关</li>
+</ul>
+<p>随着SpringCloudAlibba在国内兴起 , 我们项目中使用了一些阿里巴巴的组件 </p>
+<ul>
+<li><p>注册中心&#x2F;配置中心 Nacos</p>
+</li>
+<li><p>负载均衡 Ribbon</p>
+</li>
+<li><p>服务调用 Feign</p>
+</li>
+<li><p>服务保护 sentinel</p>
+</li>
+<li><p>服务网关 Gateway</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="5-2-服务注册和发现"><a href="#5-2-服务注册和发现" class="headerlink" title="5.2 服务注册和发现"></a>5.2 服务注册和发现</h3><blockquote>
+<p><strong>面试官：</strong>服务注册和发现是什么意思？Spring Cloud 如何实现服务注册发现？</p>
+<p><strong>候选人：</strong></p>
+<p>我理解的是主要三块大功能，分别是<strong>服务注册 、服务发现、服务状态监控</strong></p>
+<p>我们当时项目采用的eureka作为注册中心，这个也是spring cloud体系中的一个核心组件</p>
+<p><strong>服务注册</strong>：服务提供者需要把自己的信息<strong>注册</strong>到eureka，由eureka来保存这些信息，比如服务名称、ip、端口等等</p>
+<p><strong>服务发现</strong>：消费者向<strong>eureka拉取服务列表信息</strong>，如果服务提供者有集群，则消费者会利用<strong>负载均衡</strong>算法，选择一个发起调用</p>
+<p><strong>服务监控</strong>：服务提供者会每隔30秒向eureka发送<strong>心跳</strong>，报告健康状态，如果eureka服务90秒没接收到心跳，从eureka中剔除</p>
+<p><strong>面试官：</strong>我看你之前也用过nacos、你能说下nacos与eureka的区别？</p>
+<p><strong>候选人：</strong></p>
+<p>我们当时xx项目就是采用的nacos作为注册中心，选择nacos还要一个重要原因就是它<strong>支持配置中心</strong>，不过nacos作为注册中心，也比eureka要方便好用一些，主要相同不同点在于几点：</p>
+<ul>
+<li>共同点</li>
+</ul>
+<p>Nacos与eureka都支持<strong>服务注册</strong>和<strong>服务拉取</strong>，都支持服务提供者<strong>心跳方式做健康检测</strong></p>
+<ul>
+<li>Nacos与Eureka的区别</li>
+</ul>
+<p>①Nacos支持服务端<strong>主动检测提供者状态</strong>：临时实例采用心跳模式，<strong>非临时实例采用主动检测模式</strong></p>
+<p>②临时实例心跳不正常会被剔除，<strong>非临时实例</strong>则<strong>不会被剔除</strong></p>
+<p>③Nacos支持服务列表变更的消息<strong>推送</strong>模式，服务列表<strong>更新更及时</strong></p>
+<p>④Nacos集群默认采用AP方式，当集群中存在<strong>非临时实例时，采用CP模式</strong>；Eureka采用AP方式</p>
+</blockquote>
+<h3 id="5-3-负载均衡"><a href="#5-3-负载均衡" class="headerlink" title="5.3 负载均衡"></a>5.3 负载均衡</h3><blockquote>
+<p><strong>面试官：</strong>你们项目负载均衡如何实现的 ? </p>
+<p><strong>候选人：</strong></p>
+<p>是这样~~</p>
+<p>在服务调用过程中的负载均衡一般<strong>使用SpringCloud的Ribbon 组件实现</strong>  , Feign的底层已经<strong>自动集成</strong>了Ribbon  , 使用起来非常简单</p>
+<p>当发起远程调用时，<strong>ribbon先从注册中心拉取服务地址列表</strong>，然后按照一定的<strong>路由策略</strong>选择一个发起远程调用，<strong>一般</strong>的调用策略是<strong>轮询</strong></p>
+<p><strong>面试官：</strong>Ribbon负载均衡策略有哪些 ? </p>
+<p><strong>候选人：</strong></p>
+<p>我想想啊，有很多种，我记得几个：</p>
+<ul>
+<li><p>RoundRobinRule：简单<strong>轮询</strong>服务列表来选择服务器</p>
+</li>
+<li><p>WeightedResponseTimeRule：按照<strong>权重</strong>来选择服务器，<strong>响应时间越长，权重越小</strong></p>
+</li>
+<li><p>RandomRule：<strong>随机</strong>选择一个可用的服务器</p>
+</li>
+<li><p>ZoneAvoidanceRule：<strong>区域敏感</strong>策略，以区域可用的服务器为基础进行服务器的选择。使用<strong>Zone</strong>对服务器进行分类，这个Zone可以理解为一个机房、一个机架等。而后<strong>再对Zone内的多个服务做轮询(默认)</strong></p>
+</li>
+</ul>
+<p><strong>面试官：</strong>如果想自定义负载均衡策略如何实现 ? </p>
+<p><strong>候选人：</strong></p>
+<p>提供了两种方式：</p>
+<p>1，创建类<strong>实现IRule接口</strong>，可以指定负载均衡策略，这个是<strong>全局</strong>的，对所有的远程调用都起作用</p>
+<p>2，在<strong>客户端的配置文件中</strong>，可以配置<strong>某一个服务调用的负载均衡策略</strong>，只是对配置的这个服务生效远程调用</p>
+</blockquote>
+<h3 id="5-4-服务雪崩"><a href="#5-4-服务雪崩" class="headerlink" title="5.4 服务雪崩"></a>5.4 服务雪崩</h3><p><strong>面试官：</strong>什么是服务雪崩，怎么解决这个问题？</p>
+<p><strong>候选人：</strong></p>
+<p>服务雪崩是指<strong>一个服务失败</strong>，<strong>导致整条链路的服务都失败</strong>的情形，一般我们在项目解决的话就是两种方案，第一个是<strong>服务降级</strong>，第二个是<strong>服务熔断</strong>，如果<strong>流量太大</strong>的话，可以考虑<strong>限流</strong></p>
+<p>服务降级：服务自我保护的一种方式，或者保护下游服务的一种方式，用于确保服务不会受请求突增影响变得不可用，确保服务不会崩溃，一般在实际开发中<strong>与feign接口整合，编写降级逻辑</strong></p>
+<p>服务熔断：<strong>默认关闭，需要手动打开</strong>（引导类加@EnableCircuitBreaker注解），如果检测到 <strong>10 秒</strong>内请求的失败率<strong>超过 50%<strong>，就触发熔断机制。之后</strong>每隔 5 秒重新尝试</strong>请求微服务，如果微服务不能响应，继续走熔断机制。如果微服务<strong>可达，则关闭熔断机制</strong>，恢复正常请求</p>
+<h3 id="5-6-微服务监控"><a href="#5-6-微服务监控" class="headerlink" title="5.6 微服务监控"></a>5.6 微服务监控</h3><p><strong>面试官：</strong>你们的微服务是怎么监控的？</p>
+<p><strong>候选人：</strong></p>
+<p>我们项目中采用的skywalking进行监控的</p>
+<p>1，skywalking主要可以监控接口、服务、物理实例的一些<strong>状态</strong>。特别是在压测的时候可以看到众多服务中哪些服务和接口比较慢，我们可以针对性的分析和优化。</p>
+<p>2，我们还在skywalking设置了<strong>告警规则</strong>，特别是在项目上线以后，如果报错，我们分别设置了可以给相关负责人发短信和发邮件，第一时间知道项目的bug情况，第一时间修复</p>
+<h3 id="5-7-限流"><a href="#5-7-限流" class="headerlink" title="5.7 限流"></a>5.7 限流</h3><p><strong>面试官：</strong>你们项目中有没有做过限流 ? 怎么做的 ?</p>
+<p><strong>候选人：</strong></p>
+<p>我当时做的xx项目，采用就是微服务的架构，因为xx因为，应该会有突发流量，最大QPS可以达到2000，但是服务支撑不住，我们项目都通过压测最多可以支撑1200QPS。因为我们平时的QPS也就不到100，为了解决这些<strong>突发流量</strong>，所以采用了限流。</p>
+<p>【版本1】</p>
+<p>我们当时采用的<strong>nginx限流</strong>操作，nginx使用的<strong>漏桶算法</strong>来实现过滤，让请求以<strong>固定的速率处理</strong>请求，可以应对突发流量，我们控制的速率是<strong>按照ip进行限流</strong>，限制的流量是每秒20个</p>
+<p>【版本2】</p>
+<p>我们当时采用的是spring cloud gateway中支持<strong>局部过滤器RequestRateLimiter</strong>来做限流，使用的是<strong>令牌桶算法</strong>，可以根据<strong>ip或路径</strong>进行限流，可以设置<strong>每秒填充平均速率</strong>，和令牌桶总容量</p>
+<p><strong>面试官：</strong>限流常见的算法有哪些呢？</p>
+<p><strong>候选人：</strong></p>
+<p>比较常见的限流算法有<strong>漏桶算法</strong>和<strong>令牌桶算法</strong></p>
+<p>漏桶算法是把请求存入到桶中，以<strong>固定速率从桶中流出</strong>，可以让我们的服务做到<strong>绝对的平均</strong>，起到很好的限流效果</p>
+<p>令牌桶算法在桶中存储的是令牌，按照<strong>一定的速率生成令牌</strong>，每个请求都要<strong>先申请令牌</strong>，申请到令牌以后才能正常请求，也可以起到很好的限流作用</p>
+<p>它们的区别是，漏桶和令牌桶都可以处理突发流量，其中漏桶可以做到绝对的平滑，令牌桶有可能会产生突发大量请求的情况，一般nginx限流采用的漏桶，spring cloud gateway中可以支持令牌桶算法</p>
+<h3 id="5-8-CAP与BASE"><a href="#5-8-CAP与BASE" class="headerlink" title="5.8 CAP与BASE"></a>5.8 CAP与BASE</h3><blockquote>
+<p><strong>面试官</strong>：什么是CAP理论？</p>
+<p><strong>候选人</strong>：</p>
+<p>CAP主要是在分布式项目下的一个理论。包含了三项，<strong>一致性、可用性、分区容错性</strong></p>
+<ul>
+<li>一致性(Consistency)是指更新操作成功并返回客户端完成后，**所有节点在同一时间的数据完全一致(强一致性)**，不能存在中间状态。</li>
+<li>可用性(Availability) 是指系统提供的服务必须<strong>一直处于可用</strong>的状态，对于用户的每一个操作请求总是能够在有限的时间内返回结果。</li>
+<li>分区容错性(Partition tolerance) 是指分布式系统在遇到<strong>任何网络分区故障时</strong>，<strong>仍然需要能够保证对外提供满足一致性或可用性的服务</strong>，除非是整个网络环境都发生了故障。</li>
+</ul>
+<p><strong>面试官</strong>：为什么分布式系统中无法同时保证一致性和可用性？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，是这样的~~</p>
+<p>首先一个前提，对于分布式系统而言，<strong>分区容错性是一个最基本的要求</strong>，因此基本上我们在设计分布式系统的时候<strong>只能从一致性（C）和可用性（A）之间进行取舍</strong>。</p>
+<p>如果保证了一致性（C）：对于节点N1和N2，当往N1里写数据时，N2上的操作必须被暂停，只有当N1同步数据到N2时才能对N2进行读写请求，在N2被暂停操作期间客户端提交的请求会收到失败或超时。显然，这与可用性是相悖的。</p>
+<p>如果保证了可用性（A）：那就不能暂停N2的读写操作，但同时N1在写数据的话，这就违背了一致性的要求。</p>
+<hr>
+<p><strong>面试官</strong>：什么是BASE理论？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个也是CAP分布式系统设计理论</p>
+<p>BASE是CAP理论中AP方案的延伸，核心思想是即使无法做到强一致性（StrongConsistency，CAP的一致性就是强一致性），但应用可以采用适合的方式达到最终一致性（Eventual Consitency）。它的思想包含三方面：</p>
+<p>1、<strong>B</strong>asically <strong>A</strong>vailable（基本可用）：基本可用是指分布式系统在出现不可预知的故障的时候，<strong>允许损失部分可用性</strong>，但不等于系统不可用。</p>
+<p>2、<strong>S</strong>oft state（软状态）：即是指<strong>允许系统中的数据存在中间状态</strong>，并认为该中间状态的存在<strong>不会影响系统的整体可用性</strong>，即允许系统在不同节点的数据副本之间进行数据同步的过程<strong>存在延时</strong>。</p>
+<p>3、<strong>E</strong>ventually consistent（最终一致性）：强调系统中所有的数据副本，在经过一段时间的同步后，最终能够达到一个一致的状态。其本质是需要系统保证<strong>最终数据能够达到一致</strong>，而不需要实时保证系统数据的强一致性。</p>
+</blockquote>
+<h3 id="5-9-分布式事务"><a href="#5-9-分布式事务" class="headerlink" title="5.9 分布式事务"></a>5.9 分布式事务</h3><blockquote>
+<p><strong>面试官：</strong>你们采用哪种分布式事务解决方案？</p>
+<p><strong>候选人：</strong></p>
+<p>我们当时是xx项目，主要使用到的seata的at模式解决的分布式事务</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240222004930408.png" alt="image-20240222004930408"></p>
+<p>seata的AT模型分为两个阶段：</p>
+<p>1、阶段一RM的工作：① 注册分支事务  ② 记录undo-log（数据快照）③ 执行业务sql并提交 ④报告事务状态</p>
+<p>2、阶段二提交时RM的工作：删除undo-log即可</p>
+<p>3、阶段二回滚时RM的工作：根据undo-log恢复数据到更新前</p>
+<p>at模式<strong>牺牲了一致性，保证了可用性</strong>，不过，它保证的是<strong>最终一致性</strong></p>
+<hr>
+<p><strong>XA</strong>:<img src="E:/Blog/source/_posts/Java面试/image-20240222005017464.png" alt="image-20240222005017464"></p>
+<hr>
+<p><strong>AT</strong>:<img src="E:/Blog/source/_posts/Java面试/image-20240222005045429.png" alt="image-20240222005045429"></p>
+<hr>
+<p><strong>TCC</strong>:<img src="E:/Blog/source/_posts/Java面试/image-20240222005126652.png" alt="image-20240222005126652"></p>
+</blockquote>
+<h3 id="5-9-接口幂等性"><a href="#5-9-接口幂等性" class="headerlink" title="5.9 接口幂等性"></a>5.9 接口幂等性</h3><blockquote>
+<p><strong>面试官：</strong>分布式服务的接口幂等性如何设计？</p>
+<p><strong>候选人：</strong></p>
+<p>嗯，我们当时有一个xx项目的下单操作，采用的<strong>token+redis</strong>实现的，流程是这样的</p>
+<p><strong>第一次请求</strong>，也就是用户打开了<strong>商品详情页面</strong>，我们会发起一个请求，在后台生成一个<strong>唯一token存入redis</strong>，key就是用户的id，value就是这个token，同时把这个token返回前端</p>
+<p><strong>第二次请求</strong>，当用户点击了<strong>下单</strong>操作会后，会<strong>携带之前的token</strong>，后台先到redis进行验证，如果<strong>存在token，可以执行业务，同时删除token</strong>；如果不存在，则直接返回，不处理业务，就保证了同一个token只处理一次业务，就保证了幂等性</p>
+</blockquote>
+<h3 id="5-10-任务调度"><a href="#5-10-任务调度" class="headerlink" title="5.10 任务调度"></a>5.10 任务调度</h3><blockquote>
+<p><strong>面试官：</strong>xxl-job路由策略有哪些？</p>
+<p><strong>候选人：</strong></p>
+<p><strong>xxl-job</strong>提供了很多的路由策略，我们平时用的较多就是：<strong>轮询、故障转移、分片广播</strong>…</p>
+<p><strong>面试官：</strong>xxl-job任务执行失败怎么解决？</p>
+<p><strong>候选人：</strong></p>
+<p>有这么几个操作</p>
+<p>第一：路由策略选择<strong>故障转移</strong>，优先使用健康的实例来执行任务</p>
+<p>第二，如果还有失败的，我们在创建任务时，可以设置<strong>重试次数</strong></p>
+<p>第三，如果还有失败的，就可以<strong>查看日志或者配置邮件告警</strong>来通知相关负责人解决</p>
+<p><strong>面试官：</strong>如果有大数据量的任务同时都需要执行，怎么解决？</p>
+<p><strong>候选人：</strong></p>
+<p>我们会让部署<strong>多个实例</strong>，共同去执行这些批量的任务，其中任务的路由策略是<strong>分片广播</strong></p>
+<p>在任务执行的代码中可以获取分片总数和当前分片，按照<strong>取模</strong>的方式分摊到各个实例执行就可以了</p>
+</blockquote>
+<h2 id="6-消息中间件篇"><a href="#6-消息中间件篇" class="headerlink" title="6.消息中间件篇"></a>6.消息中间件篇</h2><p><img src="E:/Blog/source/_posts/Java面试/image-20240222010117676.png" alt="image-20240222010117676"></p>
+<h3 id="6-1-R消失不丢失-★"><a href="#6-1-R消失不丢失-★" class="headerlink" title="6.1 R消失不丢失(★)"></a>6.1 R消失不丢失(★)</h3><blockquote>
+<p><strong>面试官</strong>：RabbitMQ-如何保证消息不丢失</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！我们当时MYSQL和Redis的数据<strong>双写一致性</strong>就是采用RabbitMQ实现同步的，这里面就要求了消息的高可用性，我们要保证消息的不丢失。主要从三个层面考虑</p>
+<p>第一个是开启<strong>生产者确认机制</strong>，确保生产者的消息能到达队列，如果报错可以先记录到<strong>日志</strong>中，再去修复数据</p>
+<p>第二个是开启<strong>持久化功能</strong>，确保消息<strong>未消费前在队列中不会丢失</strong>，其中的<strong>交换机、队列、和消息</strong>都要做持久化</p>
+<p>第三个是开启消费者<strong>确认机制为auto</strong>，由spring<strong>确认消息处理成功后完成ack</strong>，当然也需要设置一定的<strong>重试次数</strong>，我们当时设置了3次，如果重试3次还没有收到消息，就将失败后的消息<strong>投递到异常交换机</strong>，交由人工处理</p>
+</blockquote>
+<h3 id="6-2-R重复消费问题"><a href="#6-2-R重复消费问题" class="headerlink" title="6.2 R重复消费问题"></a>6.2 R重复消费问题</h3><blockquote>
+<p><strong>面试官</strong>：RabbitMQ消息的重复消费问题如何解决的</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个我们还真遇到过，是这样的，我们当时消费者是设置了自动确认机制，当服务还没来得及给MQ确认的时候，服务宕机了，导致服务重启之后，又消费了一次消息。这样就重复消费了</p>
+<p>因为我们当时处理的支付（订单|业务唯一标识），它有一个业务的<strong>唯一标识</strong>，我们再处理消息时，<strong>先到数据库查询一下</strong>，这个数据是否存在，如果不存在，说明没有处理过，这个时候就可以正常处理这个消息了。如果已经存在这个数据了，就说明消息重复消费了，我们就不需要再消费了</p>
+<p><strong>面试官</strong>：那你还知道其他的解决方案吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，我想想~</p>
+<p>其实这个就是典型的<strong>幂等的问题</strong>，比如，<strong>redis分布式锁、数据库的锁</strong>都是可以的</p>
+</blockquote>
+<h3 id="6-3-延迟队列、死信"><a href="#6-3-延迟队列、死信" class="headerlink" title="6.3 延迟队列、死信"></a>6.3 延迟队列、死信</h3><blockquote>
+<p><strong>面试官</strong>：RabbitMQ中死信交换机 ? （RabbitMQ延迟队列有了解过嘛）</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！了解过！</p>
+<p>我们当时的xx项目有一个xx业务，需要用到延迟队列，其中就是使用RabbitMQ来实现的。</p>
+<p><strong>延迟队列就是用到了死信交换机和TTL（消息存活时间）实现的。</strong></p>
+<p>如果消息<strong>超时未消费</strong>就会变成死信，在RabbitMQ中如果消息成为死信，队列可以<strong>绑定一个死信交换机</strong>，在死信交换机上<strong>可以绑定其他队列</strong>，在我们发消息的时候可以按照需求指定TTL的时间，这样就实现了延迟队列的功能了。</p>
+<p>我记得RabbitMQ还有一种方式可以实现延迟队列，在RabbitMQ中安装一个<strong>死信插件</strong>，这样更方便一些，我们只需要在声明交互机的时候，指定这个就是死信交换机，然后在<strong>发送消息的时候直接指定超时时间</strong>就行了，相对于死信交换机+TTL要省略了一些步骤</p>
+</blockquote>
+<h3 id="6-4-消息堆积"><a href="#6-4-消息堆积" class="headerlink" title="6.4 消息堆积"></a>6.4 消息堆积</h3><blockquote>
+<p><strong>面试官</strong>：如果有100万消息堆积在MQ , 如何解决 ?</p>
+<p><strong>候选人</strong>：</p>
+<p>我在实际的开发中，没遇到过这种情况，不过，如果发生了堆积的问题，解决方案也所有很多的</p>
+<p>第一:提高消费者的消费能力 ,可以使用<strong>多线程消费</strong>任务</p>
+<p>第二：增加<strong>更多消费者</strong>，提高消费速度 </p>
+<p>​			 使用工作队列模式, 设置<strong>多个消费者消费消费同一个队列</strong>中的消息</p>
+<p>第三：扩大队列<strong>容积</strong>，提高堆积<strong>上限</strong> </p>
+<p>可以使用RabbitMQ惰性队列，惰性队列的好处主要是</p>
+<p>①接收到消息后直接<strong>存入磁盘而非内存</strong></p>
+<p>②消费者要消费消息时才会从磁盘中读取并加载到内存</p>
+<p>③支持数百万条的消息存储</p>
+</blockquote>
+<h3 id="6-5-R高可用机制"><a href="#6-5-R高可用机制" class="headerlink" title="6.5 R高可用机制"></a>6.5 R高可用机制</h3><blockquote>
+<p><strong>面试官</strong>：RabbitMQ的高可用机制有了解过嘛</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，熟悉的~</p>
+<p>我们当时项目在生产环境下，使用的集群，当时搭建是<strong>镜像模式集群</strong>，使用了3台机器。</p>
+<p>镜像队列结构是一主多从，<strong>所有操作都是主节点完成</strong>，然后<strong>同步给镜像节点</strong>，如果主节点宕机后，镜像节点会替代成新的主节点，不过在主从同步完成前，主节点就已经宕机，<strong>可能出现数据丢失</strong></p>
+<p><strong>面试官</strong>：那出现丢数据怎么解决呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>我们可以采用<strong>仲裁队列</strong>，与镜像队列一样，都是主从模式，支持主从数据同步，<strong>主从同步基于Raft协议，强一致。</strong></p>
+<p>并且使用起来也<strong>非常简单</strong>，不需要额外的配置，在声明队列的时候只要指定这个是仲裁队列即可</p>
+</blockquote>
+<h3 id="6-6-K消失不丢失-★-、重复消费问题"><a href="#6-6-K消失不丢失-★-、重复消费问题" class="headerlink" title="6.6 K消失不丢失(★)、重复消费问题"></a>6.6 K消失不丢失(★)、重复消费问题</h3><blockquote>
+<p><strong>面试官</strong>：Kafka是如何保证消息不丢失</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，这个保证机制很多，在发送消息到消费者接收消息，在每个阶段都有可能会丢失消息，所以我们解决的话也是从多个方面考虑</p>
+<p>第一个是生产者<strong>发送消息</strong>的时候，可以<strong>使用异步回调发送</strong>，如果消息发送失败，我们可以通过回调获取失败后的消息信息，可以考虑<strong>重试或记录日志</strong>，后边再做补偿都是可以的。同时在生产者这边还可以设置消息重试，有的时候是由于网络抖动的原因导致发送不成功，就可以使用<strong>重试机制</strong>来解决</p>
+<p>第二个<strong>在broker中</strong>消息有可能会丢失，我们可以通过kafka的复制机制来确保消息不丢失，在生产者发送消息的时候，<strong>可以设置一个acks</strong>，就是确认机制。我们可以设置参数为all，这样的话，当生产者发送消息到了分区之后，不仅仅只在leader分区保存确认，在follwer分区也会保存确认，只有当所有的副本都保存确认以后才算是成功发送了消息，所以，这样设置就很大程度了保证了消息不会在broker丢失</p>
+<p>第三个有可能是在<strong>消费者</strong>端丢失消息，kafka消费消息都是按照offset进行标记消费的，消费者默认是自动按期提交已经消费的偏移量，默认是每隔5s提交一次，如果出现重平衡的情况，可能会重复消费或丢失数据。我们一般都会<strong>禁用掉自动提价偏移量</strong>，<strong>改为手动提交</strong>，最好使用<strong>同步+异步</strong>提交，当消费成功以后再报告给broker消费的位置，这样就可以避免消息丢失和重复消费了</p>
+<hr>
+<p><strong>面试官</strong>：Kafka中消息的重复消费问题如何解决的</p>
+<p><strong>候选人</strong>：</p>
+<p>kafka消费消息都是按照offset进行标记消费的，消费者默认是自动按期提交已经消费的偏移量，默认是每隔5s提交一次，如果出现重平衡的情况，可能会重复消费或丢失数据。我们一般都会禁用掉自动提价偏移量，改为手动提交，当消费成功以后再报告给broker消费的位置，这样就可以避免消息丢失和重复消费了</p>
+<p>为了消息的幂等，我们也可以<strong>设置唯一主键</strong>来进行区分，或者是<strong>加锁</strong>，数据库的锁，或者是redis分布式锁，都能解决幂等的问题</p>
+</blockquote>
+<h3 id="6-7-消费的顺序性"><a href="#6-7-消费的顺序性" class="headerlink" title="6.7 消费的顺序性"></a>6.7 消费的顺序性</h3><blockquote>
+<p><strong>面试官</strong>：Kafka是如何保证消费的顺序性</p>
+<p><strong>候选人</strong>：</p>
+<p>kafka默认存储和消费消息，是不能保证顺序性的，因为一个topic数据可能存储在不同的分区中，每个分区都有一个按照顺序的存储的偏移量，如果消费者关联了多个分区不能保证顺序性</p>
+<p>如果有这样的需求的话，我们是可以解决的，把消息都<strong>存储同一个分区</strong>下就行了，有两种方式都可以进行设置，第一个是发送消息时指定分区号，第二个是发送消息时按照<strong>相同的业务设置相同的key</strong>，因为默认情况下分区也是通过key的hashcode值来选择分区的，hash值如果一样的话，分区肯定也是一样的</p>
+</blockquote>
+<h3 id="6-8-K高可用机制"><a href="#6-8-K高可用机制" class="headerlink" title="6.8 K高可用机制"></a>6.8 K高可用机制</h3><blockquote>
+<p><strong>面试官</strong>：Kafka的高可用机制有了解过嘛</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，主要是有两个层面，第一个是<strong>集群</strong>，第二个是提供了<strong>复制机制</strong></p>
+<p>kafka集群指的是由多个broker实例组成，即使某<strong>一台宕机，也不耽误其他broker</strong>继续对外提供服务</p>
+<p><strong>复制机制</strong>是可以保证kafka的高可用的，<strong>一个topic有多个分区，每个分区有多个副本</strong>，有一个leader，其余的是follower，<strong>副本存储在不同的broker中</strong>；所有的分区副本的内容是都是相同的，如果leader发生故障时，会自动将其中一个follower提升为leader，保证了系统的容错性、高可用性</p>
+<p><strong>面试官</strong>：解释一下复制机制中的ISR</p>
+<p><strong>候选人</strong>：</p>
+<p>ISR的意思是in-sync replica，就是需要<strong>同步复制</strong>保存的follower</p>
+<p>其中分区副本有很多的follower，分为了两类，一个是ISR，与leader副本同步保存数据，另外一个普通的副本，是异步同步数据，当leader挂掉之后，会<strong>优先从ISR副本列表中选取</strong>一个作为leader，因为ISR是同步保存数据，数据更加的完整一些，所以优先选择ISR副本列表</p>
+</blockquote>
+<h3 id="6-9-K数据清理机制"><a href="#6-9-K数据清理机制" class="headerlink" title="6.9 K数据清理机制"></a>6.9 K数据清理机制</h3><blockquote>
+<p><strong>面试官</strong>：Kafka数据清理机制了解过嘛</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，了解过~~</p>
+<p>Kafka中topic的数据存储在分区上，<strong>分区如果文件过大会分段存储segment</strong></p>
+<p>每个分段都在磁盘上以<strong>索引(xxxx.index)和日志文件(xxxx.log)的形式存储</strong>，这样分段的好处是，第一能够减少单个文件内容的大小，<strong>查找数据方便</strong>，第二方便kafka<strong>进行日志清理</strong>。</p>
+<p>在kafka中提供了两个日志的清理策略：</p>
+<p>第一，根据消息的<strong>保留时间</strong>，当消息保存的时间<strong>超过了指定的时间</strong>，就会触发清理，默认是168小时（ 7天）</p>
+<p>第二是根据topic存储的数据大小，当topic所占的日志文件大小<strong>大于一定的阈值</strong>，则开始删除最久的消息。这个默认是关闭的</p>
+<p>这两个策略都可以通过kafka的broker中的配置文件进行设置</p>
+</blockquote>
+<h3 id="6-10-K高性能"><a href="#6-10-K高性能" class="headerlink" title="6.10 K高性能"></a>6.10 K高性能</h3><blockquote>
+<p><strong>面试官</strong>：Kafka中实现高性能的设计有了解过嘛</p>
+<p><strong>候选人</strong>：</p>
+<p>Kafka 高性能，是多方面协同的结果，包括宏观架构、分布式存储、ISR 数据同步、以及高效的利用磁盘、操作系统特性等。主要体现有这么几点：</p>
+<p><strong>消息分区</strong>：不受单台服务器的限制，可以不受限的处理更多的数据</p>
+<p><strong>顺序读写</strong>：磁盘顺序读写，提升读写效率</p>
+<p><strong>页缓存</strong>：把磁盘中的数据缓存到内存中，把对磁盘的访问变为对内存的访问</p>
+<p><strong>零拷贝</strong>：减少上下文切换及数据拷贝</p>
+<p><strong>消息压缩</strong>：减少磁盘IO和网络IO</p>
+<p><strong>分批发送</strong>：将消息打包批量发送，减少网络开销</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20240222013619248.png" alt="image-20240222013619248"></p>
+</blockquote>
+<h2 id="7-Java集合"><a href="#7-Java集合" class="headerlink" title="7.Java集合"></a>7.Java集合</h2><p>主要涉及到的是List和Map相关的面试题，比较高频就是</p>
+<ul>
+<li><p>ArrayList</p>
+</li>
+<li><p>LinkedList</p>
+</li>
+<li><p>HashMap</p>
+</li>
+<li><p>ConcurrentHashMap</p>
+</li>
+</ul>
+<img src="E:/Blog/source/_posts/Java面试/image-20230427162524322.png" alt="image-20230427162524322" style="zoom:50%;" />
+
+<ul>
+<li>ArrayList底层实现是数组</li>
+<li>LinkedList底层实现是双向链表</li>
+<li>HashMap的底层实现使用了众多数据结构，包含了数组、链表、散列表、红黑树等</li>
+</ul>
+<h3 id="7-1-List相关面试题"><a href="#7-1-List相关面试题" class="headerlink" title="7.1 List相关面试题"></a>7.1 List相关面试题</h3><h4 id="7-1-1-面试题-ArrayList-list-x3D-new-ArrayList-10-中的list扩容几次"><a href="#7-1-1-面试题-ArrayList-list-x3D-new-ArrayList-10-中的list扩容几次" class="headerlink" title="7.1.1 面试题-ArrayList list&#x3D;new ArrayList(10)中的list扩容几次"></a>7.1.1 面试题-ArrayList list&#x3D;new ArrayList(10)中的list扩容几次</h4><blockquote>
+<p>难易程度：☆☆☆</p>
+<p>出现频率：☆☆</p>
+</blockquote>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428185505677.png" alt="image-20230428185505677"></p>
+<p>参考回答：</p>
+<p> 该语句只是声明和实例了一个 ArrayList，指定了容量为 10，未扩容 </p>
+<h4 id="7-1-2-面试题-如何实现数组和List之间的转换"><a href="#7-1-2-面试题-如何实现数组和List之间的转换" class="headerlink" title="7.1.2 面试题-如何实现数组和List之间的转换"></a>7.1.2 面试题-如何实现数组和List之间的转换</h4><blockquote>
+<p>难易程度：☆☆☆</p>
+<p>出现频率：☆☆</p>
+</blockquote>
+<p>如下代码：</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428185600918.png" alt="image-20230428185600918"></p>
+<p>参考回答：</p>
+<ul>
+<li><p>数组转List ，使用JDK中java.util.Arrays工具类的asList方法</p>
+</li>
+<li><p>List转数组，使用List的toArray方法。无参toArray方法返回 Object数组，传入初始化长度的数组对象，返回该对象数组</p>
+</li>
+</ul>
+<p>面试官再问：</p>
+<p>1，用Arrays.asList转List后，如果修改了数组内容，list受影响吗</p>
+<p>2，List用toArray转数组后，如果修改了List内容，数组受影响吗</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428185657791.png" alt="image-20230428185657791"></p>
+<blockquote>
+<p>数组转List受影响</p>
+<p>List转数组不受影响</p>
+</blockquote>
+<p>再答：</p>
+<p>1，用Arrays.asList转List后，如果修改了数组内容，list受影响吗</p>
+<p><strong>Arrays.asList转换list</strong>之后，如果修改了数组的内容，<strong>list会受影响</strong>，因为它的底层使用的Arrays类中的一个内部类ArrayList来构造的集合，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，<strong>最终指向的都是同一个内存地址</strong></p>
+<p>2，List用toArray转数组后，如果修改了List内容，数组受影响吗</p>
+<p><strong>list用了toArray转数组</strong>后，如果修改了list内容，数组<strong>不会影响</strong>，当调用了toArray以后，在底层是它是进行了<strong>数组的拷贝</strong>，跟原来的元素就没啥关系了，所以即使list修改了以后，数组也不受影响</p>
+<h4 id="7-1-3-面试题-ArrayList和LinkedList的区别是什么？"><a href="#7-1-3-面试题-ArrayList和LinkedList的区别是什么？" class="headerlink" title="7.1.3 面试题-ArrayList和LinkedList的区别是什么？"></a>7.1.3 面试题-ArrayList和LinkedList的区别是什么？</h4><ul>
+<li><p>底层数据结构</p>
+<ul>
+<li><p>ArrayList 是动态数组的数据结构实现</p>
+</li>
+<li><p>LinkedList 是双向链表的数据结构实现</p>
+</li>
+</ul>
+</li>
+<li><p>操作数据效率</p>
+<ul>
+<li>ArrayList按照下标查询的时间复杂度O(1)【内存是连续的，根据寻址公式】， LinkedList不支持下标查询</li>
+<li>查找（未知索引）： ArrayList需要遍历，链表也需要链表，时间复杂度都是O(n)</li>
+<li>新增和删除<ul>
+<li>ArrayList尾部插入和删除，时间复杂度是O(1)；其他部分增删需要挪动数组，时间复杂度是O(n)</li>
+<li>LinkedList头尾节点增删时间复杂度是O(1)，其他都需要遍历链表，时间复杂度是O(n)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>内存空间占用</p>
+<ul>
+<li><p>ArrayList底层是数组，内存连续，节省内存</p>
+</li>
+<li><p>LinkedList 是双向链表需要存储数据，和两个指针，更占用内存</p>
+</li>
+</ul>
+</li>
+<li><p>线程安全</p>
+<ul>
+<li>ArrayList和LinkedList都不是线程安全的</li>
+<li>如果需要保证线程安全，有两种方案：<ul>
+<li>在方法内使用，局部变量则是线程安全的</li>
+<li>使用线程安全的ArrayList和LinkedList(使用synchronizedList封装)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="7-2-HashMap相关面试题"><a href="#7-2-HashMap相关面试题" class="headerlink" title="7.2 HashMap相关面试题"></a>7.2 HashMap相关面试题</h3><p><img src="E:/Blog/source/_posts/Java面试/image-20230428194715016.png" alt="image-20230428194715016"></p>
+<h4 id="7-2-1-面试题-说一下HashMap的实现原理？"><a href="#7-2-1-面试题-说一下HashMap的实现原理？" class="headerlink" title="7.2.1 面试题-说一下HashMap的实现原理？"></a>7.2.1 面试题-说一下HashMap的实现原理？</h4><p>HashMap的数据结构： 底层使用hash表数据结构，即数组和链表或红黑树</p>
+<ol>
+<li><p>当我们往HashMap中put元素时，利用key的hashCode重新hash计算出当前对象的元素在数组中的下标 </p>
+</li>
+<li><p>存储时，如果出现hash值相同的key，此时有两种情况。</p>
+</li>
+</ol>
+<p>  a. 如果key相同，则覆盖原始值；</p>
+<p>  b. 如果key不同（出现冲突），则将当前的key-value放入链表或红黑树中 </p>
+<ol start="3">
+<li>获取时，直接找到hash值对应的下标，在进一步判断key是否相同，从而找到对应值。</li>
+</ol>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428204902016.png" alt="image-20230428204902016"></p>
+<p>面试官追问：HashMap的jdk1.7和jdk1.8有什么区别</p>
+<ul>
+<li><p>JDK1.8之前采用的是拉链法。拉链法：将链表和数组相结合。也就是说创建一个链表数组，数组中每一格就是一个链表。若遇到哈希冲突，则将冲突的值加到链表中即可。</p>
+</li>
+<li><p>jdk1.8在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为8） 时并且数组长度达到64时，将链表转化为红黑树，以减少搜索时间。扩容 resize( ) 时，红黑树拆分成的树的结点数小于等于临界值6个，则退化成链表</p>
+</li>
+</ul>
+<h4 id="7-2-2-面试题-HashMap的put方法的具体流程"><a href="#7-2-2-面试题-HashMap的put方法的具体流程" class="headerlink" title="7.2.2 面试题-HashMap的put方法的具体流程"></a>7.2.2 面试题-HashMap的put方法的具体流程</h4><p><img src="E:/Blog/source/_posts/Java面试/image-20230428210404117.png" alt="image-20230428210404117"></p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428210450744.png" alt="image-20230428210450744"></p>
+<ul>
+<li><p>HashMap是懒惰加载，在创建对象时并没有初始化数组</p>
+</li>
+<li><p>在无参的构造函数中，设置了默认的加载因子是0.75</p>
+</li>
+</ul>
+<p>添加数据流程图</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428210624847.png" alt="image-20230428210624847"></p>
+<ol>
+<li><p>判断键值对数组table是否为空或为null，否则执行resize()进行扩容（初始化）</p>
+</li>
+<li><p>根据键值key计算hash值得到数组索引</p>
+</li>
+<li><p>判断table[i]&#x3D;&#x3D;null，条件成立，直接新建节点添加</p>
+</li>
+<li><p>如果table[i]&#x3D;&#x3D;null ,不成立</p>
+<p>4.1 判断table[i]的首个元素是否和key一样，如果相同直接覆盖value</p>
+<p>4.2 判断table[i] 是否为treeNode，即table[i] 是否是红黑树，如果是红黑树，则直接在树中插入键值对</p>
+<p>4.3 遍历table[i]，链表的尾部插入数据，然后判断链表长度是否大于8，大于8的话把链表转换为红黑树，在红黑树中执行插入操 作，遍历过程中若发现key已经存在直接覆盖value</p>
+</li>
+<li><p>插入成功后，判断实际存在的键值对数量size是否超多了最大容量threshold（数组长度*0.75），如果超过，进行扩容。</p>
+</li>
+</ol>
+<h4 id="7-2-3-面试题-讲一讲HashMap的扩容机制"><a href="#7-2-3-面试题-讲一讲HashMap的扩容机制" class="headerlink" title="7.2.3 面试题-讲一讲HashMap的扩容机制"></a>7.2.3 面试题-讲一讲HashMap的扩容机制</h4><p><img src="E:/Blog/source/_posts/Java面试/image-20230428210844694.png" alt="image-20230428210844694"></p>
+<p>扩容的流程：</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428211031968.png" alt="image-20230428211031968"></p>
+<ul>
+<li><p>在添加元素或初始化的时候需要调用resize方法进行扩容，第一次添加数据初始化数组长度为16，以后每次每次扩容都是达到了扩容阈值（数组长度 * 0.75）</p>
+</li>
+<li><p>每次扩容的时候，都是扩容之前容量的2倍； </p>
+</li>
+<li><p>扩容之后，会新创建一个数组，需要把老数组中的数据挪动到新的数组中</p>
+<ul>
+<li>没有hash冲突的节点，则直接使用 e.hash &amp; (newCap - 1) 计算新数组的索引位置</li>
+<li>如果是红黑树，走红黑树的添加</li>
+<li>如果是链表，则需要遍历链表，可能需要拆分链表，判断(e.hash &amp; oldCap)是否为0，该元素的位置要么停留在原始位置，要么移动到原始位置+增加的数组大小这个位置上</li>
+</ul>
+</li>
+</ul>
+<h4 id="7-2-4-面试题-hashMap的寻址算法"><a href="#7-2-4-面试题-hashMap的寻址算法" class="headerlink" title="7.2.4 面试题-hashMap的寻址算法"></a>7.2.4 面试题-hashMap的寻址算法</h4><p><img src="E:/Blog/source/_posts/Java面试/image-20230428212501408.png" alt="image-20230428212501408"></p>
+<p>在putVal方法中，有一个hash(key)方法，这个方法就是来去计算key的hash值的，看下面的代码</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428212601977.png" alt="image-20230428212601977"></p>
+<p>首先获取key的hashCode值，然后右移16位 异或运算 原来的hashCode值，主要作用就是使原来的hash值<strong>更加均匀</strong>，减少hash冲突</p>
+<p>有了hash值之后，就很方便的去计算当前key的在数组中存储的下标，看下面的代码：</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428212729580.png" alt="image-20230428212729580"></p>
+<p>(n-1)&amp;hash : 得到数组中的索引，代替取模，<strong>性能更好</strong>，<strong>数组长度必须是2的n次幂</strong></p>
+<p><strong>关于hash值的其他面试题：为何HashMap的数组长度一定是2的次幂？</strong></p>
+<ol>
+<li><p><strong>计算索引时效率更高</strong>：如果是 2 的 n 次幂可以使用位与运算代替取模</p>
+</li>
+<li><p><strong>扩容时重新计算索引效率更高</strong>： hash &amp; oldCap &#x3D;&#x3D; 0 的元素留在原来位置 ，否则新位置 &#x3D; 旧位置 + oldCap</p>
+</li>
+</ol>
+<h4 id="7-2-5-面试题-hashmap在1-7情况下的多线程死循环问题"><a href="#7-2-5-面试题-hashmap在1-7情况下的多线程死循环问题" class="headerlink" title="7.2.5 面试题-hashmap在1.7情况下的多线程死循环问题"></a>7.2.5 面试题-hashmap在1.7情况下的多线程死循环问题</h4><p>jdk7的的数据结构是：数组+链表</p>
+<p>在数组进行扩容的时候，因为链表是头插法，在进行数据迁移的过程中，有可能导致死循环</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428213115071.png" alt="image-20230428213115071"></p>
+<ul>
+<li><p>变量e指向的是需要迁移的对象</p>
+</li>
+<li><p>变量next指向的是下一个需要迁移的对象</p>
+</li>
+<li><p>Jdk1.7中的链表采用的头插法</p>
+</li>
+<li><p>在数据迁移的过程中并没有新的对象产生，只是改变了对象的引用</p>
+</li>
+</ul>
+<p>产生死循环的过程：</p>
+<p>线程1和线程2的变量e和next都引用了这个两个节点</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428213533483.png" alt="image-20230428213533483"></p>
+<p>线程2扩容后，由于头插法，链表顺序颠倒，但是线程1的临时变量e和next还引用了这两个节点</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428214732877.png" alt="image-20230428214732877"></p>
+<p>第一次循环</p>
+<p>由于线程2迁移的时候，已经把B的next执行了A</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428214806072.png" alt="image-20230428214806072"></p>
+<p>第二次循环</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428214908652.png" alt="image-20230428214908652"></p>
+<p>第三次循环</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230428214937231.png" alt="image-20230428214937231"></p>
+<p>参考回答：</p>
+<p>在jdk1.7的hashmap中在数组进行扩容的时候，因为链表是头插法，在进行数据迁移的过程中，有可能导致死循环</p>
+<p>比如说，现在有两个线程</p>
+<p>线程一：读取到当前的hashmap数据，数据中一个链表，在准备扩容时，线程二介入</p>
+<p>线程二：也读取hashmap，直接进行扩容。因为是<strong>头插法</strong>，链表的顺序会进行颠倒过来。比如原来的顺序是AB，扩容后的顺序是BA，线程二执行结束。</p>
+<p>线程一：继续执行的时候就会出现死循环的问题。</p>
+<p>线程一先将A移入新的链表，再将B插入到链头，由于另外一个线程的原因，B的next指向了A，</p>
+<p>所以B-&gt;A-&gt;B,形成循环。</p>
+<p>当然，JDK 8 将扩容算法做了调整，不再将元素加入链表头（而是保持与扩容前一样的顺序），<strong>尾插法</strong>，就避免了jdk7中死循环的问题。</p>
+<h4 id="7-2-6-面试题-HashSet与HashMap的区别"><a href="#7-2-6-面试题-HashSet与HashMap的区别" class="headerlink" title="7.2.6 面试题-HashSet与HashMap的区别"></a>7.2.6 面试题-HashSet与HashMap的区别</h4><p>(1)HashSet实现了Set接口, 仅<strong>存储对象</strong>; HashMap实现了 Map接口, 存储的是<strong>键值对.</strong></p>
+<p>(2)HashSet底层其实是用HashMap实现存储的, HashSet封装了一系列HashMap的方法. 依靠HashMap来存储元素值,(利用hashMap的key键进行存储), 而value值默认为Object对象. 所以HashSet也不允许出现重复值, 判断标准和HashMap判断标准相同, 两个元素的<strong>hashCode相等并且通过equals()方法返回true</strong>.</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20221007110404375-17086215477761.png" alt="image-20221007110404375"></p>
+<h4 id="7-2-7-面试题-HashTable与HashMap的区别"><a href="#7-2-7-面试题-HashTable与HashMap的区别" class="headerlink" title="7.2.7 面试题-HashTable与HashMap的区别"></a>7.2.7 面试题-HashTable与HashMap的区别</h4><blockquote>
+<p>难易程度：☆☆</p>
+<p>出现频率：☆☆</p>
+</blockquote>
+<p>主要区别：</p>
+<table>
+<thead>
+<tr>
+<th><strong>区别</strong></th>
+<th><strong>HashTable</strong></th>
+<th><strong>HashMap</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数据结构</td>
+<td>数组+链表</td>
+<td>数组+链表+红黑树</td>
+</tr>
+<tr>
+<td>是否可以为null</td>
+<td>Key和value都不能为null</td>
+<td>可以为null</td>
+</tr>
+<tr>
+<td>hash算法</td>
+<td>key的hashCode()</td>
+<td>二次hash</td>
+</tr>
+<tr>
+<td>扩容方式</td>
+<td>当前容量翻倍 +1</td>
+<td>当前容量翻倍</td>
+</tr>
+<tr>
+<td>线程安全</td>
+<td>同步(synchronized)的，线程安全</td>
+<td>非线程安全</td>
+</tr>
+</tbody></table>
+<p>在实际开中不建议使用HashTable，在多线程环境下可以使用ConcurrentHashMap类</p>
+<h3 id="7-3-真实面试还原"><a href="#7-3-真实面试还原" class="headerlink" title="7.3 真实面试还原"></a>7.3 真实面试还原</h3><h4 id="7-3-1-Java常见的集合类"><a href="#7-3-1-Java常见的集合类" class="headerlink" title="7.3.1 Java常见的集合类"></a>7.3.1 Java常见的集合类</h4><blockquote>
+<p><strong>面试官</strong>：说一说Java提供的常见集合？（画一下集合结构图）</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，好的。</p>
+<p>在java中提供了量大类的集合框架，主要分为两类：</p>
+<p>第一个是<strong>Collection  属于单列集合</strong>，第二个是<strong>Map  属于双列集合</strong></p>
+<ul>
+<li>在Collection中有两个子接口List和Set。在我们平常开发的过程中用的比较多像list接口中的实现类<strong>ArrarList</strong>和<strong>LinkedList</strong>。  在Set接口中有实现类<strong>HashSet</strong>和<strong>TreeSet</strong>。</li>
+<li>在map接口中有很多的实现类，平时比较常见的是<strong>HashMap</strong>、<strong>TreeMap</strong>，还有一个线程安全的map:<strong>ConcurrentHashMap</strong></li>
+</ul>
+</blockquote>
+<h4 id="7-3-2-List"><a href="#7-3-2-List" class="headerlink" title="7.3.2 List"></a>7.3.2 List</h4><blockquote>
+<p><strong>面试官</strong>：ArrayList底层是如何实现的？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~，我阅读过arraylist的源码，我主要说一下add方法吧</p>
+<p>第一：确保<strong>数组</strong>已使用长度（size）加1之后足够存下下一个数据 </p>
+<p>第二：计算数组的容量，如果当前数组已使用长度+1后的大于当前的数组长度，则调用grow方法扩容（原来的<strong>1.5倍</strong>）</p>
+<p>第三：确保新增的数据有地方存储之后，则将新元素添加到位于size的位置上。 </p>
+<p>第四：返回添加成功布尔值。 </p>
+<p><strong>面试官</strong>：ArrayList list&#x3D;new ArrayList(10)中的list扩容几次</p>
+<p><strong>候选人</strong>：</p>
+<p>​	是new了一个ArrarList并且给了一个构造参数10，对吧？(问题一定要问清楚再答)</p>
+<p><strong>面试官</strong>：是的</p>
+<p><strong>候选人</strong>：</p>
+<p>​    好的，在ArrayList的源码中提供了一个带参数的构造方法，这个参数就是指定的集合初始长度，所以给了一个10的参数，就是指定了集合的初始长度是10，这里面并没有扩容。</p>
+<hr>
+<p><strong>面试官</strong>：如何实现数组和List之间的转换</p>
+<p><strong>候选人</strong>：</p>
+<p>​	嗯，这个在我们平时开发很常见</p>
+<p>​    数组转list，可以使用jdk自动的一个工具类Arrars，里面有一个<strong>asList</strong>方法可以转换为数组</p>
+<p>​    List 转数组，可以直接调用list中的<strong>toArray</strong>方法，需要给一个参数，指定数组的类型，需要指定数组的长度。</p>
+<p><strong>面试官</strong>：用Arrays.asList转List后，如果修改了数组内容，list受影响吗？List用toArray转数组后，如果修改了List内容，数组受影响吗</p>
+<p><strong>候选人</strong>：</p>
+<p>Arrays.asList转换list之后，如果修改了数组的内容，<strong>list会受影响</strong>，因为它的底层使用的Arrays类中的一个内部类ArrayList来构造的集合，在这个集合的构造器中，把我们传入的这个集合进行了包装而已，最终指向的都是同一个内存地址</p>
+<p>list用了toArray转数组后，如果修改了list内容，<strong>数组不会影响</strong>，当调用了toArray以后，在底层是它是进行了数组的拷贝，跟原来的元素就没啥关系了，所以即使list修改了以后，数组也不受影响</p>
+<hr>
+<p><strong>面试官</strong>：ArrayList 和 LinkedList 的区别是什么？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，它们两个主要是底层使用的数据结构不一样，ArrayList 是动态数组，LinkedList 是双向链表，这也导致了它们很多不同的特点。</p>
+<p>1，从<strong>操作数据</strong>效率来说</p>
+<p>ArrayList按照下标查询的时间复杂度O(1)【内存是连续的，根据寻址公式】， LinkedList不支持下标查询</p>
+<p>查找（未知索引）： ArrayList需要遍历，链表也需要链表，时间复杂度都是O(n)</p>
+<p>新增和删除</p>
+<ul>
+<li>ArrayList尾部插入和删除，时间复杂度是O(1)；其他部分增删需要挪动数组，时间复杂度是O(n)</li>
+<li>LinkedList头尾节点增删时间复杂度是O(1)，其他都需要遍历链表，时间复杂度是O(n)</li>
+</ul>
+<p>2，从<strong>内存空间</strong>占用来说</p>
+<p>ArrayList底层是数组，内存连续，节省内存</p>
+<p>LinkedList 是双向链表需要存储数据，和两个指针，更占用内存</p>
+<p>3，从<strong>线程安全</strong>来说，ArrayList和LinkedList都不是线程安全的</p>
+<p><strong>面试官</strong>：嗯，好的，刚才你说了ArrayList 和 LinkedList 不是线程安全的，你们在项目中是如何解决这个的线程安全问题的？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，是这样的，主要有两种解决方案：</p>
+<p>第一：我们使用这个集合，优先在<strong>方法内使用</strong>，定义为<strong>局部变量</strong>，这样的话，就不会出现线程安全问题。</p>
+<p>第二：如果非要在成员变量中使用的话，可以使用线程安全的集合来替代</p>
+<p>ArrayList可以通过<strong>Collections 的 synchronizedList</strong> 方法将 ArrayList 转换成线程安全的容器后再使用。</p>
+<p>LinkedList 换成<strong>ConcurrentLinkedQueue</strong>来使用</p>
+</blockquote>
+<h4 id="7-3-3-HashMap"><a href="#7-3-3-HashMap" class="headerlink" title="7.3.3 HashMap"></a>7.3.3 HashMap</h4><blockquote>
+<p><strong>面试官</strong>：说一下HashMap的实现原理？</p>
+<p><strong>候选人</strong>：</p>
+<p>​	嗯。它主要分为了一下几个部分：</p>
+<p>1，底层使用hash表数据结构，即<strong>数组+（链表 | 红黑树）</strong></p>
+<p>2，添加数据时，计算key的值确定元素在数组中的下标</p>
+<p>​	key相同则替换</p>
+<p>​	不同则存入链表或红黑树中</p>
+<p>3，获取数据通过key的hash计算数组下标获取元素</p>
+<p><strong>面试官</strong>：HashMap的jdk1.7和jdk1.8有什么区别</p>
+<p><strong>候选人</strong>：</p>
+<ul>
+<li><p>JDK1.8之前采用的拉链法，数组+链表</p>
+</li>
+<li><p>JDK1.8之后采用数组+链表+红黑树，链表长度大于8且数组长度大于64则会从链表转化为红黑树</p>
+</li>
+</ul>
+<p><strong>面试官</strong>：好的，你能说下HashMap的put方法的具体流程吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯好的。</p>
+<ol>
+<li><p>判断键值对数组table是否为空或为null，否则执行resize()进行扩容（初始化）</p>
+</li>
+<li><p>根据键值key计算hash值得到数组索引</p>
+</li>
+<li><p>判断table[i]&#x3D;&#x3D;null，条件成立，直接新建节点添加</p>
+</li>
+<li><p>如果table[i]&#x3D;&#x3D;null ,不成立</p>
+</li>
+</ol>
+<p>4.1 判断table[i]的首个元素是否和key一样，如果相同直接覆盖value</p>
+<p>4.2 判断table[i] 是否为treeNode，即table[i] 是否是红黑树，如果是红黑树，则直接在树中插入键值对</p>
+<p>4.3 遍历table[i]，链表的尾部插入数据，然后判断链表长度是否大于8，大于8的话把链表转换为红黑树，在红黑树中执行插入操 作，遍历过程中若发现key已经存在直接覆盖value</p>
+<ol start="5">
+<li>插入成功后，判断实际存在的键值对数量size是否超多了最大容量threshold（数组长度*0.75），如果超过，进行扩容。</li>
+</ol>
+<p><strong>面试官</strong>：好的，刚才你多次介绍了hsahmap的扩容，能讲一讲HashMap的扩容机制吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>好的</p>
+<ul>
+<li><p>在添加元素或初始化的时候需要调用resize方法进行扩容，第一次添加数据初始化数组长度为16，以后每次每次扩容都是达到了扩容阈值（数组长度 * 0.75）</p>
+</li>
+<li><p>每次扩容的时候，都是扩容之前容量的<strong>2倍</strong>； </p>
+</li>
+<li><p>扩容之后，会新创建一个数组，需要把老数组中的数据挪动到新的数组中</p>
+</li>
+<li><p>没有hash冲突的节点，则直接使用 <strong>e.hash &amp; (newCap - 1)</strong> 计算新数组的索引位置</p>
+</li>
+<li><p>如果是红黑树，走红黑树的添加</p>
+</li>
+<li><p>如果是链表，则需要遍历链表，可能需要拆分链表，判断**(e.hash &amp; oldCap)是否为0**，该元素的位置要么停留在原始位置，要么移动到原始位置+增加的数组大小这个位置上</p>
+</li>
+</ul>
+<p><strong>面试官</strong>：好的，刚才你说的通过hash计算后找到数组的下标，是如何找到的呢，你了解hashMap的寻址算法吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>这个哈希方法首先计算出key的<strong>hashCode</strong>值，然后通过这个hash值右移16位后的二进制进行按位<strong>异或运算</strong>得到最后的hash值。</p>
+<p>在putValue的方法中，计算数组下标的时候使用hash值与数组长度取模得到存储数据下标的位置，hashmap为了性能更好，并没有直接采用取模的方式，而是使用了数组长度-1 得到一个值，用这个值按位与运算hash值，最终得到数组的位置。</p>
+<p><strong>面试官</strong>：为何HashMap的数组长度一定是2的次幂？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，好的。hashmap这么设计主要有两个原因：</p>
+<p>第一：</p>
+<p><strong>计算索引</strong>时效率更高：如果是 2 的 n 次幂可以使用位与运算代替取模</p>
+<p>第二：</p>
+<p><strong>扩容时重新计算索引</strong>效率更高：在进行扩容是会进行判断 hash值按位与运算旧数组长租是否 &#x3D;&#x3D; 0 </p>
+<p>如果等于0，则把元素留在原来位置 ，否则新位置是等于旧位置的下标+旧数组长度</p>
+<p><strong>面试官</strong>：好的，我看你对hashmap了解的挺深入的，你知道hashmap在1.7情况下的多线程死循环问题吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，知道的。是这样</p>
+<p>jdk7的的数据结构是：数组+链表</p>
+<p>在数组进行扩容的时候，因为链表是<strong>头插法</strong>，在进行数据迁移的过程中，有可能导致死循环</p>
+<p>比如说，现在有两个线程</p>
+<p>线程一：<strong>读取</strong>到当前的hashmap数据，数据中一个链表，在准备扩容时，线程二介入</p>
+<p>线程二也读取hashmap，直接进行扩容。因为是头插法，链表的顺序会进行颠倒过来。比如原来的顺序是AB，扩容后的顺序是BA，线程二执行结束。</p>
+<p>当线程一再继续执行的时候就会出现死循环的问题。</p>
+<p>线程一先将A移入新的链表，再将B插入到链头，由于另外一个线程的原因，B的next指向了A，所以B-&gt;A-&gt;B,形成循环。</p>
+<p>当然，JDK 8 将扩容算法做了调整，不再将元素加入链表头（而是保持与扩容前一样的顺序），<strong>尾插法</strong>，就避免了jdk7中死循环的问题。</p>
+<p><strong>面试官</strong>：好的，hashmap是线程安全的吗？</p>
+<p><strong>候选人</strong>：不是线程安全的</p>
+<p><strong>面试官</strong>：那我们想要使用线程安全的map该怎么做呢？</p>
+<p><strong>候选人</strong>：我们可以采用<strong>ConcurrentHashMap</strong>进行使用，它是一个线程安全的HashMap</p>
+<p><strong>面试官</strong>：那你能聊一下ConcurrentHashMap的原理吗？</p>
+<p><strong>候选人</strong>：好的，请参考《多线程相关面试题》中的ConcurrentHashMap部分的讲解</p>
+<hr>
+<p><strong>面试官</strong>：HashSet与HashMap的区别？</p>
+<p><strong>候选人</strong>：嗯，是这样。</p>
+<p>HashSet底层其实是用HashMap实现存储的, HashSet封装了一系列HashMap的方法. 依靠HashMap来存储元素值,(利用hashMap的key键进行存储), 而value值默认为Object对象. 所以HashSet也不允许出现重复值, 判断标准和HashMap判断标准相同, 两个元素的hashCode相等并且通过equals()方法返回true.</p>
+<p><strong>面试官</strong>：HashTable与HashMap的区别</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，他们的主要区别是有几个吧</p>
+<p>第一，数据结构不一样，hashtable是数组+链表，hashmap在1.8之后改为了数组+链表+红黑树</p>
+<p>第二，hashtable存储数据的时候都不能为null，而hashmap是可以的</p>
+<p>第三，hash算法不同，hashtable是用本地修饰的hashcode值，而hashmap经常了二次hash</p>
+<p>第四，扩容方式不同，hashtable是当前容量翻倍+1，hashmap是当前容量翻倍</p>
+<p>第五，hashtable是线程安全的，操作数据的时候加了锁synchronized，hashmap不是线程安全的，效率更高一些</p>
+<p>在实际开中不建议使用HashTable，在多线程环境下可以使用ConcurrentHashMap类</p>
+</blockquote>
+<h2 id="8-多线程"><a href="#8-多线程" class="headerlink" title="8 多线程"></a>8 多线程</h2><h3 id="8-1-线程的基础知识"><a href="#8-1-线程的基础知识" class="headerlink" title="8.1 线程的基础知识"></a>8.1 线程的基础知识</h3><blockquote>
+<p><strong>面试官</strong>：聊一下并行和并发有什么区别？</p>
+<p><strong>候选人：</strong></p>
+<p>是这样的~~</p>
+<p>现在都是多核CPU，在多核CPU下</p>
+<p>并发是<strong>同一时间应对多件事情</strong>的能力，多个线程<strong>轮流</strong>使用一个或多个CPU</p>
+<p>并行是<strong>同一时间动手做多件事情</strong>的能力，4核CPU<strong>同时执行</strong>4个线程</p>
+<hr>
+<p><strong>面试官</strong>：说一下线程和进程的区别？</p>
+<p><strong>候选人：</strong></p>
+<p>嗯，好~</p>
+<ul>
+<li>进程是<strong>正在运行程序的实例</strong>，进程中<strong>包含了线程</strong>，每个线程执行不同的任务</li>
+<li>不同的进程使用不同的<strong>内存空间</strong>，在当前进程下的所有线程可以共享内存空间</li>
+<li>线程更轻量，线程<strong>上下文切换成本</strong>一般上要比进程上下文切换低(上下文切换指的是从一个线程切换到另一个线程)</li>
+</ul>
+<hr>
+<p><strong>面试官</strong>：如果在java中创建线程有哪些方式？</p>
+<p><strong>候选人：</strong></p>
+<p>在java中一共有四种常见的创建方式，分别是：<strong>继承Thread类</strong>、<strong>实现runnable接口</strong>、<strong>实现Callable接口</strong>、<strong>线程池创建线程</strong>。通常情况下，我们项目中都会采用线程池的方式创建线程。</p>
+<p><strong>面试官</strong>：好的，刚才你说的runnable 和 callable 两个接口创建线程有什么不同呢？</p>
+<p><strong>候选人：</strong></p>
+<p>是这样的~</p>
+<p>最主要的两个线程一个是有<strong>返回值</strong>，一个是没有返回值的。</p>
+<p>Runnable 接口run方法无返回值；Callable接口call方法有返回值，是个泛型，和Future、FutureTask配合可以用来获取异步执行的结果</p>
+<p>还有一个就是，他们异常处理也不一样。Runnable接口run方法只能抛出运行时异常，也<strong>无法捕获处理</strong>；Callable接口call方法<strong>允许抛出异常，可以获取异常信息</strong></p>
+<p>在实际开发中，如果需要拿到执行的结果，需要使用Callalbe接口创建线程，调用FutureTask.get()得到可以得到返回值，此方法会<strong>阻塞</strong>主进程的继续往下执行，如果不调用不会阻塞。</p>
+<hr>
+<p><strong>面试官</strong>：线程包括哪些状态，状态之间是如何变化的？</p>
+<p><strong>候选人：</strong></p>
+<p>在JDK中的Thread类中的枚举State里面定义了6中线程的状态分别是：新建、可运行、终结、阻塞、等待和有时限等待六种。</p>
+<p>关于线程的状态切换情况比较多。我分别介绍一下</p>
+<p>当一个线程对象被创建，但还未调用 start 方法时处于<strong>新建</strong>状态，调用了 start 方法，就会由<strong>新建</strong>进入<strong>可运行</strong>状态。如果线程内代码已经<strong>执行完毕</strong>，由<strong>可运行</strong>进入<strong>终结</strong>状态。当然这些是一个线程正常执行情况。</p>
+<p>如果线程<strong>获取锁失败</strong>后，由<strong>可运行</strong>进入 Monitor 的阻塞队列<strong>阻塞</strong>，只有当持锁线程释放锁时，会按照一定规则唤醒阻塞队列中的<strong>阻塞</strong>线程，唤醒后的线程进入<strong>可运行</strong>状态</p>
+<p>如果线程获取锁成功后，但由于<strong>条件不满足</strong>，调用了 wait() 方法，此时从<strong>可运行</strong>状态释放锁<strong>等待</strong>状态，当其它持锁线程调用 notify() 或 notifyAll() 方法，会恢复为<strong>可运行</strong>状态</p>
+<p>还有一种情况是调用 sleep(long) 方法也会从<strong>可运行</strong>状态进入<strong>有时限等待</strong>状态，不需要主动唤醒，超时时间到自然恢复为<strong>可运行</strong>状态</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230503203629212.png" alt="image-20230503203629212"></p>
+<p><strong>面试官</strong>：嗯，好的，刚才你说的线程中的 wait 和 sleep方法有什么不同呢？</p>
+<p><strong>候选人：</strong></p>
+<p>它们两个的相同点是都可以让当前线程暂时放弃 CPU 的使用权，进入阻塞状态。</p>
+<p>不同点主要有三个方面：</p>
+<p>第一：<strong>方法归属</strong>不同</p>
+<p>sleep(long) 是 Thread 的静态方法。而 wait()，是 Object 的成员方法，每个对象都有</p>
+<p>第二：<strong>线程醒来时机</strong>不同</p>
+<p>线程执行 sleep(long) 会在等待相应毫秒后醒来，而 wait() 需要被 notify 唤醒，wait() 如果不唤醒就一直等下去</p>
+<p>第三：<strong>锁特性</strong>不同</p>
+<p>wait 方法的调用必须<strong>先获取 wait 对象的</strong>锁，而 sleep 则无此限制</p>
+<p>wait 方法执行后会释放对象锁，允许其它线程获得该对象锁（相当于我放弃 cpu，但你们还可以用）</p>
+<p>而 sleep 如果在 synchronized 代码块中执行，并<strong>不会释放对象锁</strong>（相当于我放弃 cpu，你们也用不了）</p>
+<p><strong>面试官</strong>：好的，我现在举一个场景，你来分析一下怎么做，新建 T1、T2、T3 三个线程，如何保证它们按顺序执行？</p>
+<p><strong>候选人：</strong></p>
+<p>嗯~~，我思考一下 （适当的思考或想一下属于正常情况，脱口而出反而太假[背诵痕迹]）</p>
+<p>可以这么做，在多线程中有多种方法让线程按特定顺序执行，可以用线程类的<strong>join</strong>()方法在一个线程中启动另一个线程，另外一个线程完成该线程继续执行。</p>
+<p>比如说：</p>
+<p><strong>使用join方法</strong>，T3调用T2，T2调用T1，这样就能确保T1就会先完成而T3最后完成</p>
+<p>或者：<strong>competableFuture</strong>的方法</p>
+<p><strong>面试官</strong>：在我们使用线程的过程中，有两个方法。线程的 run()和 start()有什么区别？</p>
+<p><strong>候选人：</strong></p>
+<p>start方法用来<strong>启动</strong>线程，通过该线程调用run方法执行run方法中所定义的逻辑代码。start方法<strong>只能被调用一次</strong>。run方法封装了要被线程执行的代码，可以被调用多次。</p>
+<p><strong>面试官</strong>：那如何停止一个正在运行的线程呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>有三种方式可以停止线程</p>
+<p>第一：可以使用退出标志，使线程正常退出，也就是当<strong>run方法完成后</strong>线程终止，一般我们加一个标记</p>
+<p>第二：可以使用线程的<strong>stop方法</strong>强行终止，不过一般不推荐，这个方法已作废</p>
+<p>第三：可以使用线程的<strong>interrupt方法</strong>中断线程，内部其实也是使用<strong>中断标志</strong>来中断线程</p>
+<p>我们项目中使用的话，建议使用<strong>第一种或第三种</strong>方式中断线程</p>
+<hr>
+<p><strong>面试官</strong>：notify()和 notifyAll()有什么区别？</p>
+<p><strong>候选人</strong>：</p>
+<p>notifyAll：唤醒所有wait的线程</p>
+<p>notify：只随机唤醒一个 wait 线程</p>
+</blockquote>
+<h3 id="8-2-线程中并发锁"><a href="#8-2-线程中并发锁" class="headerlink" title="8.2 线程中并发锁"></a>8.2 线程中并发锁</h3><blockquote>
+<p><strong>面试官</strong>：讲一下synchronized关键字的底层原理？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~好的，</p>
+<p>synchronized 底层使用的JVM级别中的<strong>Monitor</strong> 来决定当前线程是否获得了锁，如果某一个线程获得了锁，在没有释放锁之前，其他线程是不能或得到锁的。synchronized 属于悲观锁。</p>
+<p>synchronized 因为需要依赖于JVM级别的Monitor ，相对性能也比较低。</p>
+<p><strong>面试官</strong>：好的，你能具体说下Monitor 吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>monitor对象存在于每个Java对象的对象头中，synchronized 锁便是通过这种方式获取锁的，也是为什么Java中任意对象可以作为锁的原因</p>
+<p>monitor内部维护了三个变量</p>
+<ul>
+<li><p>WaitSet：保存处于<strong>Waiting状态</strong>的线程</p>
+</li>
+<li><p>EntryList：保存处于<strong>Blocked状态</strong>的线程</p>
+</li>
+<li><p>Owner：<strong>持有锁</strong>的线程</p>
+</li>
+</ul>
+<p>只有一个线程获取到的标志就是在monitor中设置成功了Owner，一个monitor中只能有一个Owner</p>
+<p>在上锁的过程中，如果有其他线程也来抢锁，则进入EntryList 进行阻塞，当获得锁的线程执行完了，释放了锁，就会唤醒EntryList 中等待的线程竞争锁，竞争的时候是非公平的。</p>
+<p><strong>面试官</strong>：好的，那关于synchronized 的<strong>锁升级</strong>的情况了解吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，知道一些（要谦虚）</p>
+<p>Java中的synchronized有<strong>偏向锁</strong>、<strong>轻量级锁</strong>、<strong>重量级锁</strong>三种形式，分别对应了锁只被一个线程持有、不同线程交替持有锁、多线程竞争锁三种情况。</p>
+<p>重量级锁：底层使用的Monitor实现，里面涉及到了<strong>用户态和内核态</strong>的切换、进程的上下文切换，成本较高，性能比较低。</p>
+<p>轻量级锁：线程加锁的时间是错开的（也就是<strong>没有竞争</strong>），可以使用轻量级锁来优化。轻量级修改了对象头的锁标志，相对重量级锁性能提升很多。每次修改都是CAS操作，保证原子性</p>
+<p>偏向锁：一段很长的时间内都只被一个线程使用锁，可以使用了偏向锁，在第一次获得锁时，会有一个CAS操作，之后该线程再获取锁，只需要判断mark word中是否是<strong>自己的线程id</strong>即可，而不是开销相对较大的CAS命令</p>
+<p>一旦锁发生了<strong>竞争</strong>，都会升级为重量级锁</p>
+<p><strong>面试官</strong>：你谈谈 <strong>JMM</strong>（Java 内存模型） </p>
+<p><strong>候选人</strong>：</p>
+<p>JMM(Java Memory Model)Java内存模型,是java虚拟机规范中所定义的一种内存模型。</p>
+<p>Java内存模型(Java Memory Model)描述了Java程序中各种变量(线程共享变量)的访问规则，以及在JVM中将变量存储到内存和从内存中读取变量这样的底层细节。</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230504181638237.png" alt="image-20230504181638237"></p>
+<p>特点：</p>
+<ol>
+<li><p>所有的共享变量都存储于主内存(计算机的RAM)这里所说的变量指的是实例变量和类变量。不包含局部变量，因为局部变量是线程私有的，因此不存在竞争问题。</p>
+</li>
+<li><p>每一个线程还存在自己的工作内存，线程的工作内存，保留了被线程使用的变量的工作副本。</p>
+</li>
+<li><p>线程对变量的所有的操作(读，写)都必须在工作内存中完成，而不能直接读写主内存中的变量，不同线程之间也不能直接访问对方工作内存中的变量，线程间变量的值的传递需要通过主内存完成。</p>
+</li>
+</ol>
+<hr>
+<p><strong>面试官</strong>：好的，刚才你说了synchronized它在高并发量的情况下，性能不高，在项目该如何控制使用锁呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，其实，在<strong>高并发</strong>下，我们可以采用ReentrantLock来加锁。</p>
+<p><strong>面试官</strong>：嗯，那你说下ReentrantLock的使用方式和底层原理？</p>
+<p><strong>候选人</strong>：</p>
+<p>好的，</p>
+<p>ReentrantLock是一个<strong>可重入锁</strong>:，调用 lock 方 法获取了锁之后，再次调用 lock，是不会再阻塞，内部直接增加重入次数 就行了，标识这个线程已经重复获取一把锁而不需要等待锁的释放。</p>
+<p>ReentrantLock是属于juc包下的类，属于api层面的锁，跟synchronized一样，<strong>都是悲观锁</strong>。通过lock()用来获取锁，unlock()释放锁。</p>
+<p>它的底层实现原理主要利用<strong>CAS+AQS队列</strong>来实现。它<strong>支持公平锁和非公平锁</strong>，两者的实现类似</p>
+<p>构造方法接受一个可选的公平参数（<strong>默认非公平锁</strong>），当设置为true时，表示公平锁，否则为非公平锁。公平锁的效率往往没有非公平锁的效率高。</p>
+<hr>
+<p><strong>面试官</strong>：好的，刚才你说了CAS和AQS，你能介绍一下吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>好的。</p>
+<p>CAS的全称是： Compare And Swap(比较再交换);它体现的一种<strong>乐观锁</strong>的思想，在无锁状态下保证线程操作数据的原子性。</p>
+<ul>
+<li><p>CAS使用到的地方很多：<strong>AQS框架</strong>、<strong>AtomicXXX类</strong></p>
+</li>
+<li><p>在<strong>操作共享变量</strong>的时候使用的<strong>自旋锁</strong>，效率上更高一些</p>
+</li>
+<li><p>CAS的底层是调用的<strong>Unsafe类</strong>中的方法，都是操作系统提供的，其他语言实现</p>
+</li>
+</ul>
+<p>AQS的话，其实就一个jdk提供的类<strong>AbstractQueuedSynchronizer</strong>，是<strong>阻塞式锁</strong>和<strong>相关的同步器工具</strong>的<strong>框架</strong>。</p>
+<p>内部有一个属性 <strong>state 属性</strong>来表示资源的状态，默认state等于0，表示没有获取锁，state等于1的时候才标明获取到了锁。通过cas 机制设置 state 状态</p>
+<p>在它的内部还提供了<strong>基于 FIFO</strong> 的等待队列，是一个<strong>双向</strong>列表，其中</p>
+<ul>
+<li><p>tail 指向队列最后一个元素</p>
+</li>
+<li><p>head  指向队列中最久的一个元素</p>
+</li>
+</ul>
+<p>其中我们刚刚聊的<strong>ReentrantLock底层的实现</strong>就是一个AQS。</p>
+<p><strong>面试官</strong>：乐观锁和悲观锁的区别</p>
+<ul>
+<li><p>CAS 是基于乐观锁的思想：最乐观的估计，不怕别的线程来修改共享变量，就算改了也没关系，我吃亏点再重试呗。</p>
+</li>
+<li><p>synchronized 是基于悲观锁的思想：最悲观的估计，得防着其它线程来修改共享变量，我上了锁你们都别想改，我改完了解开锁，你们才有机会。</p>
+</li>
+</ul>
+<p><strong>面试官</strong>：synchronized和Lock有什么区别 ?   </p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，好的，主要有三个方面不太一样</p>
+<p>第一，<strong>语法</strong>层面</p>
+<ul>
+<li>synchronized 是<strong>关键字</strong>，源码在 jvm 中，用 c++ 语言实现，退出同步代码块锁会<strong>自动释放</strong></li>
+<li>Lock 是<strong>接口</strong>，源码由 jdk 提供，用 java 语言实现，需要<strong>手动调用 unlock</strong> 方法释放锁</li>
+</ul>
+<p>第二，功能层面</p>
+<ul>
+<li>二者均属于悲观锁、都具备基本的互斥、同步、锁重入功能</li>
+<li>Lock 提供了许多 synchronized 不具备的功能，例如<strong>获取等待状态、公平锁、可打断、可超时、多条件变量</strong>，同时Lock 可以实现不同的场景，如 ReentrantLock， ReentrantReadWriteLock</li>
+</ul>
+<p>第三，性能层面</p>
+<ul>
+<li>在<strong>没有竞争</strong>时，<strong>synchronized</strong> 做了很多优化，如偏向锁、轻量级锁，性能不赖</li>
+<li>在<strong>竞争激烈</strong>时，<strong>Lock</strong> 的实现通常会提供更好的性能</li>
+</ul>
+<p>统合来看，需要根据不同的场景来选择不同的锁的使用。</p>
+<hr>
+<p><strong>面试官</strong>：死锁产生的条件是什么？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，是这样的，一个线程需要<strong>同时获取多把锁</strong>，这时就容易发生死锁，举个例子来说：</p>
+<p>t1 线程获得A对象锁，接下来想获取B对象的锁</p>
+<p>t2 线程获得B对象锁，接下来想获取A对象的锁 </p>
+<p>这个时候t1线程和t2线程都在互相等待对方的锁，就产生了死锁</p>
+<p><strong>面试官</strong>：那如果产出了这样的，如何进行死锁诊断？</p>
+<p><strong>候选人</strong>：</p>
+<p>这个也很容易，我们只需要通过jdk自动的工具就能搞定</p>
+<p>我们可以先通过<strong>jps</strong>来查看当前java程序运行的进程id</p>
+<p>然后通过<strong>jstack</strong>来查看这个进程id，就能展示出来死锁的问题，并且，可以定位代码的具体行号范围，我们再去找到对应的代码进行排查就行了。</p>
+<hr>
+<p><strong>面试官</strong>：请谈谈你对 volatile 的理解</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~</p>
+<p>volatile 是一个<strong>关键字</strong>，可以修饰<strong>类的成员变量</strong>、<strong>类的静态成员变量</strong>，主要有两个功能</p>
+<p>第一：保证了<strong>不同线程对这个变量进行操作时的可见性</strong>，即一个线程修改了某个变量的值，这新值<strong>对其他线程来说是立即可见</strong>的,volatile关键字会强制将修改的值立即写入主存。</p>
+<p>第二： <strong>禁止进行指令重排序</strong>，可以保证代码执行有序性。底层实现原理是，添加了一个<strong>内存屏障</strong>，通过插入内存屏障禁止在内存屏障<strong>前后</strong>的指令执行重排序优化（写屏蔽上方操作，读屏蔽上方操作）</p>
+<hr>
+<p><strong>本文作者</strong>：接《集合相关面试题》</p>
+<p><strong>面试官</strong>：那你能聊一下ConcurrentHashMap的原理吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯好的，</p>
+<p>ConcurrentHashMap 是一种线程安全的高效Map集合，jdk1.7和1.8也做了很多调整。</p>
+<ul>
+<li>JDK1.7的底层采用是<strong>分段的数组</strong>+<strong>链表</strong> 实现</li>
+<li>JDK1.8 采用的数据结构跟HashMap1.8的结构一样，数组+链表&#x2F;红黑二叉树。</li>
+</ul>
+<p>在jdk1.7中 ConcurrentHashMap 里包含一个 <strong>Segment 数组</strong>。Segment 的结构和HashMap类似，是一 种数组和链表结构，一个 Segment 包含一个 HashEntry 数组，每个 HashEntry 是一个链表结构 的元素，每个 Segment 守护着一个HashEntry数组里的元素，当对 HashEntry 数组的数据进行修 改时，必须首先获得对应的 Segment的锁。</p>
+<p>Segment 是一种<strong>可重入的锁 ReentrantLock</strong>，每个 Segment 守护一个HashEntry 数组里得元 素，当对 HashEntry 数组的数据进行修改时，必须首先获得对应的 Segment 锁</p>
+<p>在jdk1.8中的ConcurrentHashMap 做了较大的优化，性能提升了不少。首先是它的数据结构与jdk1.8的hashMap数据结构完全一致。其次是<strong>放弃了Segment臃肿的设计</strong>，取而代之的是采用<strong>Node + CAS + Synchronized</strong>来保 证并发安全进行实现，synchronized只锁定当前链表或红黑二叉树的<strong>首节点</strong>，这样只要hash不冲 突，就不会产生并发 , 效率得到提升</p>
+<p><strong>面试官</strong>： 导致并发程序出现问题的根本原因是什么</p>
+<p><strong>候选人</strong>：</p>
+<p>Java并发编程三大特性</p>
+<ul>
+<li><p>原子性</p>
+</li>
+<li><p>可见性</p>
+</li>
+<li><p>有序性</p>
+</li>
+</ul>
+<h5 id="（1）原子性"><a href="#（1）原子性" class="headerlink" title="（1）原子性"></a>（1）原子性</h5><p>一个线程在CPU中操作不可暂停，也不可中断，要不执行完成，要不不执行</p>
+<p>解决方案：</p>
+<p>1.synchronized：同步加锁</p>
+<p>2.JUC里面的lock：加锁</p>
+<h5 id="（2）内存可见性"><a href="#（2）内存可见性" class="headerlink" title="（2）内存可见性"></a>（2）内存可见性</h5><p>内存可见性：让一个线程对共享变量的修改对另一个线程可见</p>
+<p>解决方案：</p>
+<ul>
+<li><p>synchronized</p>
+</li>
+<li><p>volatile（推荐）</p>
+</li>
+<li><p>LOCK</p>
+</li>
+</ul>
+<h5 id="（3）有序性"><a href="#（3）有序性" class="headerlink" title="（3）有序性"></a>（3）有序性</h5><p>指令重排：处理器为了提高程序运行效率，可能会对输入代码进行优化，它不保证程序中各个语句的执行先后顺序同代码中的顺序一致，但是它会保证程序最终执行结果和代码顺序执行的结果是一致的</p>
+<p>解决方案：</p>
+<ul>
+<li>volatile</li>
+</ul>
+</blockquote>
+<h3 id="8-3-线程池"><a href="#8-3-线程池" class="headerlink" title="8.3 线程池"></a>8.3 线程池</h3><blockquote>
+<p><strong>面试官</strong>：线程池的种类有哪些？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯！是这样</p>
+<p>在jdk中默认提供了4中方式创建线程池</p>
+<p>第一个是：<strong>newCachedThreadPool</strong>创建一个可缓存线程池，如果线程池长度超过处理需要，可<strong>灵活回收</strong>空闲线程，若无可回收，则新建线程。 </p>
+<p>第二个是：<strong>newFixedThreadPool</strong> 创建一个<strong>定长</strong>线程池，可控制线程最大并发数，超出的线程会在队列 中<strong>等待</strong>。 </p>
+<p>第三个是：<strong>newScheduledThreadPool</strong> 创建一个定长线程池，支持<strong>定时及周期性</strong>任务执行。 </p>
+<p>第四个是：<strong>newSingleThreadExecutor</strong> 创建一个<strong>单线程化</strong>的线程池，它只会用唯一的工作线程来执行任 务，保证所有任务按照<strong>指定顺序</strong>(FIFO, LIFO, 优先级)执行。</p>
+<p><strong>面试官</strong>：线程池的核心参数有哪些？</p>
+<p><strong>候选人</strong>：</p>
+<p>在线程池中一共有<strong>7个</strong>核心参数：</p>
+<ol>
+<li><p>corePoolSize <strong>核心线程数目</strong> - 池中会保留的最多线程数</p>
+</li>
+<li><p>maximumPoolSize <strong>最大线程数目</strong> - 核心线程+救急线程的最大数目</p>
+</li>
+<li><p>keepAliveTime <strong>生存时间</strong> - 救急线程的生存时间，生存时间内没有新任务，此线程资源会释放</p>
+</li>
+<li><p>unit <strong>时间单位</strong> - 救急线程的生存时间单位，如秒、毫秒等</p>
+</li>
+<li><p>workQueue - 当没有空闲核心线程时，新来任务会加入到此队列<strong>排队</strong>，队列满会创建救急线程执行任务</p>
+</li>
+<li><p>threadFactory <strong>线程工厂</strong> - 可以定制线程对象的创建，例如设置线程名字、是否是守护线程等</p>
+</li>
+<li><p>handler <strong>拒绝策略</strong> - 当所有线程都在繁忙，workQueue 也放满时，会触发拒绝策略</p>
+</li>
+</ol>
+<p>在拒绝策略中又有4中拒绝策略</p>
+<p>当线程数过多以后，第一种是<strong>抛异常</strong>、第二种是由<strong>调用者</strong>(主线程)执行任务、第三是<strong>丢弃当前的任务</strong>，第四是<strong>丢弃最早排队任务</strong>。默认是直接抛异常。</p>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230505220701835.png" alt="image-20230505220701835"></p>
+<p><strong>面试官</strong>：线程池的执行原理知道吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~，它是这样的</p>
+<p>首先判断线程池里的核心线程是否都在执行任务，如果不是则创建一个新的工作线程来执行任务。如果核心线程都在执行任务，则线程池判断工作队列是否已满，如果工作队列没有满，则将新提交的任务存储在这个工作队 列里。如果工作队列满了，则判断线程池里的线程是否都处于工作状态，如果没有，则创建一个新的工作线程来执行任 务。如果已经满了，则交给拒绝策略来处理这个任务。</p>
+<p><strong>面试官</strong>：线程池中有哪些常见的阻塞队列</p>
+<p><strong>候选人</strong>：</p>
+<p>是这样的，我们公司当时有一些规范，为了减少线程上下文的切换，要根据当时部署的服务器的CPU核数来决定，我们规则是：CPU核数+1就是最终的核心线程数。</p>
+<p>比较常见的有4个，用的最多是ArrayBlockingQueue和LinkedBlockingQueue</p>
+<p>1.ArrayBlockingQueue：基于数组结构的有界阻塞队列，FIFO。</p>
+<p>2.LinkedBlockingQueue：基于链表结构的有界阻塞队列，FIFO。</p>
+<p>3.DelayedWorkQueue ：是一个优先级队列，它可以保证每次出队的任务都是当前队列中执行时间最靠前的</p>
+<p>4.SynchronousQueue：不存储元素的阻塞队列，每个插入操作都必须等待一个移出操作。</p>
+<p><strong>ArrayBlockingQueue的LinkedBlockingQueue区别</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>LinkedBlockingQueue</strong></th>
+<th><strong>ArrayBlockingQueue</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>默认无界，支持有界</td>
+<td>强制有界</td>
+</tr>
+<tr>
+<td>底层是链表</td>
+<td>底层是数组</td>
+</tr>
+<tr>
+<td>是懒惰的，创建节点的时候添加数据</td>
+<td>提前初始化 Node  数组</td>
+</tr>
+<tr>
+<td>入队会生成新 Node</td>
+<td>Node需要是提前创建好的</td>
+</tr>
+<tr>
+<td>两把锁（头尾）</td>
+<td>一把锁</td>
+</tr>
+</tbody></table>
+<p>左边是LinkedBlockingQueue加锁的方式，右边是ArrayBlockingQueue加锁的方式</p>
+<ul>
+<li>LinkedBlockingQueue读和写各有一把锁，性能相对较好</li>
+<li>ArrayBlockingQueue只有一把锁，读和写公用，性能相对于LinkedBlockingQueue差一些</li>
+</ul>
+<p><img src="E:/Blog/source/_posts/Java面试/image-20230505221424359.png" alt="image-20230505221424359"></p>
+<p><strong>面试官</strong>：如何确定核心线程池呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>① 高并发、任务执行时间短 –&gt;（ CPU核数+1 ），减少线程上下文的切换</p>
+<p>② 并发不高、任务执行时间长</p>
+<ul>
+<li><p>IO密集型的任务 –&gt; (CPU核数 * 2 + 1)</p>
+</li>
+<li><p>计算密集型任务 –&gt; （ CPU核数+1 ）</p>
+</li>
+</ul>
+<p>③ 并发高、业务执行时间长，解决这种类型任务的关键不在于线程池而在于整体架构的设计，看看这些业务里面某些数据是否能做缓存是第一步，增加服务器是第二步，至于线程池的设置，设置参考（2）</p>
+<p><strong>面试官</strong>：为什么不建议使用Executors创建线程池呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>好的，其实这个事情在阿里提供的最新开发手册《Java开发手册-嵩山版》中也提到了</p>
+<p>主要原因是如果使用Executors创建线程池的话，它允许的请求队列默认长度是Integer.MAX_VALUE，这样的话，有可能导致堆积大量的请求，从而导致OOM（内存溢出）。</p>
+<p>所以，我们一般推荐使用ThreadPoolExecutor来创建线程池，这样可以明确规定线程池的参数，避免资源的耗尽。</p>
+</blockquote>
+<h3 id="8-4-线程使用场景问题"><a href="#8-4-线程使用场景问题" class="headerlink" title="8.4 线程使用场景问题"></a>8.4 线程使用场景问题</h3><blockquote>
+<p><strong>面试官</strong>：如果控制某一个方法允许并发访问线程的数量？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，我想一下</p>
+<p>在jdk中提供了一个<strong>Semaphore类</strong>（信号量）</p>
+<p>它提供了两个方法，semaphore.<strong>acquire</strong>() 请求信号量，可以限制线程的个数，是一个正数，如果信号量是-1,就代表已经用完了信号量，其他线程需要阻塞了</p>
+<p>第二个方法是semaphore.<strong>release</strong>()，代表是释放一个信号量，此时信号量的个数+1</p>
+<p><strong>面试官</strong>：好的，那该如何保证Java程序在多线程的情况下执行安全呢？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，刚才讲过了导致线程安全的原因，如果解决的话，jdk中也提供了很多的类帮助我们解决多线程安全的问题，比如：</p>
+<ul>
+<li>JDK Atomic开头的原子类、synchronized、LOCK，可以解决原子性问题</li>
+<li>synchronized、volatile、LOCK，可以解决可见性问题</li>
+<li>Happens-Before 规则可以解决有序性问题</li>
+</ul>
+<hr>
+<p><strong>面试官</strong>：你在项目中哪里用了多线程？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯~~，我想一下当时的场景[根据自己简历上的模块设计多线程场景]</p>
+<p>参考场景一：</p>
+<p><strong>es数据批量导入</strong></p>
+<p>在我们项目上线之前，我们需要把数据量的数据<strong>一次性的同步</strong>到es索引库中，但是当时的数据好像是1000万左右，一次性读取数据肯定不行（<strong>oom异常</strong>），如果分批执行的话，耗时也太久了。所以，当时我就想到可以使用线程池的方式导入，利用CountDownLatch+Future来控制，就能大大提升导入的时间。</p>
+<p>参考场景二：</p>
+<p>在我做那个xx电商网站的时候，里面有一个数据汇总的功能，在用户下单之后需要查询订单信息，也需要获得订单中的商品详细信息（可能是多个），还需要查看物流发货信息。因为它们三个对应的分别三个微服务，如果一个一个的操作的话，互相等待的时间比较长。所以，我当时就想到可以使用线程池，让多个线程同时处理，最终再汇总结果就可以了，当然里面需要用到Future来获取每个线程执行之后的结果才行</p>
+<p>参考场景三：</p>
+<p>《黑马头条》项目中使用的</p>
+<p>我当时做了一个文章搜索的功能，用户输入关键字要搜索文章，同时需要保存用户的搜索记录（搜索历史），这块我设计的时候，为了不影响用户的正常搜索，我们采用的异步的方式进行保存的，为了提升性能，我们加入了线程池，也就说在调用异步方法的时候，直接从线程池中获取线程使用</p>
+</blockquote>
+<h3 id="8-5-其他"><a href="#8-5-其他" class="headerlink" title="8.5 其他"></a>8.5 其他</h3><blockquote>
+<p><strong>面试官</strong>：谈谈你对ThreadLocal的理解</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，是这样的~~</p>
+<p>ThreadLocal 主要功能有两个，第一个是可以实现资源对象的<strong>线程隔离</strong>，让每个线程各用各的资源对象，避免争用引发的线程安全问题，第二个是实现了线程内的<strong>资源共享</strong></p>
+<p><strong>面试官</strong>：好的，那你知道ThreadLocal的底层原理实现吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，知道一些~</p>
+<p>在ThreadLocal内部维护了一个一个 <strong>ThreadLocalMap</strong> 类型的成员变量，用来存储资源对象</p>
+<p>当我们调用 <strong>set</strong> 方法，就是以 ThreadLocal <strong>自己作为 key</strong>，资源<strong>对象作为 value</strong>，放入当前线程的 ThreadLocalMap 集合中</p>
+<p>当调用 get 方法，就是以 ThreadLocal 自己作为 key，到当前线程中查找关联的资源值</p>
+<p>当调用 remove 方法，就是以 ThreadLocal 自己作为 key，移除当前线程关联的资源值</p>
+<p><strong>面试官</strong>：好的，那关于ThreadLocal会导致内存溢出这个事情，了解吗？</p>
+<p><strong>候选人</strong>：</p>
+<p>嗯，我之前看过源码，我想一下~~</p>
+<p>是应为ThreadLocalMap 中的 key 被设计为<strong>弱引用</strong>，它是被动的被GC调用释放key，不过关键的是只有key可以得到内存释放，而value不会，因为value是一个强引用。</p>
+<p>在使用ThreadLocal 时都把它作为静态变量（即强引用），因此无法被动依靠 GC 回收，建议<strong>主动的remove</strong> 释放 key，这样就能避免内存溢出。</p>
+</blockquote>
+<h2 id="9-JVM"><a href="#9-JVM" class="headerlink" title="9 JVM"></a>9 JVM</h2><h3 id="9-1-JVM组成"><a href="#9-1-JVM组成" class="headerlink" title="9.1 JVM组成"></a>9.1 JVM组成</h3><blockquote>
+<p><strong>面试官</strong>：JVM由那些部分组成，运行流程是什么？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，好的~~</p>
+<p>在JVM中共有四大部分，分别是<strong>ClassLoader（类加载器）</strong>、<strong>Runtime Data Area（运行时数据区，内存分区）</strong>、<strong>Execution Engine（执行引擎）</strong>、<strong>Native Method Library（本地库接口）</strong></p>
+<p>它们的运行流程是：</p>
+<p>第一，类加载器（ClassLoader）把Java代码转换为字节码</p>
+<p>第二，运行时数据区（Runtime Data Area）把字节码加载到内存中，而字节码文件只是JVM的一套指令集规范，并不能直接交给底层系统去执行，而是有执行引擎运行</p>
+<p>第三，执行引擎（Execution Engine）将字节码翻译为底层系统指令，再交由CPU执行去执行，此时需要调用其他语言的本地库接口（Native Method Library）来实现整个程序的功能。</p>
+<p><strong>面试官</strong>：好的，你能详细说一下 JVM 运行时数据区吗？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，好~</p>
+<p>运行时数据区包含了<strong>堆</strong>、<strong>方法区</strong>、<strong>栈</strong>、<strong>本地方法栈</strong>、<strong>程序计数器</strong>这几部分，每个功能作用不一样。</p>
+<ul>
+<li><strong>堆</strong>解决的是<strong>对象实例存储</strong>的问题，垃圾回收器管理的主要区域。</li>
+<li><strong>方法区</strong>可以认为是堆的一部分，用于存储已被虚拟机加载的信息，<strong>常量、静态变量、即时编译器编译后的代码</strong>。</li>
+<li><strong>栈</strong>解决的是<strong>程序运行</strong>的问题，栈里面存的是<strong>栈帧</strong>，栈帧里面存的是局部变量表、操作数栈、动态链接、方法出口等信息。</li>
+<li><strong>本地方法栈</strong>与栈功能相同，本地方法栈执行的是本地方法，一个Java调用非Java代码的接口。</li>
+<li>程序计数器（PC寄存器）程序计数器中<strong>存放的是当前线程所执行的字节码的行数</strong>。JVM工作时就是通过改变这个计数器的值来选取下一个需要执行的字节码指令。</li>
+</ul>
+<p><strong>面试官</strong>：好的，你再详细介绍一下程序计数器的作用？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，是这样~~</p>
+<p>java虚拟机对于多线程是通过线程轮流切换并且分配线程执行时间。在任何的一个时间点上，一个处理器只会处理执行一个线程，如果当前被执行的这个线程它所分配的执行时间用完了【挂起】。处理器会切换到另外的一个线程上来进行执行。并且这个线程的执行时间用完了，接着处理器就会又来执行被挂起的这个线程。这时候程序计数器就起到了关键作用，程序计数器在来回切换的线程中<strong>记录他上一次执行的行号</strong>，然后接着继续向下执行。</p>
+<p><strong>面试官</strong>：你能给我详细的介绍Java堆吗?</p>
+<p><strong>候选人:</strong></p>
+<p>好的~</p>
+<p>Java中的堆术语线程共享的区域。主要用来保存<strong>对象实例，数组</strong>等，当堆中没有内存空间可分配给实例，也无法再扩展时，则抛出OutOfMemoryError异常。</p>
+<p>​	在JAVA8中堆内会存在<strong>年轻代</strong>、<strong>老年代</strong></p>
+<p>​	1）<strong>Young区</strong>被划分为三部分，<strong>Eden区</strong>和两个大小严格相同的<strong>Survivor区</strong>，其中，Survivor区间中，某一时刻只有其中一个是被使用的，另外一个留做垃圾收集时复制对象用。在Eden区变满的时候， GC就会将存活的对象移到空闲的Survivor区间中，根据JVM的策略，在经过几次垃圾收集后，任然存活于Survivor的对象将被移动到<strong>Tenured区间</strong>。</p>
+<p>​	2）Tenured区主要保存生命周期长的对象，一般是一些老的对象，当一些对象在Young复制转移一定的次数以后，对象就会被转移到Tenured区。</p>
+<p><strong>面试官</strong>：能不能解释一下方法区？</p>
+<p><strong>候选人:</strong></p>
+<p>好的~</p>
+<p><img src="/Java%E9%9D%A2%E8%AF%95/image-20240226015537638-171491597349848.png" alt="image-20240226015537638"></p>
+<p>与虚拟机栈类似。本地方法栈是为虚拟机<strong>执行本地方法时提供服务的</strong>。不需要进行GC。本地方法一般是由其他语言编写。</p>
+<ul>
+<li>方法区(Method Area)是各个线程共享的内存区域</li>
+<li>主要存储类的信息、运行时常量池</li>
+<li>虚拟机启动的时候创建，关闭虚拟机时释放</li>
+<li>如果方法区域中的内存无法满足分配请求，则会抛出OutOfMemoryError: Metaspace</li>
+</ul>
+<p>运行时常量池</p>
+<p>常量池：可以看作是一张表，虚拟机指令根据这张常量表找到要执行的类名、方法名、参数类型、字面量等信息</p>
+<p>当类被加载，它的常量池信息就会放入运行时常量池，并把里面的符号地址变为真实地址</p>
+<p><strong>面试官</strong>：你听过直接内存吗？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯~~</p>
+<p>不受 JVM 内存回收管理，是虚拟机的系统内存，常见于 NIO 操作时，用于数据缓冲区，分配回收成本较高，但读写性能高，不受 JVM 内存回收管理</p>
+<p>它又叫做<strong>堆外内存</strong>，<strong>线程共享的区域</strong>，在 Java 8 之前有个<strong>永久代</strong>的概念，实际上指的是 HotSpot 虚拟机上的永久代，它用永久代实现了 JVM 规范定义的方法区功能，<strong>主要存储类的信息，常量，静态变量</strong>，即时编译器编译后代码等，这部分由于是在堆中实现的，受 GC 的管理，不过由于永久代有 -XX:MaxPermSize 的上限，所以如果大量动态生成类（将类信息放入永久代），很容易造成 OOM，有人说可以把永久代设置得足够大，但很难确定一个合适的大小，受类数量，常量数量的多少影响很大。</p>
+<p>​	所以在 Java 8 中就把方法区的实现移到了本地内存中的元空间中，这样方法区就不受 JVM 的控制了,也就不会进行 GC，也因此提升了性能。</p>
+<p><strong>面试官</strong>：什么是<strong>虚拟机栈</strong></p>
+<p><strong>候选人:</strong></p>
+<p>虚拟机栈是<strong>描述的是方法执行时的内存模型</strong>,是<strong>线程私有</strong>的，生命周期与线程相同,每个方法被执行的同时会创建<strong>栈桢</strong>。保存执行方法时的<strong>局部变量、动态连接信息、方法返回地址信息</strong>等等。方法开始执行的时候会进栈，方法执行完会出栈【相当于清空了数据】，所以这块区域<strong>不需要进行 GC</strong>。</p>
+<ol>
+<li>垃圾回收是否涉及栈内存？</li>
+</ol>
+<p> 垃圾回收主要指就是堆内存，当栈帧弹栈以后，内存就会释放</p>
+<ol start="2">
+<li>栈内存分配越大越好吗？</li>
+</ol>
+<p> 未必，默认的栈内存通常为1024k</p>
+<p> 栈帧过大会导致线程数变少，例如，机器总内存为512m，目前能活动的线程数则为512个，如果把栈内存改为2048k，那么能活动的栈帧就会减半</p>
+<ol start="3">
+<li>方法内的局部变量是否线程安全？</li>
+</ol>
+<ul>
+<li><p>如果方法内局部变量没有逃离方法的作用范围，它是线程安全的</p>
+</li>
+<li><p>如果是局部变量引用了对象，并逃离方法的作用范围，需要考虑线程安全</p>
+</li>
+</ul>
+<p><strong>面试官</strong>：能说一下堆栈的区别是什么吗？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，好的，有这几个区别</p>
+<p>第一，栈内存一般会用来存储<strong>局部变量和方法调用</strong>，但堆内存是用来存储<strong>Java对象和数组</strong>的的。<strong>堆会GC垃圾回收</strong>，而栈不会。</p>
+<p>第二、栈内存是线程<strong>私有</strong>的，而堆内存是线程<strong>共有</strong>的。</p>
+<p>第三、两者<strong>异常错误不同</strong>，但如果栈内存或者堆内存不足都会抛出异常。</p>
+<p>栈空间不足：java.lang.StackOverFlowError。</p>
+<p>堆空间不足：java.lang.OutOfMemoryError。</p>
+</blockquote>
+<h3 id="5-2-类加载器"><a href="#5-2-类加载器" class="headerlink" title="5.2 类加载器"></a>5.2 类加载器</h3><blockquote>
+<p><strong>面试官</strong>：什么是类加载器，类加载器有哪些?</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，是这样的</p>
+<p>JVM只会运行二进制文件，而类加载器（ClassLoader）的主要作用就是将<strong>字节码文件加载到JVM中</strong>，从而让Java程序能够启动起来。</p>
+<p>常见的类加载器有4个</p>
+<p>第一个是启动类加载器(BootStrap ClassLoader)：其是由C++编写实现。用于加载JAVA_HOME&#x2F;jre&#x2F;lib目录下的类库。</p>
+<p>第二个是扩展类加载器(ExtClassLoader)：该类是ClassLoader的子类，主要加载JAVA_HOME&#x2F;jre&#x2F;lib&#x2F;ext目录中的类库。</p>
+<p>第三个是应用类加载器(AppClassLoader)：该类是ClassLoader的子类，主要用于加载classPath下的类，也就是加载开发者自己编写的Java类。</p>
+<p>第四个是自定义类加载器：开发者自定义类继承ClassLoader，实现自定义类加载规则。</p>
+<p><strong>面试官</strong>：说一下类装载的执行过程？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，这个过程还是挺多的。</p>
+<p>类从加载到虚拟机中开始，直到卸载为止，它的整个生命周期包括了：加载、验证、准备、解析、初始化、使用和卸载这7个阶段。其中，验证、准备和解析这三个部分统称为连接（linking）</p>
+<p>1.加载：查找和导入class文件</p>
+<p>2.验证：保证加载类的准确性</p>
+<p>3.准备：为类变量分配内存并设置类变量初始值</p>
+<p>4.解析：把类中的符号引用转换为直接引用</p>
+<p>5.初始化：对类的静态变量，静态代码块执行初始化操作</p>
+<p>6.使用：JVM 开始从入口方法开始执行用户的程序代码</p>
+<p>7.卸载：当用户程序代码执行完毕后，JVM 便开始销毁创建的 Class 对象，最后负责运行的 JVM 也退出内存</p>
+<p><strong>面试官</strong>：什么是双亲委派模型？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，它是是这样的。</p>
+<p>如果一个类加载器收到了类加载的请求，它首先不会自己尝试加载这个类，而是把这请求委派给父类加载器去完成，每一个层次的类加载器都是如此，因此所有的加载请求最终都应该传说到顶层的启动类加载器中，只有当父类加载器返回自己无法完成这个加载请求（它的搜索返回中没有找到所需的类）时，子类加载器才会尝试自己去加载</p>
+<p><strong>面试官</strong>：JVM为什么采用双亲委派机制</p>
+<p><strong>候选人:</strong></p>
+<p>主要有两个原因。</p>
+<p>第一、通过双亲委派机制可以避免某一个类被重复加载，当父类已经加载后则无需重复加载，保证唯一性。</p>
+<p>第二、为了安全，保证类库API不会被修改</p>
+</blockquote>
+<h3 id="5-3-垃圾回收"><a href="#5-3-垃圾回收" class="headerlink" title="5.3 垃圾回收"></a>5.3 垃圾回收</h3><blockquote>
+<p><strong>面试官</strong>：简述Java垃圾回收机制？（GC是什么？为什么要GC）</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，是这样~~</p>
+<p>为了让程序员更专注于代码的实现，而不用过多的考虑内存释放的问题，所以，在Java语言中，有了自动的垃圾回收机制，也就是我们熟悉的GC(Garbage Collection)。</p>
+<p>有了垃圾回收机制后，程序员只需要关心内存的申请即可，内存的释放由系统自动识别完成。</p>
+<p>在进行垃圾回收时，不同的对象引用类型，GC会采用不同的回收时机</p>
+<p><strong>面试官</strong>：强引用、软引用、弱引用、虚引用的区别？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯嗯~</p>
+<p>强引用最为普通的引用方式，表示一个对象处于<strong>有用且必须</strong>的状态，如果一个对象具有强引用，则GC并不会回收它。即便堆中内存不足了，宁可出现OOM，也不会对其进行回收</p>
+<p>软引用表示一个对象处于<strong>有用且非必须</strong>状态，如果一个对象处于软引用，在内存空间足够的情况下，GC机制并不会回收它，而在内存空间不足时，则会在OOM异常出现之间对其进行回收。但值得注意的是，因为GC线程优先级较低，软引用并不会立即被回收。</p>
+<p>弱引用表示一个对象处于<strong>可能有用且非必须</strong>的状态。在GC线程扫描内存区域时，一旦发现弱引用，就会回收到弱引用相关联的对象。对于弱引用的回收，无关内存区域是否足够，一旦发现则会被回收。同样的，因为GC线程优先级较低，所以弱引用也并不是会被立刻回收。</p>
+<p>虚引用表示一个对象处于<strong>无用</strong>的状态。在任何时候都有可能被垃圾回收。虚引用的使用必须和引用队列Reference Queue联合使用</p>
+<p><strong>面试官</strong>：对象什么时候可以被垃圾器回收</p>
+<p><strong>候选人:</strong></p>
+<p>思考一会~~</p>
+<p>如果一个或多个对象没有任何的引用指向它了，那么这个对象现在就是垃圾，如果定位了垃圾，则有可能会被垃圾回收器回收。</p>
+<p>如果要定位什么是垃圾，有两种方式来确定，第一个是引用计数法，第二个是可达性分析算法</p>
+<p>通常都使用可达性分析算法来确定是不是垃圾</p>
+<p><strong>面试官</strong>： JVM 垃圾回收算法有哪些？</p>
+<p><strong>候选人:</strong></p>
+<p>我记得一共有四种，分别是标记清除算法、复制算法、标记整理算法、分代回收</p>
+<p><strong>面试官</strong>： 你能详细聊一下分代回收吗？</p>
+<p><strong>候选人:</strong></p>
+<p>关于分代回收是这样的</p>
+<p>在java8时，堆被分为了两份：新生代和老年代，它们默认空间占用比例是1:2</p>
+<p>对于新生代，内部又被分为了三个区域。Eden区，S0区，S1区默认空间占用比例是8:1:1</p>
+<p>具体的工作机制是有些情况：</p>
+<p>1）当创建一个对象的时候，那么这个对象会被分配在新生代的Eden区。当Eden区要满了时候，触发YoungGC。</p>
+<p>2）当进行YoungGC后，此时在Eden区存活的对象被移动到S0区，并且<strong>当前对象的年龄会加1</strong>，清空Eden区。</p>
+<p>3）当再一次触发YoungGC的时候，会把Eden区中存活下来的对象和S0中的对象，移动到S1区中，这些对象的年龄会加1，清空Eden区和S0区。</p>
+<p>4）当再一次触发YoungGC的时候，会把Eden区中存活下来的对象和S1中的对象，移动到S0区中，这些对象的年龄会加1，清空Eden区和S1区。</p>
+<p>5）对象的年龄达到了某一个限定的值（<strong>默认15岁</strong>  ），那么这个对象就会进入到老年代中。</p>
+<p>当然也有特殊情况，如果进入Eden区的是一个大对象，在触发YoungGC的时候，会直接存放到老年代</p>
+<p>当老年代满了之后，<strong>触发FullGC</strong>。<strong>FullGC同时回收新生代和老年代</strong>，当前只会存在一个FullGC的线程进行执行，其他的线程全部会被挂起。  我们在程序中要尽量避免FullGC的出现。</p>
+<p><strong>面试官</strong>：讲一下新生代、老年代、永久代的区别？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯！是这样的，简单说就是</p>
+<p><strong>新生代</strong>主要用来存放新生的对象。</p>
+<p><strong>老年代</strong>主要存放应用中生命周期长的内存对象。</p>
+<p><strong>永久代</strong>指的是永久保存区域。主要存放Class和Meta（元数据）的信息。在Java8中，永久代已经被移除，取而代之的是一个称之为“元数据区”（<strong>元空间</strong>）的区域。元空间和永久代类似，不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存的限制。</p>
+<p><strong>面试官</strong>：说一下 JVM 有哪些垃圾回收器？</p>
+<p><strong>候选人:</strong></p>
+<p>在jvm中，实现了多种垃圾收集器，包括：串行垃圾收集器、并行垃圾收集器（JDK8默认）、CMS（并发）垃圾收集器、G1垃圾收集器（JDK9默认）</p>
+<p><strong>面试官</strong>：Minor GC、Major GC、Full GC是什么</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，其实它们指的是不同代之间的垃圾回收</p>
+<p>Minor GC 发生在新生代的垃圾回收，暂停时间短</p>
+<p>Major GC 老年代区域的垃圾回收，老年代空间不足时，会先尝试触发Minor GC。Minor GC之后空间还不足，则会触发Major GC，Major GC速度比较慢，暂停时间长</p>
+<p>Full GC 新生代 + 老年代完整垃圾回收，暂停时间长，<strong>应尽力避免</strong></p>
+</blockquote>
+<h3 id="5-4-JVM实践（调优）"><a href="#5-4-JVM实践（调优）" class="headerlink" title="5.4 JVM实践（调优）"></a>5.4 JVM实践（调优）</h3><blockquote>
+<p><strong>面试官</strong>：JVM 调优的参数可以在哪里设置参数值？</p>
+<p><strong>候选人:</strong></p>
+<p>我们当时的项目是springboot项目，可以在项目启动的时候，java -jar中加入参数就行了</p>
+<p><strong>面试官</strong>：用的 JVM 调优的参数都有哪些？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，这些参数是比较多的</p>
+<p>我记得当时我们设置过堆的大小，像-Xms和-Xmx</p>
+<p>还有就是可以设置年轻代中Eden区和两个Survivor区的大小比例</p>
+<p>还有就是可以设置使用哪种垃圾回收器等等。具体的指令还真记不太清楚。</p>
+<p><strong>面试官</strong>：嗯，好的，你们平时调试 JVM都用了哪些工具呢？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，我们一般都是使用jdk自带的一些工具，比如</p>
+<p>jps 输出JVM中运行的进程状态信息</p>
+<p>jstack查看java进程内<strong>线程的堆栈</strong>信息。</p>
+<p>jmap 用于生成堆转存快照</p>
+<p>jstat用于JVM统计监测工具</p>
+<p>还有一些可视化工具，像jconsole和VisualVM等</p>
+<p><strong>面试官</strong>：假如项目中产生了java内存泄露，你说一下你的排查思路？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，这个我在之前项目排查过</p>
+<p>第一呢可以通过jmap指定打印他的内存快照 dump文件，不过有的情况打印不了，我们会设置vm参数让程序自动生成dump文件</p>
+<p>第二，可以通过工具去分析 dump文件，jdk自带的VisualVM就可以分析</p>
+<p>第三，通过查看堆信息的情况，可以大概定位内存溢出是哪行代码出了问题</p>
+<p>第四，找到对应的代码，通过阅读上下文的情况，进行修复即可</p>
+<p><strong>面试官</strong>：好的，那现在再来说一种情况，就是说服务器CPU持续飙高，你的排查方案与思路？</p>
+<p><strong>候选人:</strong></p>
+<p>嗯，我思考一下~~</p>
+<p>可以这么做~~</p>
+<p>第一可以使用使用top命令查看占用cpu的情况</p>
+<p>第二通过top命令查看后，可以查看是哪一个进程占用cpu较高，记录这个进程id</p>
+<p>第三可以通过ps 查看当前进程中的线程信息，看看哪个线程的cpu占用较高</p>
+<p>第四可以jstack命令打印进行的id，找到这个线程，就可以进一步定位问题代码的行号</p>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Kylece</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://kylece666.github.io/2024/05/05/java-mian-shi/">http://kylece666.github.io/2024/05/05/java-mian-shi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Kylece</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2024/07/17/cryptology/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="cryptology">
+                        
+                        <span class="card-title">cryptology</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2024-07-17
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kylece
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+                        <span class="chip bg-color">密码学</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">安全</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/04/21/neo4j/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="neo4j">
+                        
+                        <span class="card-title">neo4j</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-04-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kylece
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">图数据库</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">
+                        <span class="chip bg-color">知识图谱</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2024</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">Kylece</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/kylece666" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1341446024@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1341446024" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1341446024" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+    <script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
+
+</body>
+
+</html>
